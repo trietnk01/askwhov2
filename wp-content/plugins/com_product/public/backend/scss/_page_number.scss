@@ -1,0 +1,38 @@
+.page-numbers {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   column-gap: 10px;
+   margin-top: 10px;
+   li {
+      span {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         color: #33362f;
+         font-size: 18px;      
+         background: $mau_1;
+         color: #fff;
+      }
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         color: #33362f;
+         font-size: 18px;         
+         background: #e0e0e0;         
+         &:hover{
+            background: $mau_1;
+            color: #fff;
+         }
+      }
+   }
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $f_Regular;    
+    color: $mau_1; 
+    font-size: 14px;       
+}
+body, p, h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+}
+ul, ol,p{
+    margin-bottom: 30px;
+}
+ul,ol{
+    padding-left: 40px;
+}
