@@ -122,8 +122,7 @@ header {
                                 a {
                                     padding-top: 15px;
                                     padding-bottom: 15px;
-                                    font-family: $f_GeneralSansVariable;
-                                    font-weight: 500;
+                                    font-family: $f_GeneralSans_Medium;
                                     font-size: 16px;
                                     line-height: 32px;
                                     color: #000;
@@ -148,6 +147,12 @@ header {
     align-items: center;
     justify-content: center;
     height: $fabars_sidebar_height;
+    position: relative;
+    .logoAskWho{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .agence {        
         width: 811px;
         margin-right: auto;
@@ -156,7 +161,7 @@ header {
         padding-right: 15px;        
         display: flex;
         align-items: center;    
-        color: #000;    
+        color: #000;            
         @media (max-width: 576px) {
             width: 100%;
         }

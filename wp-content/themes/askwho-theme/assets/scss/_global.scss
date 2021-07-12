@@ -4,16 +4,14 @@
 }
 h1{
     font-family: $f_KontrapunktMiki_Regular;        
-    font-weight: 400;
-    font-size: 64px;
+    font-size: 64px;    
     line-height: 72px;
     @media(max-width:576px){
         font-size: 40px;        
     }
 }
 h2{
-    font-family: $f_GeneralSansVariable;    
-    font-weight: 500;
+    font-family: $f_GeneralSans_Medium;        
     font-size: 32px;
     line-height: 48px;
     @media(max-width:576px){
@@ -21,8 +19,7 @@ h2{
     }
 }
 h3{
-    font-family: $f_GeneralSansVariable;    
-    font-weight: 800;
+    font-family: $f_GeneralSans_Bold;        
     font-size: 24px;
     line-height: 32px;
     @media(max-width:576px){
@@ -30,8 +27,7 @@ h3{
     }
 }
 body{
-    font-family: $f_GeneralSansVariable;    
-    font-weight: 400;
+    font-family: $f_GeneralSans_Regular;        
     font-size: 18px;
     line-height: 32px;
     @media(max-width:576px){
@@ -39,14 +35,12 @@ body{
     }
 }
 .caption{
-    font-family: $f_GeneralSansVariable;    
-    font-weight: 500;
+    font-family: $f_GeneralSans_Medium;        
     font-size: 16px;
     line-height: 32px;    
 }
 .readmore{
-    font-family: $f_GeneralSansVariable;    
-    font-weight: 800;
+    font-family: $f_GeneralSans_Bold;        
     font-size: 24px;
     line-height: 32px;
     @media(max-width:576px){
