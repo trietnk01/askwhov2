@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'General Sans Variable';
+    src: url('GeneralSansVariable-Extralight.eot');
+    src: url('GeneralSansVariable-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('GeneralSansVariable-Extralight.woff2') format('woff2'),
+        url('GeneralSansVariable-Extralight.woff') format('woff'),
+        url('GeneralSansVariable-Extralight.ttf') format('truetype'),
+        url('GeneralSansVariable-Extralight.svg#GeneralSansVariable-Extralight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
