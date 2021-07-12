@@ -1,13 +1,49 @@
 @font-face {
-    font-family: 'GeneralSans-Bold';
-    src:  url('./../fonts/GeneralSans/GeneralSans-Bold.eot');
-    src:  url('./../fonts/GeneralSans/GeneralSans-Bold.otf') format('embedded-opentype'),
-      url('./../fonts/GeneralSans/GeneralSans-Bold.ttf') format('truetype'),
-      url('./../fonts/GeneralSans/GeneralSans-Bold.woff') format('woff'),
-      url('./../fonts/GeneralSans/GeneralSans-Bold.woff2') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-$f_FontAwesome:"FontAwesome";
-$f_Regular:'Montserrat', sans-serif;
+  font-family: "KontrapunktMiki-Bold";
+  src: url("./../fonts/KontrapunktMiki/KontrapunktMiki-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "KontrapunktMiki-ExtraBold";
+  src: url("./../fonts/KontrapunktMiki/KontrapunktMiki-ExtraBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "KontrapunktMiki-Regular";
+  src: url("./../fonts/KontrapunktMiki/KontrapunktMiki-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "GeneralSans-Variable";
+  src: url("./../fonts/GeneralSans/GeneralSans-Variable.eot"), url("./../fonts/GeneralSans/GeneralSans-Variable.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Variable.woff"), url("./../fonts/GeneralSans/GeneralSans-Variable.woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Bold";
+  src: url("./../fonts/GeneralSans/GeneralSans-Bold.eot"),url("./../fonts/GeneralSans/GeneralSans-Bold.otf"), url("./../fonts/GeneralSans/GeneralSans-Bold.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Bold.woff"), url("./../fonts/GeneralSans/GeneralSans-Bold.woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Extralight";
+  src: url("./../fonts/GeneralSans/GeneralSans-Extralight.eot"),url("./../fonts/GeneralSans/GeneralSans-Extralight.otf"), url("./../fonts/GeneralSans/GeneralSans-Extralight.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Extralight.woff"), url("./../fonts/GeneralSans/GeneralSans-Extralight.woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Light";
+  src: url("./../fonts/GeneralSans/GeneralSans-Light.eot"),url("./../fonts/GeneralSans/GeneralSans-Light.otf"), url("./../fonts/GeneralSans/GeneralSans-Light.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Light.woff"), url("./../fonts/GeneralSans/GeneralSans-Light.woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Medium";
+  src: url("./../fonts/GeneralSans/GeneralSans-Medium.eot"),url("./../fonts/GeneralSans/GeneralSans-Medium.otf"), url("./../fonts/GeneralSans/GeneralSans-Medium.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Medium.woff"), url("./../fonts/GeneralSans/GeneralSans-Medium.woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Regular";
+  src: url("./../fonts/GeneralSans/GeneralSans-Regular.eot"),url("./../fonts/GeneralSans/GeneralSans-Regular.otf"), url("./../fonts/GeneralSans/GeneralSans-Regular.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Regular.woff"), url("./../fonts/GeneralSans/GeneralSans-Regular.woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Semibold";
+  src: url("./../fonts/GeneralSans/GeneralSans-Semibold.eot"),url("./../fonts/GeneralSans/GeneralSans-Semibold.otf"), url("./../fonts/GeneralSans/GeneralSans-Semibold.ttf"),
+    url("./../fonts/GeneralSans/GeneralSans-Semibold.woff"), url("./../fonts/GeneralSans/GeneralSans-Semibold.woff2");
+}
+$f_FontAwesome: "FontAwesome";
+$f_Regular: "Montserrat", sans-serif;
