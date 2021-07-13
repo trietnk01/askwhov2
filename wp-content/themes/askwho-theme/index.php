@@ -59,9 +59,9 @@ for ($i = 1; $i <= 12; $i++) {
             <h2 class="ask_who_label">L'actualité</h2>
             <h2 class="ask_who_label arrowDown">AskWho.</h2>
         </div>
-        <div class="owl_carousel_featured_post owl-carousel owl-theme owl-loaded">
+        <div class="featured_post">
             <?php
-for ($i = 1; $i <= 8; $i++) {
+for ($i = 1; $i <= 4; $i++) {
     ?>
             <div class="item">
                 <a href="javascript:void(0);" class="author_image">
@@ -108,6 +108,8 @@ for ($i = 1; $i <= 8; $i++) {
             </a>
         </div>
         <div class="ask_who_col_right">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+                alt="<?php echo get_bloginfo('name'); ?>" class="logo">
             <img class="ask_who_avatar" src="<?php echo get_template_directory_uri() . "/assets/images/boss.png"; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </div>

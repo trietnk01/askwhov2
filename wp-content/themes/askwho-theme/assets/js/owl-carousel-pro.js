@@ -12,31 +12,14 @@ jQuery(document).ready(function($){
         responsiveClass:true,
         responsive:{
             0:{
-                items:1
-            },
+                items:2
+            },            
             739:{
+                items:4
+            },
+            1023:{
                 items:6
             }
         }
-    });    
-    $(".owl_carousel_featured_post").owlCarousel({
-        autoplay:false,
-        loop:false,
-        margin:10,
-        nav:false,
-        navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
-        dots:false,
-        mouseDrag: false,
-        touchDrag: false,
-        lazyLoad: false,
-        responsiveClass:false,
-        responsive:{
-            0:{
-                items:1
-            },
-            739:{
-                items:4
-            }
-        }
-    });    
+    });        
 });

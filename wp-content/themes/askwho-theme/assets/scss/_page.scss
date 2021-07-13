@@ -1,5 +1,5 @@
 .logoMain {
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 0;
     z-index: 15;
@@ -175,6 +175,7 @@ header {
                 .navbar-header {
                     .navbar-toggle {
                         i {
+                            color: #000;
                         }
                     }
                 }
@@ -304,7 +305,7 @@ header {
             margin-bottom: 40px;
             position: relative;
             @media (max-width: 576px) {
-                width: 100%;
+                width: 280px;
             }
             &::after {
                 content: "";
@@ -314,27 +315,25 @@ header {
                 height: 48px;
                 top: 70px;
                 right: 55px;
+                @media (max-width: 576px) {
+                    top: 80px;
+                    right: 105px;
+                }
             }
         }
         .humaine {
             display: flex;
             justify-content: flex-end;
             margin-bottom: 40px;
-            @media (max-width: 576px) {
+            @media (max-width: 992px) {
                 display: block;
             }
             .box_content {
                 width: 746px;
                 @media (max-width: 1024px) {
-                    width: 475px;
+                    width: 355px;
                 }
-                @media (max-width: 768px) {
-                    width: 420px;
-                }
-                @media (max-width: 740px) {
-                    width: 395px;
-                }
-                @media (max-width: 576px) {
+                @media (max-width: 992px) {
                     width: 100%;
                 }
             }
@@ -346,8 +345,11 @@ header {
             justify-content: space-between;
             align-items: center;
             position: absolute;
-            bottom: -45px;
-            right: 0;
+            bottom: -67px;
+            right: 15px;
+            @media(max-width:576px){
+                width: 165px;
+            }
             span {
                 position: relative;
                 overflow: hidden;
@@ -375,7 +377,7 @@ header {
         }
         .owl_carousel_author {
             .owl-nav {
-                margin-top: 45px;
+                margin-top: 65px;
                 position: relative;
                 div {
                     background-repeat: no-repeat;
@@ -412,9 +414,7 @@ header {
                             }
                             .author_name {
                                 margin-bottom: 5px;
-                            }
-                            .author_function {
-                            }
+                            }                           
                         }
                     }
                 }
@@ -424,6 +424,9 @@ header {
 }
 .askwho_block {
     padding: 50px 0 100px 0px;
+    @media(max-width:576px){
+        padding-bottom: 50px;
+    }
     .banner_parat {
         width: $wapper_width;
         margin-right: auto;
@@ -440,7 +443,7 @@ header {
         }
         .actulites {
             margin-top: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             position: relative;
             .ask_who_label {
                 margin-bottom: 10px;
@@ -448,15 +451,17 @@ header {
             .arrowDown {
                 position: relative;
                 width: 200px;
+                @media(max-width:576px){
+                    width: 170px;
+                }
                 &::after {
                     content: "";
                     position: absolute;
                     bottom: -25px;
                     right: 0;
                     background-image: url("./../images/ic_arrowDown.svg");
-                    background-repeat: no-repeat;
-                    width: 55px;
-                    height: 50px;
+                    width: 54px;
+                    height: 48px;
                 }
             }
             .rubat {
@@ -484,44 +489,34 @@ header {
                 }
             }
         }
-        .owl_carousel_featured_post {
-            .owl-nav {
-                margin-top: 45px;
-                font-size: 30px;
-                position: relative;
-                .owl-prev {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                }
-                .owl-next {
-                    position: absolute;
-                    bottom: 0;
-                    left: 45px;
-                }
+        .featured_post {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            @media(max-width:576px){
+                display: block;
             }
-            .owl-stage-outer {
-                .owl-stage {
-                    .owl-item {
-                        .item {
-                            .author_image {
-                                margin-bottom: 20px;
-                                display: block;
-                                overflow: hidden;
-                                img {
-                                    transition-duration: 500ms;
-                                }
-                                &:hover {
-                                    img {
-                                        transform: scale(1.2);
-                                    }
-                                }
-                            }
-                            .post_date {
-                                margin-bottom: 5px;
-                            }
+            .item {
+                flex-basis: calc(100% / 4 - 15px);
+                @media(max-width:576px){
+                    margin-bottom: 40px;
+                }                
+                .author_image {
+                    margin-bottom: 20px;
+                    display: block;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        transition-duration: 500ms;
+                    }
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
                         }
                     }
+                }
+                .post_date {
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -533,7 +528,10 @@ header {
             align-items: center;
             position: absolute;
             bottom: -80px;
-            right: 0;
+            right: 15px;
+            @media(max-width:576px){
+                width: 165px;
+            }
             span {
                 position: relative;
                 overflow: hidden;
@@ -587,11 +585,14 @@ header {
             @media (max-width: 576px) {
                 flex-basis: 100%;
             }
-            .logo{
+            .logo {
                 width: 120px;
                 height: 120px;
                 margin-bottom: 40px;
-            }            
+                @media(max-width:576px){
+                    display: none;
+                }
+            }
             .ask_who_author {
                 margin-bottom: 30px;
             }
@@ -600,7 +601,10 @@ header {
                 height: 40px;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;                
+                align-items: center;
+                @media(max-width:576px){
+                    width: 165px;
+                }
                 span {
                     position: relative;
                     overflow: hidden;
@@ -635,6 +639,16 @@ header {
             @media (max-width: 576px) {
                 flex-basis: 100%;
                 margin-bottom: 50px;
+                display: block;
+            }
+            .logo {
+                display: none;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 40px;
+                @media(max-width:576px){
+                    display: block;
+                }
             }
         }
     }
@@ -658,9 +672,10 @@ header {
         .yellow_title {
             width: 490px;
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             @media (max-width: 576px) {
-                width: 100%;
+                width: 318px;
+                margin-bottom: 40px;
             }
             &::after {
                 content: "";
@@ -670,6 +685,10 @@ header {
                 height: 48px;
                 top: 70px;
                 right: 55px;
+                @media(max-width:576px){
+                    top: 80px;
+                    right: 90px;
+                }
             }
         }
         .content_bottom {
@@ -882,13 +901,39 @@ header {
                 @media (max-width: 576px) {
                     flex-basis: 100%;
                     margin-bottom: 30px;
-                }
-                .single_title {
-                }
+                }                
                 .single_date {
                     margin-bottom: 30px;
                 }
             }
         }
     }
+}
+.footer{
+    padding-bottom: 40px;
+    .container_ask_who {
+        width: $wapper_width;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 1024px) {
+            width: $wrapper_mobile_width;
+        }
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+        @media(max-width:576px){
+            justify-content: center;
+        }
+        a{
+            .logo {
+                width: 120px;
+                height: 120px;                
+            }
+        }        
+    }    
 }
