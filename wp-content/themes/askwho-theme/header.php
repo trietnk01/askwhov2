@@ -17,6 +17,7 @@
         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
             alt="<?php echo get_bloginfo('name'); ?>">
     </a>
+    <a href="<?php echo site_url('contact'); ?>" class="contactMenuMobile">Contact</a>
     <div class="menu_sidebar">
         <div class="fabars_sidebar">
             <a href="javascript:void(0);" class="navbar_href">
@@ -26,10 +27,8 @@
         </div>
     </div>
     <div class="menu_back_drop">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <?php
+        <div class="samBox">
+            <?php
 $args = array(
     'menu' => '',
     'container' => '',
@@ -52,12 +51,10 @@ $args = array(
 );
 wp_nav_menu($args);
 ?>
-                    <ul class="iCollect">
-                        <li><a href="javascript:void(0);">Mentions légales et politique des cookies</a></li>
-                        <li><a href="javascript:void(0);">Accessibilité</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="iCollect">
+                <li><a href="javascript:void(0);">Mentions légales et politique des cookies</a></li>
+                <li><a href="javascript:void(0);">Accessibilité</a></li>
+            </ul>
         </div>
         <a href="<?php echo site_url(); ?>" class="logoFooter">
             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"

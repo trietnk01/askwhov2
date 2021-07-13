@@ -1,10 +1,10 @@
 jQuery(document).ready(function($){   
     $(".owl_carousel_author").owlCarousel({
-        autoplay:true,
-        loop:true,
+        autoplay:false,
+        loop:false,
         margin:10,
         nav:true,
-        navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
+        navText: ['',''],
         dots:false,
         mouseDrag: true,
         touchDrag: false,
@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
                 items:1
             },
             739:{
-                items:4
+                items:6
             }
         }
     });    
