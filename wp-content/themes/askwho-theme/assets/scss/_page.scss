@@ -1,9 +1,15 @@
-.logoMain{
+.logoMain {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     z-index: 5;
-    margin: 5px;
+    width: $sidebar_width;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 56px;
+        height: 56px;
+    }
 }
 .box_random {
     background: teal;
@@ -15,7 +21,7 @@
     z-index: 4;
 }
 .menu_sidebar {
-    width: 80px;
+    width: $sidebar_width;
     height: 100%;
     border-right: 1px solid #000;
     position: fixed;
@@ -27,10 +33,10 @@
     }
     .fabars_sidebar {
         height: $fabars_sidebar_height;
-        display: flex;        
+        display: flex;
         align-items: center;
-        justify-content:center;
-        position: relative;        
+        justify-content: center;
+        position: relative;
         .navbar_href {
             font-size: 25px;
             .burger {
@@ -53,8 +59,8 @@
             bottom: 30px;
             left: 0;
             transform: rotate(-90deg);
-            color: #0e0e0e;            
-            font-family: $f_GeneralSans_Medium;            
+            color: #0e0e0e;
+            font-family: $f_GeneralSans_Medium;
         }
     }
 }
@@ -80,9 +86,15 @@
     }
     .logoFooter {
         position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 5px;
+        bottom: 10px;
+        right: 0;        
+        width: $sidebar_width;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 56px;
+            height: 56px;
+        }
     }
     .mainmenu {
         list-style: none;
@@ -204,31 +216,40 @@ header {
         justify-content: space-between;
         @media (max-width: 1024px) {
             width: 800px;
-        }        
-        @media(max-width:768px){
+        }
+        @media (max-width: 768px) {
             width: 100%;
         }
         @media (max-width: 576px) {
-            flex-direction: column;            
-            row-gap: 25px;
+            flex-direction: column;
+            row-gap: 50px;
         }
-        .logoAskWho {            
+        .logoAskWho {
             width: 160px;
             margin-top: -75px;
-            @media(max-width:1024px){
+            @media (max-width: 1024px) {
                 width: 100px;
+            }
+            @media (max-width: 576px) {
+                width: 96px;
                 margin-top: 0;
-            }      
-            img{
+            }
+            img {
                 width: 100%;
-            }      
+            }
         }
         .agence {
             width: 755px;
-            color: #000;            
-            @media(max-width:1024px){
-                width: 635px;
-            } 
+            color: #000;
+            @media (max-width: 1024px) {
+                width: 630px;
+            }
+            @media (max-width: 768px) {
+                width: 590px;
+            }
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
     }
 }
