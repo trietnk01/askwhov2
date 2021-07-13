@@ -5,24 +5,10 @@ let viewSection = 0;
 let el_top = 0;
 let attr_bg = "";
 $(document).ready(function () {
-  // let data_item = {
-  //   product_id:1,
-  //   action: "save_section_data_to_session",
-  // };
-  // $.ajax({
-  //   url: ajaxurl,
-  //   type: "POST",
-  //   data: data_item,
-  //   dataType: "json",
-  //   success: function (data, status, jsXHR) {
-  //     console.log(data);
-  //   },
-  //   beforeSend: function (jqXHR, setting) {},
-  // });
   var section_ctrl = $("section");
   $(".navbar_href").on("click", function () {
-    let i_ctrl = $(this).children("i");
-    $(i_ctrl).toggleClass("fa-bars fa-times", 500);
+    let i_ctrl = $(this).children(".ic");
+    $(i_ctrl).toggleClass("burger close", 500);
     $(".menu_back_drop").toggleClass("meu_back_drop_scaleX1");
   });
   $(window).scroll(function () {

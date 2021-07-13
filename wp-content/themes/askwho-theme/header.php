@@ -13,10 +13,14 @@
 
 <body>
     <div id="preloader"></div>
+    <a href="<?php echo site_url(); ?>" class="logoMain">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+            alt="<?php echo get_bloginfo('name'); ?>">
+    </a>
     <div class="menu_sidebar">
         <div class="fabars_sidebar">
             <a href="javascript:void(0);" class="navbar_href">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <div class="ic burger"></div>
             </a>
             <a href="<?php echo site_url("contact"); ?>" class="navbar_contact">Contact</a>
         </div>
@@ -48,9 +52,17 @@ $args = array(
 );
 wp_nav_menu($args);
 ?>
+                    <ul class="iCollect">
+                        <li><a href="javascript:void(0);">Mentions légales et politique des cookies</a></li>
+                        <li><a href="javascript:void(0);">Accessibilité</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <a href="<?php echo site_url(); ?>" class="logoFooter">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+                alt="<?php echo get_bloginfo('name'); ?>">
+        </a>
     </div>
     <header class="fixed-top scroll-change" data-menu-anima="fade-in">
         <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
@@ -114,5 +126,6 @@ wp_nav_menu($args_mobile);
         </div>
     </header>
     <div class="arrow_down">
-        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_scrollDown.svg'; ?>"
+            alt="<?php echo get_bloginfo('name'); ?>">
     </div>

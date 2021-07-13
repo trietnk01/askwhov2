@@ -1,11 +1,18 @@
-.box_random{
+.logoMain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 5px;
+}
+.box_random {
     background: teal;
     height: 50px;
     position: absolute;
     width: 100%;
     top: 50px;
     left: 0;
-    z-index: 999999;
+    z-index: 4;
 }
 .menu_sidebar {
     width: 80px;
@@ -14,29 +21,40 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 4;
     @media (max-width: 992px) {
         display: none;
     }
     .fabars_sidebar {
         height: $fabars_sidebar_height;
-        display: flex;
+        display: flex;        
         align-items: center;
-        justify-content: center;
-        position: relative;
-        .navbar_href {            
-            i {
-                color: $mau_1;
+        justify-content:center;
+        position: relative;        
+        .navbar_href {
+            font-size: 25px;
+            .burger {
+                background-image: url("../images/ic_burger.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+            }
+            .close {
+                background-image: url("../images/ic_close.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 20px;
+                height: 20px;
             }
         }
         .navbar_contact {
-            transform: rotate(-90deg);
-            color: #0e0e0e;
             position: absolute;
-            bottom: 10%;
-            left: 15%;
-            display: block;
-            font-weight: 600;
+            bottom: 30px;
+            left: 0;
+            transform: rotate(-90deg);
+            color: #0e0e0e;            
+            font-family: $f_GeneralSans_Medium;            
         }
     }
 }
@@ -45,20 +63,26 @@
     width: 100%;
     height: $fabars_sidebar_height;
     transform: scaleX(0);
-    opacity: 0;    
+    opacity: 0;
     transform-origin: left;
-    transition: transform 0.5s , opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9998;
+    z-index: 3;
     @media (max-width: 1024px) {
         padding: 0px 150px;
     }
     @media (max-width: 992px) {
         display: none;
+    }
+    .logoFooter {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 5px;
     }
     .mainmenu {
         list-style: none;
@@ -66,8 +90,30 @@
         margin: 0;
         li {
             margin: 20px 0px;
-            a {                
-                color: $mau_1;                
+            a {
+                color: $mau_1;
+                font-weight: $f_KontrapunktMiki_Regular;
+                font-size: 56px;
+                line-height: 72px;
+                @media (max-width: 576px) {
+                    font-size: 40px;
+                }
+                &:hover {
+                    background-color: $mau_2;
+                }
+            }
+        }
+    }
+    .iCollect {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            a {
+                font-family: $f_KontrapunktMiki_Regular;
+                font-size: 24px;
+                color: #000;
+                line-height: 50px;
                 &:hover {
                     background-color: $mau_2;
                 }
@@ -83,7 +129,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9997;
+    z-index: 1;
     width: 100%;
     .navbar.navbar-default {
         border: 0;
@@ -132,7 +178,7 @@ header {
                                     }
                                     &::before {
                                         background: none;
-                                    }                                    
+                                    }
                                 }
                             }
                         }
@@ -147,31 +193,50 @@ header {
     align-items: center;
     justify-content: center;
     height: $fabars_sidebar_height;
-    position: relative;
-    .logoAskWho{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .agence {        
-        width: 811px;
+    .logoBox {
+        position: relative;
+        width: 990px;
         margin-right: auto;
         margin-left: auto;
         padding-left: 15px;
-        padding-right: 15px;        
+        padding-right: 15px;
         display: flex;
-        align-items: center;    
-        color: #000;            
-        @media (max-width: 576px) {
+        justify-content: space-between;
+        @media (max-width: 1024px) {
+            width: 800px;
+        }        
+        @media(max-width:768px){
             width: 100%;
         }
-    }    
+        @media (max-width: 576px) {
+            flex-direction: column;            
+            row-gap: 25px;
+        }
+        .logoAskWho {            
+            width: 160px;
+            margin-top: -75px;
+            @media(max-width:1024px){
+                width: 100px;
+                margin-top: 0;
+            }      
+            img{
+                width: 100%;
+            }      
+        }
+        .agence {
+            width: 755px;
+            color: #000;            
+            @media(max-width:1024px){
+                width: 635px;
+            } 
+        }
+    }
 }
 .arrow_down {
     position: absolute;
     bottom: 2%;
     right: 1%;
-    z-index: 5;    
+    z-index: 2;
     i {
         color: $mau_1;
     }
@@ -193,9 +258,9 @@ header {
             width: 100%;
         }
         .uncarnet_addresses {
-            width: 325px;            
+            width: 325px;
             margin-bottom: 20px;
-            position: relative;                    
+            position: relative;
             @media (max-width: 576px) {
                 width: 100%;
             }
@@ -214,7 +279,7 @@ header {
                 right: -10px;
                 content: "\f063";
                 font-family: $f_FontAwesome;
-                color: $mau_1;                
+                color: $mau_1;
             }
         }
         .humaine {
@@ -225,7 +290,7 @@ header {
                 display: block;
             }
             .box_content {
-                width: 655px;                
+                width: 655px;
                 @media (max-width: 1024px) {
                     width: 475px;
                 }
@@ -238,7 +303,7 @@ header {
                 @media (max-width: 576px) {
                     width: 100%;
                 }
-            }            
+            }
         }
         .readmore {
             position: absolute;
@@ -275,7 +340,7 @@ header {
                 font-size: 30px;
             }
         }
-        .owl_carousel_author {            
+        .owl_carousel_author {
             .owl-nav {
                 margin-top: 45px;
                 font-size: 30px;
@@ -312,18 +377,18 @@ header {
                                 }
                             }
                             .author_name {
-                                margin-bottom: 5px;                                
+                                margin-bottom: 5px;
                             }
-                            .author_function {                                
+                            .author_function {
                             }
                         }
                     }
                 }
             }
-        }       
+        }
     }
 }
-.askwho_block {    
+.askwho_block {
     padding: 50px 0 100px 0px;
     .banner_parat {
         width: $wapper_width;
@@ -372,7 +437,7 @@ header {
                 }
             }
         }
-        .owl_carousel_featured_post {            
+        .owl_carousel_featured_post {
             .owl-nav {
                 margin-top: 45px;
                 font-size: 30px;
@@ -420,7 +485,7 @@ header {
                     }
                 }
             }
-        }        
+        }
         .readmore {
             position: absolute;
             bottom: -45px;
@@ -455,10 +520,10 @@ header {
                 color: $mau_1;
                 font-size: 30px;
             }
-        }        
+        }
     }
 }
-.boss_box {    
+.boss_box {
     padding: 50px 0px;
     .container_ask_who {
         width: $wapper_width;
@@ -473,32 +538,31 @@ header {
             width: $wrapper_mobile_width;
         }
         @media (max-width: 992px) {
-            width: 100%;            
+            width: 100%;
         }
-        @media(max-width:576px){
+        @media (max-width: 576px) {
             flex-direction: column-reverse;
             justify-content: flex-start;
         }
         .ask_who_col_left {
-            flex-basis: 40%;            
-            @media(max-width:576px){
-                flex-basis: 100%;;
+            flex-basis: 40%;
+            @media (max-width: 576px) {
+                flex-basis: 100%;
             }
             .ask_who_title {
-                
-            }            
+            }
             .ask_who_author {
-                color: $mau_1;                
-                margin-bottom: 30px;                
-            }                    
+                color: $mau_1;
+                margin-bottom: 30px;
+            }
             .readmore {
-                position: relative;                
+                position: relative;
                 width: 145px;
                 height: 30px;
                 justify-content: flex-end;
                 align-items: center;
                 display: flex;
-                margin-top: 30px;                     
+                margin-top: 30px;
                 &::before {
                     position: absolute;
                     bottom: 13px;
@@ -509,7 +573,7 @@ header {
                     content: "";
                 }
                 .child_label {
-                    color: $mau_1;                    
+                    color: $mau_1;
                 }
                 &::after {
                     position: absolute;
@@ -520,21 +584,21 @@ header {
                     color: $mau_1;
                     font-size: 30px;
                 }
-            }            
+            }
         }
         .ask_who_col_right {
             flex-basis: 55%;
             text-align: center;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 flex-basis: 100%;
                 margin-bottom: 50px;
-            }            
+            }
         }
     }
 }
 .yellow_box {
     padding-top: 50px;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
     .container_ask_who {
         width: $wapper_width;
         margin-right: auto;
@@ -544,14 +608,14 @@ header {
         position: relative;
         @media (max-width: 1024px) {
             width: $wrapper_mobile_width;
-        }      
+        }
         @media (max-width: 992px) {
-            width: 100%;            
-        }        
-        .yellow_title {            
-            width: 325px;            
+            width: 100%;
+        }
+        .yellow_title {
+            width: 325px;
             position: relative;
-            margin-bottom: 50px;            
+            margin-bottom: 50px;
             @media (max-width: 576px) {
                 width: 100%;
             }
@@ -562,7 +626,7 @@ header {
                 width: 40px;
                 height: 5px;
                 background: $mau_1;
-                content: "";                
+                content: "";
             }
             &::after {
                 position: absolute;
@@ -571,14 +635,14 @@ header {
                 content: "\f063";
                 font-family: $f_FontAwesome;
                 color: $mau_1;
-                font-size: 30px;                
+                font-size: 30px;
             }
-        }        
+        }
         .content_bottom {
             display: flex;
             flex-wrap: wrap;
-            column-gap: 30px;            
-            @media(max-width:576px){
+            column-gap: 30px;
+            @media (max-width: 576px) {
                 display: block;
             }
             .ask_who_col_30 {
@@ -594,7 +658,7 @@ header {
                     }
                 }
             }
-        }        
+        }
     }
 }
 .child_page {
@@ -611,15 +675,15 @@ header {
             width: $wrapper_mobile_width;
         }
         @media (max-width: 992px) {
-            width: 100%;            
+            width: 100%;
         }
-        .ask_who_title {            
-            margin-bottom: 30px;            
+        .ask_who_title {
+            margin-bottom: 30px;
         }
-        .uncarnet_addresses {            
-            width: 325px;            
+        .uncarnet_addresses {
+            width: 325px;
             margin-bottom: 20px;
-            position: relative;                        
+            position: relative;
             &::before {
                 position: absolute;
                 bottom: 20px;
@@ -627,7 +691,7 @@ header {
                 width: 40px;
                 height: 5px;
                 background: $mau_1;
-                content: "";                
+                content: "";
             }
             &::after {
                 position: absolute;
@@ -636,7 +700,7 @@ header {
                 content: "\f063";
                 font-family: $f_FontAwesome;
                 color: $mau_1;
-                font-size: 30px;                
+                font-size: 30px;
             }
             @media (max-width: 576px) {
                 width: 100%;
@@ -650,19 +714,19 @@ header {
                 display: block;
             }
             .box_content {
-                width: 655px;  
-                @media(max-width:1024px){
+                width: 655px;
+                @media (max-width: 1024px) {
                     width: 475px;
-                } 
-                @media(max-width:992px){
+                }
+                @media (max-width: 992px) {
                     width: 485px;
-                } 
-                @media(max-width:768px){
+                }
+                @media (max-width: 768px) {
                     width: 420px;
                 }
-                @media(max-width:740px){
+                @media (max-width: 740px) {
                     width: 390px;
-                }              
+                }
                 @media (max-width: 576px) {
                     width: 100%;
                 }
@@ -671,7 +735,7 @@ header {
         .actulites {
             position: relative;
             margin-bottom: 40px;
-            .ask_who_label {                
+            .ask_who_label {
                 margin-bottom: 10px;
             }
             .rubat {
@@ -718,7 +782,7 @@ header {
                 flex-basis: calc(100% / 4 - 15px);
                 @media (max-width: 576px) {
                     flex-basis: 100%;
-                }                
+                }
                 a {
                     margin-bottom: 20px;
                     display: block;
@@ -733,15 +797,15 @@ header {
                     }
                 }
                 .author_name {
-                    margin-bottom: 5px;                    
+                    margin-bottom: 5px;
                 }
-                .author_function {                    
+                .author_function {
                 }
                 .post_date {
                     margin-bottom: 5px;
                 }
                 .post_title {
-                    a {                        
+                    a {
                         color: $mau_1;
                     }
                 }
@@ -749,14 +813,14 @@ header {
         }
         .box_readmore {
             margin-top: 20px;
-            margin-left: 0px;            
-            .readmore {                                                
+            margin-left: 0px;
+            .readmore {
                 width: 170px;
                 height: 30px;
                 display: flex;
                 justify-content: flex-end;
-                align-items: center;                
-                position: relative;        
+                align-items: center;
+                position: relative;
                 background: none;
                 border: 0;
                 &::before {
@@ -769,7 +833,7 @@ header {
                     content: "";
                 }
                 .child_label {
-                    color: $mau_1;                
+                    color: $mau_1;
                 }
                 &::after {
                     position: absolute;
@@ -786,17 +850,17 @@ header {
             display: flex;
             flex-wrap: wrap;
             column-gap: 40px;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 flex-direction: column-reverse;
                 column-gap: 0;
             }
             .box_col {
                 flex-basis: calc(100% / 2 - 20px);
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     flex-basis: 100%;
                     margin-bottom: 30px;
                 }
-                .single_title {                
+                .single_title {
                 }
                 .single_date {
                     margin-bottom: 30px;

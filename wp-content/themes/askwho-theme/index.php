@@ -2,11 +2,15 @@
 get_header();
 ?>
 <section class="boxheader" id="section_1" attr_bg="#f0e97c" style="background-color:#f0e97c">
-    <img class="logoAskWho" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
-        alt="<?php echo get_bloginfo('name'); ?>">
-    <h1 class="agence">
-        L'agence qui vous conseille et programme les meilleurs intervenants pour vos événements
-    </h1>
+    <div class="logoBox">
+        <div class="logoAskWho">
+            <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+                alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <h1 class="agence">
+            L'agence qui vous conseille et programme les meilleurs intervenants pour vos événements
+        </h1>
+    </div>
 </section>
 <section class="uncarnet" id="section_2" attr_bg="#8ec9e9" style="background-color:#8ec9e9">
     <div class="dutex">
