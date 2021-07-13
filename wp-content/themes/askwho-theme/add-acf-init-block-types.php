@@ -17,6 +17,7 @@ add_action('acf/init', 'my_acf_init_block_types');
 function my_acf_init_block_types()
 {
     if (function_exists('acf_register_block_type')) {
+        /* begin block homepage */
         acf_register_block_type(array(
             'name' => 'homepage-1-block',
             'title' => __('homepage-1-block'),
@@ -57,5 +58,6 @@ function my_acf_init_block_types()
             'category' => 'template-part-block-page',
             'icon' => 'book-alt',
         ));
+        /* begin block homepage */
     }
 }

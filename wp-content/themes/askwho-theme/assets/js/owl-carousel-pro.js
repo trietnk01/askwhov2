@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
         nav:true,
         navText: ['',''],
         dots:false,
-        mouseDrag: true,
+        mouseDrag: false,
         touchDrag: false,
         lazyLoad: true,
         responsiveClass:true,
@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
                 items:4
             },
             1023:{
-                items:6
+                items:4
             }
         }
     });        

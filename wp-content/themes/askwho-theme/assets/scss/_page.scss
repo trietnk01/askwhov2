@@ -444,11 +444,8 @@ header {
         .actulites {
             margin-top: 50px;
             margin-bottom: 80px;
-            position: relative;
+            position: relative;            
             .ask_who_label {
-                margin-bottom: 10px;
-            }
-            .arrowDown {
                 position: relative;
                 width: 200px;
                 @media(max-width:576px){
@@ -593,8 +590,9 @@ header {
                     display: none;
                 }
             }
-            .ask_who_author {
-                margin-bottom: 30px;
+            .ask_who_title {
+                margin-bottom: 30px;        
+                width: 260px;        
             }
             .readmore {
                 width: 200px;

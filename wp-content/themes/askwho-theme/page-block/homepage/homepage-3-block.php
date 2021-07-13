@@ -1,34 +1,57 @@
-<div class="askwho_block">
+<?php
+global $zController;
+?>
+<section class="askwho_block" id="section_3" attr_bg="#a6e0d4" style="background-color:#a6e0d4">
     <div class="banner_parat">
-        <img src="<?php echo get_template_directory_uri() . "/assets/images/banner.jpg"; ?>"
-            alt="<?php echo get_bloginfo("name") ?>">
-    </div>
-    <div class="actulites">
-        <div class="ask_who_label">L'actualité</div>
-        <div class="ask_who_label">AskWho.</div>
-        <div class="rubat"></div>
-    </div>
-    <div class="featured_post_ask_who">
-        <div class="owl_carousel_featured_post owl-carousel owl-theme owl-loaded">
+        <div class="text-center">
+            <img src="<?php echo get_field('hp_3_banniere'); ?>" alt="<?php echo get_bloginfo("name") ?>">
+        </div>
+        <div class="actulites">
+            <h2 class="ask_who_label"><?php echo get_field('hp_3_titre'); ?></h2>
+        </div>
+        <?php
+$hp_3_article_liste = get_field('hp_3_article_liste');
+if (is_array($hp_3_article_liste)) {
+    if (count($hp_3_article_liste) > 0) {
+        ?>
+        <div class="featured_post">
             <?php
-for ($i = 1; $i <= 8; $i++) {
-    ?>
+foreach ($hp_3_article_liste as $key => $val) {
+            $hp_3_article_objet = $val["hp_3_article_objet"];
+            $featured_image = '';
+            if (!empty(get_the_post_thumbnail_url($hp_3_article_objet->ID, 'full'))) {
+                $featured_image = get_the_post_thumbnail_url($hp_3_article_objet->ID, 'full');
+            } else {
+                $featured_image = get_stylesheet_directory_uri() . "/assets/images/no-image.png";
+            }
+            $date = get_the_date('Y-m-d', $hp_3_article_objet->ID);
+            $date_vn = $zController->getHelper("CommonHelper")->datetimeConverterByFormat($date, "d.m.Y");
+            ?>
             <div class="item">
-                <a href="javascript:void(0);" class="author_image">
-                    <img src="<?php echo get_template_directory_uri() . "/assets/images/post.png"; ?>"
-                        alt="<?php echo get_bloginfo("name"); ?>" />
+                <a href="<?php echo get_the_permalink($hp_3_article_objet->ID); ?>" class="author_image">
+                    <img src="<?php echo $featured_image; ?>" alt="<?php echo get_bloginfo("name"); ?>" />
                 </a>
-                <h4 class="post_date">12.05.2021</h4>
+                <h4 class="post_date"><?php echo $date_vn; ?></h4>
                 <h3 class="post_title">
-                    <a href="javascript:void(0);">Donec euismod massa porta interdum purus in ullamcorper quam</a>
+                    <a href="<?php echo get_the_permalink($hp_3_article_objet->ID); ?>">
+                        <?php echo wp_trim_words($hp_3_article_objet->post_title, '99', '...'); ?>
+                    </a>
                 </h3>
             </div>
             <?php
 }
-?>
+        ?>
         </div>
-        <a class="readmore" href="javascript:void(0);">
-            <span class="child_label">En voir plus</span>
+        <?php
+}
+}
+?>
+        <a class="readmore" href="<?php echo get_field('hp_3_lire_la_suite'); ?>">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_arrowRight.svg'; ?>"
+                alt="<?php echo get_bloginfo('name'); ?>">
+            <span>
+                En voir plus
+            </span>
         </a>
     </div>
-</div>
+</section>

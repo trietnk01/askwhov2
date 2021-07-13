@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: $f_KontrapunktMiki_Regular;        
+    font-size: 64px;    
+    line-height: 72px;
+    @media(max-width:1024px){
+        font-size: 40px;      
+        line-height: 40px;  
+    }
+}
+h2{
+    font-family: $f_GeneralSans_Medium;        
+    font-size: 32px;
+    line-height: 48px;
+    @media(max-width:576px){
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+h3{
+    font-family: $f_GeneralSans_Bold;        
+    font-size: 24px;
+    line-height: 32px;
+    @media(max-width:576px){
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+.caption{
+    font-family: $f_GeneralSans_Medium;        
+    font-size: 16px;
+    line-height: 32px;    
+}
+.readmore{
+    font-family: $f_GeneralSans_Bold;        
+    font-size: 24px;
+    line-height: 32px;
+    @media(max-width:576px){
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+ul, ol,p{
+    margin-bottom: 30px;
+}
+ul,ol{
+    padding-left: 40px;
+}

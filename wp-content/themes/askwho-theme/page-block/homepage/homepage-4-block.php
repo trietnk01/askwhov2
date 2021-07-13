@@ -1,21 +1,25 @@
-<div class="boss_box">
+<section class="boss_box" id="section_4" attr_bg="#ecc3b3" style="background-color:#ecc3b3">
     <div class="container_ask_who">
         <div class="ask_who_col_left">
-            <h5 class="ask_who_title">Demander à qui? La personne qu'il vous faut est</h5>
-            <h6 class="ask_who_author">Aris Kaprielian.</h6>
-            <div class="ask_who_description">
-                A I' écoute votre besoin, I' efficacité et la rapidité d'Aris permettent de cibler la personne qu'll
-                vous faut dans des délais record. Fort d'une expertise dans le placement de personalités sur les
-                plateaux de télévision de grandes chaines, Aris a assuré la programmation de très mombreuses émissions
-                et de débats télévisés pour CNEWS, BFW TV, RMC Info, LCI, Europe 1, i>Télé
-            </div>
-            <a class="readmore" href="javascript:void(0);">
-                <span class="child_label">En voir plus</span>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+                alt="<?php echo get_bloginfo('name'); ?>" class="logo">
+            <h2 class="ask_who_title"><?php echo get_field('hp_4_titre'); ?></h2>
+            <p class="ask_who_description">
+                <?php echo get_field('hp_4_extrait'); ?>
+            </p>
+            <a class="readmore" href="<?php echo get_field('hp_4_lire_la_suite'); ?>">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_arrowRight.svg'; ?>"
+                    alt="<?php echo get_bloginfo('name'); ?>">
+                <span>
+                    En voir plus
+                </span>
             </a>
         </div>
         <div class="ask_who_col_right">
-            <img class="ask_who_avatar" src="<?php echo get_template_directory_uri() . "/assets/images/boss.png"; ?>"
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+                alt="<?php echo get_bloginfo('name'); ?>" class="logo">
+            <img class="ask_who_avatar" src="<?php echo get_field('hp_4_banniere'); ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </div>
     </div>
-</div>
+</section>

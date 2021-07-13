@@ -1,4 +1,5 @@
 <?php
+add_theme_support('post-thumbnails');
 /* begin add session */
 add_action('init', 'zendvn_sp_session_start', 1);
 function zendvn_sp_session_start()
