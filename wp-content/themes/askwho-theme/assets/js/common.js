@@ -11,6 +11,11 @@ $(document).ready(function () {
     $(i_ctrl).toggleClass("burger close", 500);
     $(".menu_back_drop").toggleClass("meu_back_drop_scaleX1");
   });
+  $('.navbar_toggle_v2').on('click',function(){
+    let i_ctrl = $(this).children(".ic");
+    $(i_ctrl).toggleClass("burger close", 500);
+    $(".menu_back_drop").toggleClass("meu_back_drop_scaleX1");
+  });
   $(window).scroll(function () {
     viewScroll = Math.round(
       parseFloat(window.innerHeight) / 15 + parseFloat($(this).scrollTop())

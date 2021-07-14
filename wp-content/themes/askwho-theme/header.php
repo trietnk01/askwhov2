@@ -18,11 +18,14 @@
             alt="<?php echo get_bloginfo('name'); ?>">
     </a>
     <a href="<?php echo site_url('contact'); ?>" class="contactMenuMobile">Contact</a>
+    <button type="button" class="navbar_toggle_v2">
+        <i class="ic burger"></i>
+    </button>
     <div class="menu_sidebar">
         <div class="fabars_sidebar">
-            <a href="javascript:void(0);" class="navbar_href">
-                <div class="ic burger"></div>
-            </a>
+            <button type="button" class="navbar_href">
+                <i class="ic burger"></i>
+            </button>
             <a href="<?php echo site_url("contact"); ?>" class="navbar_contact">Contact</a>
         </div>
     </div>
@@ -93,28 +96,7 @@ $args_desktop = array(
     'menu_item_has_children' => 'menu-item-has-children',
     'add_li_class' => 'dropdown',
 );
-$args_mobile = array(
-    'menu' => '',
-    'container' => '',
-    'container_class' => '',
-    'container_id' => '',
-    'menu_class' => 'nav navbar-nav menu_mobile',
-    'echo' => true,
-    'fallback_cb' => 'wp_page_menu',
-    'before' => '',
-    'after' => '',
-    'link_before' => '',
-    'link_after' => '',
-    'items_wrap' => '<ul  id="%1$s" class="%2$s">%3$s</ul>',
-    'depth' => 3,
-    'walker' => '',
-    'theme_location' => 'menu_mobile',
-    'menu_li_actived' => 'active',
-    'menu_item_has_children' => 'menu-item-has-children',
-    'add_li_class' => 'dropdown',
-);
 wp_nav_menu($args_desktop);
-wp_nav_menu($args_mobile);
 ?>
                         </div>
                     </div>

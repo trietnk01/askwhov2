@@ -1,3 +1,32 @@
+.navbar_toggle_v2 {
+    display: none;
+    @media (max-width: 992px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 25px;
+        padding: 0;
+        margin-top: 25px;
+        background-color: transparent;
+        background-image: none;
+        border: none;
+        z-index: 15;
+    }
+    .ic{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        display: block;
+    }    
+    .burger {
+        background-image: url("../images/ic_burger.svg");        
+    }
+    .close {
+        background-image: url("../images/ic_close.svg");        
+    }
+}
 .logoMain {
     position: absolute;
     top: 10px;
@@ -50,20 +79,20 @@
         justify-content: center;
         position: relative;
         .navbar_href {
-            font-size: 25px;
-            .burger {
-                background-image: url("../images/ic_burger.svg");
+            background: none;
+            border: none;        
+            .ic{
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 20px;
                 height: 20px;
+                display: block;
+            }    
+            .burger {
+                background-image: url("../images/ic_burger.svg");                
             }
             .close {
-                background-image: url("../images/ic_close.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 20px;
-                height: 20px;
+                background-image: url("../images/ic_close.svg");                
             }
         }
         .navbar_contact {
@@ -89,13 +118,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 12;
-    @media (max-width: 1024px) {
-        padding: 0px 150px;
-    }
-    @media (max-width: 992px) {
-        display: none;
-    }
+    z-index: 12;    
     .logoFooter {
         position: absolute;
         bottom: 10px;
@@ -120,6 +143,8 @@
         }
         @media (max-width: 992px) {
             width: 100%;
+            padding-left:30px;
+            padding-right:30px;
         }
         .mainmenu {
             list-style: none;
@@ -133,6 +158,7 @@
                     line-height: 72px;
                     @media (max-width: 576px) {
                         font-size: 40px;
+                        line-height: 30px;
                     }
                     &:hover {
                         background-color: $mau_2;
@@ -172,28 +198,15 @@ header {
         border: 0;
         .navbar.navbar-main {
             .container {
-                .navbar-header {
-                    .navbar-toggle {
-                        i {
-                            color: #000;
-                        }
+                .navbar-header{
+                    @media(max-width:992px){
+                        display: none;
                     }
                 }
                 .collapse.navbar-collapse {
                     box-shadow: 0 0 0 transparent;
                     border: 0;
                     .nav.navbar-nav.navbar-right {
-                        .menu_desktop {
-                            @media (max-width: 992px) {
-                                display: none;
-                            }
-                        }
-                        .menu_mobile {
-                            display: none;
-                            @media (max-width: 992px) {
-                                display: block;
-                            }
-                        }
                         .nav.navbar-nav {
                             height: 100%;
                             text-align: right;
@@ -347,7 +360,7 @@ header {
             position: absolute;
             bottom: -67px;
             right: 15px;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 width: 165px;
             }
             span {
@@ -414,7 +427,7 @@ header {
                             }
                             .author_name {
                                 margin-bottom: 5px;
-                            }                           
+                            }
                         }
                     }
                 }
@@ -424,7 +437,7 @@ header {
 }
 .askwho_block {
     padding: 50px 0 100px 0px;
-    @media(max-width:576px){
+    @media (max-width: 576px) {
         padding-bottom: 50px;
     }
     .banner_parat {
@@ -444,11 +457,11 @@ header {
         .actulites {
             margin-top: 50px;
             margin-bottom: 80px;
-            position: relative;            
+            position: relative;
             .ask_who_label {
                 position: relative;
                 width: 200px;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     width: 170px;
                 }
                 &::after {
@@ -490,14 +503,14 @@ header {
             display: flex;
             flex-wrap: wrap;
             column-gap: 20px;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 display: block;
             }
             .item {
                 flex-basis: calc(100% / 4 - 15px);
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     margin-bottom: 40px;
-                }                
+                }
                 .author_image {
                     margin-bottom: 20px;
                     display: block;
@@ -526,7 +539,7 @@ header {
             position: absolute;
             bottom: -80px;
             right: 15px;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 width: 165px;
             }
             span {
@@ -586,13 +599,13 @@ header {
                 width: 120px;
                 height: 120px;
                 margin-bottom: 40px;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     display: none;
                 }
             }
             .ask_who_title {
-                margin-bottom: 30px;        
-                width: 260px;        
+                margin-bottom: 30px;
+                width: 260px;
             }
             .readmore {
                 width: 200px;
@@ -600,7 +613,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     width: 165px;
                 }
                 span {
@@ -644,7 +657,7 @@ header {
                 width: 120px;
                 height: 120px;
                 margin-bottom: 40px;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     display: block;
                 }
             }
@@ -683,7 +696,7 @@ header {
                 height: 48px;
                 top: 70px;
                 right: 55px;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     top: 80px;
                     right: 90px;
                 }
@@ -899,7 +912,10 @@ header {
                 @media (max-width: 576px) {
                     flex-basis: 100%;
                     margin-bottom: 30px;
-                }                
+                }
+                .single_title {
+                    margin-bottom: 30px;
+                }
                 .single_date {
                     margin-bottom: 30px;
                 }
@@ -907,7 +923,7 @@ header {
         }
     }
 }
-.footer{
+.footer {
     padding-bottom: 40px;
     .container_ask_who {
         width: $wapper_width;
@@ -924,14 +940,14 @@ header {
         @media (max-width: 992px) {
             width: 100%;
         }
-        @media(max-width:576px){
+        @media (max-width: 576px) {
             justify-content: center;
         }
-        a{
+        a {
             .logo {
                 width: 120px;
-                height: 120px;                
+                height: 120px;
             }
-        }        
-    }    
+        }
+    }
 }
