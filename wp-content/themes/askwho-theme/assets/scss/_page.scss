@@ -13,31 +13,31 @@
         border: none;
         z-index: 15;
     }
-    .ic{
+    .ic {
         background-repeat: no-repeat;
         background-size: cover;
         width: 20px;
         height: 20px;
         display: block;
-    }    
+    }
     .burger {
-        background-image: url("../images/ic_burger.svg");        
+        background-image: url("../images/ic_burger.svg");
     }
     .close {
-        background-image: url("../images/ic_close.svg");        
+        background-image: url("../images/ic_close.svg");
     }
 }
 .logoMain {
     position: absolute;
-    top: 10px;
+    top: 16px;
     left: 0;
     z-index: 15;
     width: $sidebar_width;
     display: flex;
     justify-content: center;
     img {
-        width: 56px;
-        height: 56px;
+        width: 72px;
+        height: 72px;
     }
 }
 .contactMenuMobile {
@@ -80,28 +80,31 @@
         position: relative;
         .navbar_href {
             background: none;
-            border: none;        
-            .ic{
+            border: none;
+            .ic {
                 background-repeat: no-repeat;
                 background-size: cover;
-                width: 20px;
-                height: 20px;
+                width: 48px;
+                height: 48px;
                 display: block;
-            }    
+            }
             .burger {
-                background-image: url("../images/ic_burger.svg");                
+                background-image: url("../images/ic_burger.svg");
             }
             .close {
-                background-image: url("../images/ic_close.svg");                
+                background-image: url("../images/ic_close.svg");
             }
         }
         .navbar_contact {
             position: absolute;
-            bottom: 30px;
+            bottom: 60px;
             left: 0;
             transform: rotate(-90deg);
-
+            width: 100%;
             font-family: $f_GeneralSans_Medium;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 32px;
         }
     }
 }
@@ -118,7 +121,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 12;    
+    z-index: 12;
     .logoFooter {
         position: absolute;
         bottom: 10px;
@@ -132,7 +135,7 @@
         }
     }
     .samBox {
-        width: $wapper_width;
+        width: 1070px;
         margin-right: auto;
         margin-left: auto;
         padding-left: 15px;
@@ -143,19 +146,19 @@
         }
         @media (max-width: 992px) {
             width: 100%;
-            padding-left:30px;
-            padding-right:30px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
         .mainmenu {
             list-style: none;
             padding: 0;
             margin: 0;
             li {
-                margin: 20px 0px;
+                margin: 20px 0;
                 a {
-                    font-weight: $f_KontrapunktMiki_Regular;
+                    font-family: $f_KontrapunktMiki_Regular;
                     font-size: 56px;
-                    line-height: 72px;
+                    line-height: 64px;
                     @media (max-width: 576px) {
                         font-size: 40px;
                         line-height: 30px;
@@ -174,8 +177,7 @@
                 a {
                     font-family: $f_KontrapunktMiki_Regular;
                     font-size: 24px;
-
-                    line-height: 50px;
+                    line-height: 64px;
                     &:hover {
                         background-color: $mau_2;
                     }
@@ -198,8 +200,8 @@ header {
         border: 0;
         .navbar.navbar-main {
             .container {
-                .navbar-header{
-                    @media(max-width:992px){
+                .navbar-header {
+                    @media (max-width: 992px) {
                         display: none;
                     }
                 }

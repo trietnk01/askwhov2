@@ -23,40 +23,40 @@ function my_acf_init_block_types()
             'title' => __('homepage-1-block'),
             'description' => __('homepage-1-block'),
             'render_template' => 'page-block/homepage/homepage-1-block.php',
-            'category' => 'template-part-block-page',
-            'icon' => 'book-alt',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('homepage'),
         ));
         acf_register_block_type(array(
             'name' => 'homepage-2-block',
             'title' => __('homepage-2-block'),
             'description' => __('homepage-2-block'),
             'render_template' => 'page-block/homepage/homepage-2-block.php',
-            'category' => 'template-part-block-page',
-            'icon' => 'book-alt',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('homepage'),
         ));
         acf_register_block_type(array(
             'name' => 'homepage-3-block',
             'title' => __('homepage-3-block'),
             'description' => __('homepage-3-block'),
             'render_template' => 'page-block/homepage/homepage-3-block.php',
-            'category' => 'template-part-block-page',
-            'icon' => 'book-alt',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('homepage'),
         ));
         acf_register_block_type(array(
             'name' => 'homepage-4-block',
             'title' => __('homepage-4-block'),
             'description' => __('homepage-4-block'),
             'render_template' => 'page-block/homepage/homepage-4-block.php',
-            'category' => 'template-part-block-page',
-            'icon' => 'book-alt',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('homepage'),
         ));
         acf_register_block_type(array(
             'name' => 'homepage-5-block',
             'title' => __('homepage-5-block'),
             'description' => __('homepage-5-block'),
             'render_template' => 'page-block/homepage/homepage-5-block.php',
-            'category' => 'template-part-block-page',
-            'icon' => 'book-alt',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('homepage'),
         ));
         /* begin block homepage */
     }
