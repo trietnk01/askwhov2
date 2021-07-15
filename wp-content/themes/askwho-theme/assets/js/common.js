@@ -4,7 +4,7 @@ let outerHeightSection = 0;
 let viewSection = 0;
 let el_top = 0;
 let attr_bg = "";
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   var section_ctrl = $("section");
   $(".navbar_href").on("click", function () {
     let i_ctrl = $(this).children(".ic");

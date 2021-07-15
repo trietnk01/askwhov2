@@ -16,7 +16,6 @@ class Backend
     {
         $js_css_ran = rand(1000, 100000);
         wp_enqueue_style('common_css', PLUGIN_URL . 'public/backend/scss/common.css', array(), $js_css_ran, 'all');
-        wp_enqueue_script('common_js', PLUGIN_URL . 'public/backend/js/common.js', array("jquery"), $js_css_ran, true);
     }
     /* begin remove resize function image */
     public function remove_image_sizes($sizes, $metadata)

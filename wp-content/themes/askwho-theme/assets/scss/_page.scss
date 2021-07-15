@@ -303,11 +303,9 @@ header {
     background-color: $mau_3;
     padding: 50px 0 90px 0;
     .dutex {
-        width: $wapper_width;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        max-width: $wapper_width;
+        margin-left: 168px;
+        margin-right: 0;
         position: relative;
         @media (max-width: 1024px) {
             width: $wrapper_mobile_width;
@@ -315,8 +313,12 @@ header {
         @media (max-width: 992px) {
             width: 100%;
         }
+        @media (max-width: 576px) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
         .uncarnet_addresses {
-            width: 512px;
+            width: 39%;
             margin-bottom: 40px;
             position: relative;
             @media (max-width: 576px) {
@@ -344,7 +346,7 @@ header {
                 display: block;
             }
             .box_content {
-                width: 746px;
+                width: 67%;
                 @media (max-width: 1024px) {
                     width: 355px;
                 }
@@ -444,10 +446,8 @@ header {
     }
     .banner_parat {
         width: $wapper_width;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 168px;
+        margin-right: 0;
         margin-top: -50px;
         position: relative;
         @media (max-width: 1024px) {
@@ -455,6 +455,10 @@ header {
         }
         @media (max-width: 992px) {
             width: 100%;
+        }
+        @media (max-width: 576px) {
+            padding-left: 24px;
+            padding-right: 24px;
         }
         .actulites {
             margin-top: 50px;
@@ -575,10 +579,8 @@ header {
     padding: 50px 0px;
     .container_ask_who {
         width: $wapper_width;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 168px;
+        margin-right: 0;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -591,6 +593,8 @@ header {
         @media (max-width: 576px) {
             flex-direction: column-reverse;
             justify-content: flex-start;
+            padding-left: 24px;
+            padding-right: 24px;
         }
         .ask_who_col_left {
             flex-basis: 40%;
@@ -671,16 +675,18 @@ header {
     padding-bottom: 50px;
     .container_ask_who {
         width: $wapper_width;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 168px;
+        margin-right: 0;
         position: relative;
         @media (max-width: 1024px) {
             width: $wrapper_mobile_width;
         }
         @media (max-width: 992px) {
             width: 100%;
+        }
+        @media (max-width: 576px) {
+            padding-left: 24px;
+            padding-right: 24px;
         }
         .yellow_title {
             width: 490px;
@@ -732,16 +738,18 @@ header {
     padding-bottom: 50px;
     .container_ask_who {
         width: $wapper_width;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 168px;
+        margin-right: 0;
         position: relative;
         @media (max-width: 1024px) {
             width: $wrapper_mobile_width;
         }
         @media (max-width: 992px) {
             width: 100%;
+        }
+        @media (max-width: 576px) {
+            padding-left: 24px;
+            padding-right: 24px;
         }
         .ask_who_title {
             margin-bottom: 30px;
@@ -929,10 +937,8 @@ header {
     padding-bottom: 40px;
     .container_ask_who {
         width: $wapper_width;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 168px;
+        margin-right: 0;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -944,6 +950,8 @@ header {
         }
         @media (max-width: 576px) {
             justify-content: center;
+            padding-left: 24px;
+            padding-right: 24px;
         }
         a {
             .logo {
