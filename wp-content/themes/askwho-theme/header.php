@@ -12,15 +12,16 @@
 </head>
 
 <body>
-    <div id="preloader"></div>
     <a href="<?php echo site_url(); ?>" class="logoMain">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
             alt="<?php echo get_bloginfo('name'); ?>">
     </a>
-    <a href="<?php echo site_url('contact'); ?>" class="contactMenuMobile">Contact</a>
-    <button type="button" class="navbar_toggle_v2">
-        <i class="ic burger"></i>
-    </button>
+    <div class="contact_navbar">
+        <a href="<?php echo site_url('contact'); ?>" class="contactMenuMobile">Contact</a>
+        <button type="button" class="navbar_toggle_v2">
+            <i class="ic burger"></i>
+        </button>
+    </div>
     <div class="menu_sidebar">
         <div class="fabars_sidebar">
             <button type="button" class="navbar_href">
@@ -60,28 +61,18 @@ wp_nav_menu($args);
             </ul>
         </div>
         <a href="<?php echo site_url(); ?>" class="logoFooter">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </a>
     </div>
-    <header class="fixed-top scroll-change" data-menu-anima="fade-in">
-        <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
-            <div class="navbar navbar-main">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <div class="nav navbar-nav navbar-right">
-                            <?php
-$args_desktop = array(
+    <header>
+        <?php
+$args = array(
     'menu' => '',
     'container' => '',
     'container_class' => '',
     'container_id' => '',
-    'menu_class' => 'nav navbar-nav menu_desktop',
+    'menu_class' => 'menu_header',
     'echo' => true,
     'fallback_cb' => 'wp_page_menu',
     'before' => '',
@@ -96,13 +87,8 @@ $args_desktop = array(
     'menu_item_has_children' => 'menu-item-has-children',
     'add_li_class' => 'dropdown',
 );
-wp_nav_menu($args_desktop);
+wp_nav_menu($args);
 ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <div class="arrow_down">
         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_scrollDown.svg'; ?>"

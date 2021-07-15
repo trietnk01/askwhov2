@@ -32,19 +32,7 @@ jQuery(document).ready(function ($) {
         $(section_ctrl).css({
           "background-color": attr_bg,
           transition: "200ms",
-        });
-        $(".navbar.navbar-main").css({
-          "background-color": attr_bg,
-          transition: "200ms",
-        });
-        $(".navbar-header").css({
-          "background-color": attr_bg,
-          transition: "200ms",
-        });
-        $(".nav.navbar-nav").css({
-          "background-color": attr_bg,
-          transition: "200ms",
-        });
+        });        
       }
     });
   });

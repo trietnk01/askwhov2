@@ -29,10 +29,10 @@ h3{
         line-height: 32px;
     }
 }
-body,p{
+body{
     font-family: $f_GeneralSans_Regular;        
     font-size: 18px;
-    line-height: 32px;
+    line-height: 32px;    
     color: #000;
     @media(max-width:576px){
         font-size: 16px;
@@ -55,6 +55,7 @@ body,p{
 }
 a{
     color: #000;
+    text-decoration: none;
 }
 ul,ol{
     padding-left: 40px;

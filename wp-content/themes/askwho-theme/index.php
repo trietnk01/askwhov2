@@ -4,7 +4,7 @@ get_header();
 <section class="boxheader" id="section_1" attr_bg="#f0e97c" style="background-color:#f0e97c">
     <div class="logoBox">
         <div class="logoAskWho">
-            <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+            <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </div>
         <h1 class="agence">
@@ -89,7 +89,7 @@ for ($i = 1; $i <= 4; $i++) {
 <section class="boss_box" id="section_4" attr_bg="#ecc3b3" style="background-color:#ecc3b3">
     <div class="container_ask_who">
         <div class="ask_who_col_left">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>" class="logo">
             <h2 class="ask_who_title">Demander à qui? La personne qu'il vous faut est</h2>
             <h2 class="ask_who_author">Aris Kaprielian.</h2>
@@ -108,7 +108,7 @@ for ($i = 1; $i <= 4; $i++) {
             </a>
         </div>
         <div class="ask_who_col_right">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>" class="logo">
             <img class="ask_who_avatar" src="<?php echo get_template_directory_uri() . "/assets/images/boss.png"; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">

@@ -1,7 +1,7 @@
 <section class="boxheader" id="section_1" attr_bg="#f0e97c" style="background-color:#f0e97c">
     <div class="logoBox">
         <div class="logoAskWho">
-            <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+            <img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </div>
         <h1 class="agence">
