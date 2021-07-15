@@ -12,23 +12,9 @@
 </head>
 
 <body>
-    <a href="<?php echo site_url(); ?>" class="logoMain">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
+    <div class="arrow_down">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_scrollDown.svg'; ?>"
             alt="<?php echo get_bloginfo('name'); ?>">
-    </a>
-    <div class="contact_navbar">
-        <a href="<?php echo site_url('contact'); ?>" class="contactMenuMobile">Contact</a>
-        <button type="button" class="navbar_toggle_v2">
-            <i class="ic burger"></i>
-        </button>
-    </div>
-    <div class="menu_sidebar">
-        <div class="fabars_sidebar">
-            <button type="button" class="navbar_href">
-                <i class="ic burger"></i>
-            </button>
-            <a href="<?php echo site_url("contact"); ?>" class="navbar_contact">Contact</a>
-        </div>
     </div>
     <div class="menu_back_drop">
         <div class="samBox">
@@ -55,7 +41,11 @@ $args = array(
 );
 wp_nav_menu($args);
 ?>
-            <ul class="iCollect">
+            <ul class="i_special">
+                <li><a href="javascript:void(0);">Spécial Chefs</a></li>
+                <li><a href="javascript:void(0);">Spécial Arts & Culture</a></li>
+            </ul>
+            <ul class="i_collect">
                 <li><a href="javascript:void(0);">Mentions légales et politique des cookies</a></li>
                 <li><a href="javascript:void(0);">Accessibilité</a></li>
             </ul>
@@ -64,6 +54,12 @@ wp_nav_menu($args);
             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </a>
+    </div>
+    <div class="contact_navbar">
+        <a href="<?php echo site_url('contact'); ?>" class="contactMenuMobile">Contact</a>
+        <button type="button" class="navbar_toggle_v2">
+            <i class="ic burger"></i>
+        </button>
     </div>
     <header>
         <?php
@@ -90,7 +86,15 @@ $args = array(
 wp_nav_menu($args);
 ?>
     </header>
-    <div class="arrow_down">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_scrollDown.svg'; ?>"
-            alt="<?php echo get_bloginfo('name'); ?>">
+    <div class="menu_sidebar">
+        <div class="fabars_sidebar">
+            <button type="button" class="navbar_href">
+                <i class="ic burger"></i>
+            </button>
+            <a href="<?php echo site_url("contact"); ?>" class="navbar_contact">Contact</a>
+        </div>
     </div>
+    <a href="<?php echo site_url(); ?>" class="logoMain">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
+            alt="<?php echo get_bloginfo('name'); ?>">
+    </a>

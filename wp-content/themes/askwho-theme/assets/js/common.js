@@ -5,6 +5,13 @@ let viewSection = 0;
 let el_top = 0;
 let attr_bg = "";
 jQuery(document).ready(function ($) {
+  /* begin box_header remove class */
+  $('.box_header').removeClass('wp-block-columns');
+  let box_header_child=$('.box_header').children('div');
+  $.each(box_header_child,function(index,val){
+    $(val).removeClass('wp-block-column');
+  });
+  /* end box_header remove class */
   var section_ctrl = $("section");
   $(".navbar_href").on("click", function () {
     let i_ctrl = $(this).children(".ic");
