@@ -501,10 +501,7 @@ header {
     }
 }
 .box_banner {
-    padding-bottom: 160px;
-    @media (max-width: 576px) {
-        padding-bottom: 110px;
-    }
+    padding-bottom: 100px;
     > div {
         margin-left: 168px;
         margin-right: 64px;
@@ -528,7 +525,7 @@ header {
             @media (max-width: 992px) {
                 padding: 0 24px;
             }
-            @media (max-width: 576px) {
+            @media(max-width:576px){
                 margin-bottom: 45px;
             }
             > div {
@@ -559,8 +556,8 @@ header {
             display: flex;
             flex-wrap: wrap;
             column-gap: 40px;
-            @media (max-width: 992px) {
-                padding: 0 24px;
+            @media(max-width:992px){
+                padding:0 24px;
             }
             @media (max-width: 576px) {
                 display: block;
@@ -570,8 +567,8 @@ header {
                 @media (max-width: 576px) {
                     margin-bottom: 32px;
                 }
-                .author_image {
-                    > img {
+                .author_image{
+                    >img{
                         width: 100%;
                     }
                 }
@@ -584,13 +581,13 @@ header {
                 .post_title {
                     a {
                         font-family: $f_GeneralSans_Medium;
-                        font-size: 20px;
+                        font-size: 20px;                        
                         line-height: 32px;
                     }
                 }
             }
         }
-        > .box_readmore {
+        >.box_readmore {
             display: flex;
             align-items: center;
             column-gap: 24px;
@@ -653,237 +650,6 @@ header {
                         }
                     }
                 }
-            }
-        }
-    }
-}
-.box_content_bottom {
-    padding-left: 168px;
-    padding-right: 43px;
-    display: flex;
-    column-gap: 9px;
-    padding-top: 64px;
-    padding-bottom: 41px;
-    @media (max-width: 992px) {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    @media (max-width: 576px) {
-        display: block;
-        padding-top: 40px;
-    }
-    > div {
-        &:first-child {
-            width: 480px;
-            @media (max-width: 1024px) {
-                width: 48%;
-            }
-            @media (max-width: 576px) {
-                width: 100%;
-            }
-            > .logo {
-                width: 120px;
-                height: 120px;
-                margin-bottom: 40px;
-                @media (max-width: 576px) {
-                    margin-bottom: 0;
-                    width: 96px;
-                    height: 96px;
-                }
-            }
-            > .boss_mobile {
-                display: none;
-                @media (max-width: 576px) {
-                    display: block;
-                    margin-bottom: 0;
-                    > img {
-                        width: 100%;
-                    }
-                }
-            }
-            > .slogan {
-                font-family: $f_GeneralSans_Medium;
-                font-size: 32px;
-                line-height: 40px;
-                @media (max-width: 576px) {
-                    font-size: 24px;
-                    line-height: 32px;
-                }
-            }
-            > .author_name {
-                font-family: $f_GeneralSans_Bold;
-                font-size: 32px;
-                line-height: 40px;
-                padding: 0;
-                display: inline;
-                @media (max-width: 576px) {
-                    font-size: 24px;
-                    line-height: 32px;
-                }
-            }
-            > .excerption {
-                margin-top: 40px;
-                margin-bottom: 40px;
-                @media (max-width: 576px) {
-                    margin-top: 24px;
-                    margin-bottom: 32px;
-                }
-            }
-            > .box_readmore {
-                display: flex;
-                align-items: center;
-                column-gap: 24px;
-                > div {
-                    &:first-child {
-                        height: 34px;
-                        width: 48px;
-                        @media (max-width: 576px) {
-                            height: 22.67px;
-                            width: 32px;
-                        }
-                        > figure {
-                            margin-bottom: 0;
-                        }
-                    }
-                    &:last-child {
-                        > p {
-                            > a {
-                                font-family: $f_GeneralSans_Bold;
-                                font-size: 24px;
-                                letter-spacing: 0;
-                                line-height: 32px;
-                                position: relative;
-                                overflow: hidden;
-                                z-index: 1;
-                                display: block;
-                                color: #000;
-                                @media (max-width: 576px) {
-                                    font-size: 18px;
-                                    line-height: 24px;
-                                    background-color: $mau_3;
-                                }
-                                &::first-letter {
-                                    background-color: $mau_3;
-                                }
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    top: 0;
-                                    left: -100%;
-                                    width: 100%;
-                                    height: 100%;
-                                    background: $mau_3;
-                                    transition-duration: 500ms;
-                                    z-index: -1;
-                                    display: block;
-                                }
-                                &:hover {
-                                    &::before {
-                                        left: 0;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &:last-child {
-            margin-left: auto;
-            @media (max-width: 576px) {
-                width: 100%;
-                display: none;
-            }
-            > figure {
-                > img {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-.box_pourquoi {
-    padding-left: 168px;
-    padding-right: 168px;
-    padding-top: 56px;
-    padding-bottom: 55px;
-    @media (max-width: 576px) {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-    .box_excerpt {
-        width: 455px;
-        position: relative;
-        @media (max-width: 576px) {
-            width: 318px;
-        }
-        > figure {
-            position: absolute;
-            top: 75px;
-            left: 368px;
-            height: 48px;
-            width: 54px;
-            margin-bottom: 0;
-            @media (max-width: 576px) {
-                top: 78px;
-                left: 170px;
-                height: 32px;
-                width: 36px;
-            }
-        }
-    }
-}
-.box_ex_co_ac {
-    display: flex;
-    padding-left: 168px;
-    padding-right: 64px;
-    column-gap: 124px;
-    padding-top: 40px;
-    padding-bottom: 56px;
-    @media (max-width: 992px) {
-        flex-direction: column;
-        padding-left: 24px;
-        padding-right: 24px;
-        row-gap: 44px;
-    }
-    @media(max-width:576px){
-        padding-bottom: 40px;
-    }
-    > div {
-        width: 320px;
-        @media (max-width: 992px) {
-            width: 100%;
-        }
-        > h3 {
-            margin-bottom: 48px;
-            display: inline-block;
-            background-color: #8dc8e8;
-            @media (max-width: 992px) {
-                margin-bottom: 32px;
-            }
-        }
-    }
-}
-.box_footer {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 168px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    @media (max-width: 576px) {
-        justify-content: center;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    > a {
-        img {
-            width: 120px;
-            height: 120px;
-            @media (max-width: 576px) {
-                width: 80px;
-                height: 80px;
             }
         }
     }

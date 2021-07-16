@@ -10,10 +10,22 @@ jQuery(document).ready(function ($) {
   $('img').removeAttr('height');
   /* end remove attr */
   /* begin box_header remove class */
-  var section_ctrl = $('.box_section');
+  let section_ctrl = $('.box_section');
   $(section_ctrl).removeClass('wp-block-columns');
   let box_header_child=$(section_ctrl).children('div');
   $.each(box_header_child,function(index,val){
+    $(val).removeClass('wp-block-column');
+  });
+  let box_readmore_parent = $('.box_readmore');
+  $(box_readmore_parent).removeClass('wp-block-columns');
+  let box_readmore_child=$(box_readmore_parent).children('div');
+  $.each(box_readmore_child,function(index,val){
+    $(val).removeClass('wp-block-column');
+  });
+  let tutorial_col_parent = $('.wp_tutorial_cols');
+  $(tutorial_col_parent).removeClass('wp-block-columns');
+  let tutorial_col_child=$(tutorial_col_parent).children('div');
+  $.each(tutorial_col_child,function(index,val){
     $(val).removeClass('wp-block-column');
   });
   /* end box_header remove class */  
