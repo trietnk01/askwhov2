@@ -5,14 +5,18 @@ let viewSection = 0;
 let el_top = 0;
 let attr_bg = "";
 jQuery(document).ready(function ($) {
+  /* begin remove attr */
+  $('img').removeAttr('width');
+  $('img').removeAttr('height');
+  /* end remove attr */
   /* begin box_header remove class */
-  $('.box_header').removeClass('wp-block-columns');
-  let box_header_child=$('.box_header').children('div');
+  var section_ctrl = $('.box_section');
+  $(section_ctrl).removeClass('wp-block-columns');
+  let box_header_child=$(section_ctrl).children('div');
   $.each(box_header_child,function(index,val){
     $(val).removeClass('wp-block-column');
   });
-  /* end box_header remove class */
-  var section_ctrl = $("section");
+  /* end box_header remove class */  
   $(".navbar_href").on("click", function () {
     let i_ctrl = $(this).children(".ic");
     $(i_ctrl).toggleClass("burger close", 500);

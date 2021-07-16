@@ -4,6 +4,13 @@
     right: 40px;
     height: 48px;
     width: 34px;
+    display: block;
+    @media (max-width: 576px) {
+        height: 32px;
+        width: 22.67px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 .contact_navbar {
     display: none;
@@ -67,6 +74,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     @media (max-width: 992px) {
         display: none;
     }
@@ -116,9 +124,12 @@
     transition: transform 0.5s, opacity 0.5s;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -100%;
+    @media(max-width:576px){
+        height: auto;
+    }
     .logoFooter {
         position: absolute;
         bottom: 40px;
@@ -253,14 +264,14 @@ header {
     }
 }
 .box_header {
-    padding: 0 250px !important;
+    padding: 0 250px;
     height: 100vh;
     display: flex;
     align-items: center;
     column-gap: 72px;
     margin-bottom: 0;
     @media (max-width: 992px) {
-        padding: 0px 32px !important;
+        padding: 0px 32px;
     }
     @media (max-width: 576px) {
         flex-direction: column;
@@ -269,7 +280,7 @@ header {
     }
     .box_logo {
         width: $logo_block_1_width;
-        margin-top: -205px;
+        margin-top: -265px;
         margin-bottom: 0;
         @media (max-width: 576px) {
             margin-top: 76px;
@@ -277,12 +288,6 @@ header {
         }
         .wp-block-image.size-large {
             margin-bottom: 0;
-            img {
-                height: $logo_block_1_width;
-                @media (max-width: 576px) {
-                    height: 96px;
-                }
-            }
         }
     }
     .box_slogan {
@@ -293,22 +298,43 @@ header {
         @media (max-width: 576px) {
             margin-top: 40px;
         }
-        p {
-            font-family: $f_KontrapunktMiki_Regular;
-            letter-spacing: 0;
-            line-height: 56px;
-            @media (max-width: 1024px) {
-                font-size: 30px !important;
-            }
-            @media (max-width: 576px) {
-                font-size: 40px !important;
-                line-height: 40px;
-            }
+        h1 {
             span {
                 @media (max-width: 576px) {
                     background: none !important;
                 }
             }
         }
+    }
+}
+.box_contacts {
+    padding-left: 168px;
+    padding-right: 168px;
+    padding-top: 56px;
+    padding-bottom: 72px;
+    position: relative;    
+    @media (max-width: 576px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .box_excerpt {
+        width: 450px;        
+        @media (max-width: 576px) {
+            width: 318px;
+        }
+        figure {
+            position: absolute;
+            top: 131px;
+            left: 579px;
+            height: 48px;
+            width: 54px;
+            margin-bottom: 0;
+            @media(max-width:576px){
+                top: 124px;
+                left: 141px;
+                height: 32px;
+                width: 36px;                
+            }
+        }        
     }
 }
