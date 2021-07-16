@@ -350,8 +350,12 @@ header {
         margin-left: 619px;
         margin-right: 64px;      
         @media(max-width:1024px){
+            margin-left: 168px;
+            margin-right: 168px;
+        }  
+        @media(max-width:992px){
             margin-left: 24px;
             margin-right: 24px;
-        }  
+        }
     }
 }
