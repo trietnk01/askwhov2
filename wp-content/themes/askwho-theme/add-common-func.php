@@ -1,5 +1,31 @@
 <?php
 add_theme_support('post-thumbnails');
+/* begin convert to datetime */
+function datetimeConverterByFormat($date, $format = "d/m/Y H:i:s")
+{
+    $result = "";
+    if (!empty($date) && $date != '0000-00-00 00:00:00' && $date != '0000-00-00') {
+        $arrDate = date_parse_from_format('Y-m-d H:i:s', $date);
+        $ts = mktime($arrDate["hour"], $arrDate["minute"], $arrDate["second"], $arrDate['month'], $arrDate['day'], $arrDate['year']);
+        $result = date($format, $ts);
+    }
+    return $result;
+}
+/* end convert to datetime */
+/* begin add css to admin */
+add_action('admin_enqueue_scripts', 'add_css_file_admin');
+function add_css_file_admin()
+{
+    $js_css_ran = rand(1000, 100000);
+    wp_enqueue_style('common_css', get_stylesheet_directory_uri() . '/assets/scss/common_admin.css', array(), $js_css_ran, 'all');
+}
+/* end add css to admin */
+/* begin remove resize function image */
+function remove_image_sizes($sizes, $metadata)
+{
+    return [];
+}
+/* end remove resize function image */
 /* begin add session */
 add_action('init', 'zendvn_sp_session_start', 1);
 function zendvn_sp_session_start()

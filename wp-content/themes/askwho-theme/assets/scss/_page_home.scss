@@ -19,7 +19,7 @@
         top: 30px;
         right: 24px;
         display: flex;
-        column-gap: 64px;
+        column-gap: 30px;
         align-items: center;
         z-index: 11;
     }
@@ -132,6 +132,7 @@
     z-index: 10;
     @media (max-width: 576px) {
         align-items: flex-start;
+        position: absolute;
     }
     .logoFooter {
         position: absolute;
@@ -150,7 +151,7 @@
     }
     .samBox {
         width: 100%;
-        padding: 0 244px;
+        padding-left: 244px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -168,8 +169,11 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            @media(max-width:576px){
+                margin-bottom: 25px;
+            }
             li {
-                margin: 16px 0;
+                margin-bottom: 16px;
                 @media (max-width: 992px) {
                     margin: 0;
                 }
@@ -177,13 +181,10 @@
                     font-family: $f_KontrapunktMiki_Regular;
                     font-size: 56px;
                     line-height: 64px;
-                    @media (max-width: 992px) {
-                        font-size: 40px;
-                        line-height: 56px;
-                    }
                     @media (max-width: 576px) {
+                        font-size: 40px;
                         line-height: 72px;
-                    }
+                    }                    
                     &:hover {
                         background-color: $mau_2;
                     }
@@ -197,9 +198,10 @@
             display: none;
             @media (max-width: 576px) {
                 display: block;
+                margin-bottom: 5px;
             }
             li {
-                margin: 8px 0;
+                margin-bottom:16px;
                 a {
                     font-family: $f_GeneralSans_Medium;
                     font-size: 24px;
@@ -210,7 +212,7 @@
         }
         .i_collect {
             list-style: none;
-            padding: 0;
+            padding: 0;            
             margin: 0;
             li {
                 a {
@@ -273,7 +275,7 @@ header {
     }
 }
 .box_header {
-    padding: 0 250px;
+    padding-left: 250px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -308,6 +310,10 @@ header {
             margin-top: 40px;
         }
         h1 {
+            @media (max-width: 576px) {
+                font-size: 40px;
+                line-height: 40px;
+            }
             span {
                 @media (max-width: 576px) {
                     background: none !important;
@@ -351,42 +357,38 @@ header {
 }
 .box_taille {
     padding-bottom: 80px;
+    padding-left: 619px;
+    padding-right: 134px;
+    @media (max-width: 1024px) {
+        padding-left: 168px;
+        padding-right: 168px;
+    }
+    @media (max-width: 992px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     @media (max-width: 576px) {
         padding-bottom: 32px;
     }
-    > div {
-        margin-left: 619px;
-        margin-right: 64px;
-        @media (max-width: 1024px) {
-            margin-left: 168px;
-            margin-right: 168px;
-        }
-        @media (max-width: 992px) {
-            margin-left: 24px;
-            margin-right: 24px;
-        }
-        > p {
-            font-family: $f_GeneralSans_Medium;
-        }
-    }
 }
 .box_author {
-    padding-bottom: 195px;
+    padding-bottom: 270px;
+    padding-left: 168px;
+    @media (max-width: 992px) {
+        padding-left: 24px;
+    }
     @media (max-width: 576px) {
-        padding-bottom: 180px;
+        padding-bottom: 125px;
     }
     > div {
-        margin-left: 168px;
         position: relative;
-        @media (max-width: 992px) {
-            margin-left: 24px;
-        }
         .owl_carousel_author {
             .owl-nav {
-                position: relative;
-                margin-top: 80px;
+                position: absolute;
+                bottom: -80px;
+                left: 0;
                 @media (max-width: 576px) {
-                    margin-top: 65px;
+                    bottom: -60px;
                 }
                 > div {
                     background-repeat: no-repeat;
@@ -502,17 +504,17 @@ header {
 }
 .box_banner {
     padding-bottom: 160px;
+    padding-left: 168px;
+    padding-right: 64px;
+    @media (max-width: 992px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
     @media (max-width: 576px) {
         padding-bottom: 110px;
     }
     > div {
-        margin-left: 168px;
-        margin-right: 64px;
         position: relative;
-        @media (max-width: 992px) {
-            margin-left: 0;
-            margin-right: 0;
-        }
         > figure {
             margin-bottom: 56px;
             @media (max-width: 576px) {
@@ -520,7 +522,10 @@ header {
             }
             > img {
                 width: 100%;
-                margin-top: -110px;
+                margin-top: -95px;
+                @media (max-width: 576px) {
+                    margin-top: 0;
+                }
             }
         }
         > .lactualite {
@@ -586,6 +591,10 @@ header {
                         font-family: $f_GeneralSans_Medium;
                         font-size: 20px;
                         line-height: 32px;
+                        @media (max-width: 576px) {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
                     }
                 }
             }
@@ -671,6 +680,7 @@ header {
     @media (max-width: 576px) {
         display: block;
         padding-top: 40px;
+        padding-bottom: 80px;
     }
     > div {
         &:first-child {
@@ -848,7 +858,7 @@ header {
         padding-right: 24px;
         row-gap: 44px;
     }
-    @media(max-width:576px){
+    @media (max-width: 576px) {
         padding-bottom: 40px;
     }
     > div {
