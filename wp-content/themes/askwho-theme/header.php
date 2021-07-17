@@ -49,7 +49,7 @@ wp_nav_menu($args);
             </ul>
         </div>
         <a href="<?php echo site_url(); ?>" class="logoFooter">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
+            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
         </a>
     </div>
@@ -93,6 +93,6 @@ wp_nav_menu($args);
         </div>
     </div>
     <a href="<?php echo site_url(); ?>" class="logoMain">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.png'; ?>"
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
             alt="<?php echo get_bloginfo('name'); ?>">
     </a>

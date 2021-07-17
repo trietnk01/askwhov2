@@ -181,7 +181,7 @@
   top: 0;
   left: -100%;
   z-index: 10; }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     .menu_back_drop {
       align-items: flex-start;
       position: absolute; } }
@@ -241,9 +241,11 @@
       padding: 0;
       margin: 0;
       display: none; }
+      @media (max-width: 992px) {
+        .menu_back_drop .samBox .i_special {
+          display: block; } }
       @media (max-width: 576px) {
         .menu_back_drop .samBox .i_special {
-          display: block;
           margin-bottom: 5px; } }
       .menu_back_drop .samBox .i_special li {
         margin-bottom: 16px; }
@@ -321,16 +323,18 @@ header {
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; } }
-  .box_header .box_logo {
+  .box_header > .box_logo {
     width: 160px;
     margin-top: -265px;
     margin-bottom: 0; }
     @media (max-width: 576px) {
-      .box_header .box_logo {
+      .box_header > .box_logo {
         margin-top: 76px;
         width: 96px; } }
-    .box_header .box_logo .wp-block-image.size-large {
+    .box_header > .box_logo > .wp-block-image.size-large {
       margin-bottom: 0; }
+      .box_header > .box_logo > .wp-block-image.size-large > img {
+        width: 100%; }
   .box_header .box_slogan {
     width: 752px; }
     @media (max-width: 992px) {
@@ -413,26 +417,20 @@ header {
         .box_author > div .owl_carousel_author .owl-nav {
           bottom: -60px; } }
       .box_author > div .owl_carousel_author .owl-nav > div {
-        background-repeat: no-repeat;
         position: absolute;
-        bottom: 0;
-        width: 48px;
-        height: 34px; }
-        @media (max-width: 576px) {
-          .box_author > div .owl_carousel_author .owl-nav > div {
-            height: 33px;
-            width: 48px; } }
+        bottom: 0; }
+        .box_author > div .owl_carousel_author .owl-nav > div > img {
+          width: 50px; }
+          @media (max-width: 576px) {
+            .box_author > div .owl_carousel_author .owl-nav > div > img {
+              width: 30px; } }
         .box_author > div .owl_carousel_author .owl-nav > div.owl-prev {
-          left: 0;
-          background-image: url("./../images/ic_scrollDown-1.svg");
-          content: ""; }
+          left: 0; }
         .box_author > div .owl_carousel_author .owl-nav > div.owl-next {
-          left: 75px;
-          background-image: url("./../images/ic_scrollDown-2.svg");
-          content: ""; }
+          left: 75px; }
           @media (max-width: 576px) {
             .box_author > div .owl_carousel_author .owl-nav > div.owl-next {
-              left: 65px; } }
+              left: 50px; } }
     .box_author > div .owl_carousel_author .owl-stage-outer .owl-stage .owl-item .item .author_image {
       margin-bottom: 20px; }
     .box_author > div .owl_carousel_author .owl-stage-outer .owl-stage .owl-item .item .author_name {
@@ -658,6 +656,8 @@ header {
           margin-bottom: 0;
           width: 96px;
           height: 96px; } }
+      .box_content_bottom > div:first-child > .logo > img {
+        width: 100%; }
     .box_content_bottom > div:first-child > .boss_mobile {
       display: none; }
       @media (max-width: 576px) {
@@ -667,7 +667,7 @@ header {
           .box_content_bottom > div:first-child > .boss_mobile > img {
             width: 100%; } }
     .box_content_bottom > div:first-child > .slogan {
-      font-family: "GeneralSans_Medium";
+      font-family: "GeneralSans_Semibold";
       font-size: 32px;
       line-height: 40px; }
       @media (max-width: 576px) {
@@ -675,7 +675,7 @@ header {
           font-size: 24px;
           line-height: 32px; } }
     .box_content_bottom > div:first-child > .author_name {
-      font-family: "GeneralSans_Bold";
+      font-family: "GeneralSans_Semibold";
       font-size: 32px;
       line-height: 40px;
       padding: 0;
@@ -695,6 +695,9 @@ header {
       display: flex;
       align-items: center;
       column-gap: 24px; }
+      @media (max-width: 576px) {
+        .box_content_bottom > div:first-child > .box_readmore {
+          column-gap: 7px; } }
       .box_content_bottom > div:first-child > .box_readmore > div:first-child {
         height: 34px;
         width: 48px; }

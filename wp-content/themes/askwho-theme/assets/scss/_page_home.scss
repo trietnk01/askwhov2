@@ -130,7 +130,7 @@
     top: 0;
     left: -100%;
     z-index: 10;
-    @media (max-width: 576px) {
+    @media (max-width: 992px) {
         align-items: flex-start;
         position: absolute;
     }
@@ -169,7 +169,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 margin-bottom: 25px;
             }
             li {
@@ -184,7 +184,7 @@
                     @media (max-width: 576px) {
                         font-size: 40px;
                         line-height: 72px;
-                    }                    
+                    }
                     &:hover {
                         background-color: $mau_2;
                     }
@@ -196,12 +196,14 @@
             padding: 0;
             margin: 0;
             display: none;
-            @media (max-width: 576px) {
+            @media (max-width: 992px) {
                 display: block;
+            }
+            @media (max-width: 576px) {
                 margin-bottom: 5px;
             }
             li {
-                margin-bottom:16px;
+                margin-bottom: 16px;
                 a {
                     font-family: $f_GeneralSans_Medium;
                     font-size: 24px;
@@ -212,7 +214,7 @@
         }
         .i_collect {
             list-style: none;
-            padding: 0;            
+            padding: 0;
             margin: 0;
             li {
                 a {
@@ -289,7 +291,7 @@ header {
         align-items: flex-start;
         justify-content: center;
     }
-    .box_logo {
+    > .box_logo {
         width: $logo_block_1_width;
         margin-top: -265px;
         margin-bottom: 0;
@@ -297,8 +299,11 @@ header {
             margin-top: 76px;
             width: 96px;
         }
-        .wp-block-image.size-large {
+        > .wp-block-image.size-large {
             margin-bottom: 0;
+            > img {
+                width: 100%;
+            }
         }
     }
     .box_slogan {
@@ -391,26 +396,21 @@ header {
                     bottom: -60px;
                 }
                 > div {
-                    background-repeat: no-repeat;
                     position: absolute;
                     bottom: 0;
-                    width: 48px;
-                    height: 34px;
-                    @media (max-width: 576px) {
-                        height: 33px;
-                        width: 48px;
+                    > img {
+                        width: 50px;
+                        @media(max-width:576px){
+                            width: 30px;
+                        }                        
                     }
                     &.owl-prev {
-                        left: 0;
-                        background-image: url("./../images/ic_scrollDown-1.svg");
-                        content: "";
+                        left: 0;                        
                     }
                     &.owl-next {
-                        left: 75px;
-                        background-image: url("./../images/ic_scrollDown-2.svg");
-                        content: "";
+                        left: 75px;                        
                         @media (max-width: 576px) {
-                            left: 65px;
+                            left: 50px;
                         }
                     }
                 }
@@ -423,7 +423,7 @@ header {
                                 margin-bottom: 20px;
                             }
                             .author_name {
-                                font-family: $f_GeneralSans_Medium;                                
+                                font-family: $f_GeneralSans_Medium;
                             }
                             .author_function {
                                 font-family: $f_GeneralSans_Regular;
@@ -700,6 +700,9 @@ header {
                     width: 96px;
                     height: 96px;
                 }
+                > img {
+                    width: 100%;
+                }
             }
             > .boss_mobile {
                 display: none;
@@ -712,7 +715,7 @@ header {
                 }
             }
             > .slogan {
-                font-family: $f_GeneralSans_Medium;
+                font-family: $f_GeneralSans_Semibold;
                 font-size: 32px;
                 line-height: 40px;
                 @media (max-width: 576px) {
@@ -721,7 +724,7 @@ header {
                 }
             }
             > .author_name {
-                font-family: $f_GeneralSans_Bold;
+                font-family: $f_GeneralSans_Semibold;
                 font-size: 32px;
                 line-height: 40px;
                 padding: 0;
@@ -743,6 +746,9 @@ header {
                 display: flex;
                 align-items: center;
                 column-gap: 24px;
+                @media(max-width:576px){
+                    column-gap: 7px;
+                }
                 > div {
                     &:first-child {
                         height: 34px;

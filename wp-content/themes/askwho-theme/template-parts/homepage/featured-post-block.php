@@ -26,7 +26,7 @@ while ($the_query->have_posts()) {
         <div class="post_date"><?php echo $date_vn; ?></div>
         <div class="post_title">
             <a href="<?php echo get_the_permalink(); ?>">
-                <?php echo wp_trim_words(get_the_title(), '99', '...'); ?>
+                <?php echo wp_trim_words(get_the_title(), '10', '(...)'); ?>
             </a>
         </div>
     </div>

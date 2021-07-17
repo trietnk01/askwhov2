@@ -5,6 +5,8 @@ let viewSection = 0;
 let el_top = 0;
 let attr_bg = "";
 jQuery(document).ready(function ($) {
+  let param_a=window.location.href;
+  console.log(param_a);
   /* begin remove attr */
   $('img').removeAttr('width');
   $('img').removeAttr('height');
