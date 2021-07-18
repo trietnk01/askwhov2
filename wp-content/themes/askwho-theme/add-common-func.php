@@ -67,28 +67,28 @@ add_action('wp_ajax_nopriv_plus_articles_more', 'plus_articles_more');
 function plus_articles_more()
 {
     $offset = 0;
-    $posts_per_page = 4;
-    $main_posts_per_page = 0;
+    $per_item_rendered = 4;
+    $main_item_rendered = 0;
     $xhtml = '';
     $hideLoadmore = false;
     if (isset($_POST['offset'])) {
-        $offset = intval($_POST['offset']) + intval($posts_per_page);
+        $offset = intval($_POST['offset']);
     }
     $args_no_limit = array(
         'post_type' => 'post',
         'posts_per_page' => -1,
     );
     $the_query_no_limit = new WP_Query($args_no_limit);
-    $remaining_posts = intval($the_query_no_limit->found_posts) - intval($offset);
-    if (intval($remaining_posts) <= intval($posts_per_page)) {
-        $main_posts_per_page = intval($remaining_posts);
+    $remaining_items = intval($the_query_no_limit->found_posts) - intval($offset);
+    if (intval($remaining_items) <= intval($per_item_rendered)) {
+        $main_item_rendered = intval($remaining_items);
         $hideLoadmore = true;
     } else {
-        $main_posts_per_page = intval($posts_per_page);
+        $main_item_rendered = intval($per_item_rendered);
     }
     $args = array(
         'post_type' => 'post',
-        'posts_per_page' => intval($main_posts_per_page),
+        'posts_per_page' => intval($main_item_rendered),
         'offset' => intval($offset),
     );
     $the_query = new WP_Query($args);
@@ -117,6 +117,7 @@ function plus_articles_more()
         }
         wp_reset_postdata();
     }
+    $offset += $per_item_rendered;
     $data = array(
         'offset' => intval($offset),
         'xhtml' => $xhtml,

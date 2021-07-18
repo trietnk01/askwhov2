@@ -1,7 +1,7 @@
 <?php
 get_header();
 $posts_per_page = intval(get_option('posts_per_page'));
-$offset = 0;
+$offset = $posts_per_page;
 ?>
 <div class="box_section child_page" style="background:#a6e0d4" id="section_1" attr_bg="#a6e0d4">
     <form class="container_ask_who" name="frm_category" method="POST" action="">
@@ -44,8 +44,7 @@ while (have_posts()) {
     ?>
         </div>
         <?php
-$remaining_posts = intval($wp_query->found_posts) - intval($offset);
-    if (intval($remaining_posts) > intval($posts_per_page)) {
+if (intval($posts_per_page) < intval($wp_query->found_posts)) {
         ?>
         <div class="box_readmore">
             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_arrowRight.svg'; ?>"
