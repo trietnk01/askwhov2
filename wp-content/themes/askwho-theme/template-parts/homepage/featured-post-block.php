@@ -2,6 +2,7 @@
 global $zController;
 $args = array(
     'post_type' => 'post',
+    'posts_per_page' => 4,
 );
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) {
@@ -16,8 +17,8 @@ while ($the_query->have_posts()) {
         } else {
             $featured_image = get_stylesheet_directory_uri() . "/assets/images/no-image.png";
         }
-        $date = get_the_date('Y-m-d');
-        $date_vn = datetimeConverterByFormat($date, "d.m.Y");
+        $date_en = get_the_date('Y-m-d');
+        $date_vn = datetimeConverterByFormat($date_en, "d.m.Y");
         ?>
     <div class="item">
         <a href="<?php echo get_the_permalink(); ?>" class="author_image">

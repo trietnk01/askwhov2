@@ -1,8 +1,11 @@
 <?php
 get_header();
+$posts_per_page = intval(get_option('posts_per_page'));
+$offset = 0;
 ?>
 <div class="box_section child_page" style="background:#a6e0d4" id="section_1" attr_bg="#a6e0d4">
     <form class="container_ask_who" name="frm_category" method="POST" action="">
+        <input type="hidden" name="offset" value="<?php echo $offset; ?>">
         <h1 class="category_name">Blog</h1>
         <div class="lactualite">
             <h2 class="name">L’actualité AskWho</h2>
@@ -40,12 +43,17 @@ while (have_posts()) {
 }
     ?>
         </div>
+        <?php
+$remaining_posts = intval($wp_query->found_posts) - intval($offset);
+    if (intval($remaining_posts) > intval($posts_per_page)) {
+        ?>
         <div class="box_readmore">
             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_arrowRight.svg'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>">
             <button type="button" name="btn_plus_articles">Voir plus d'articles</button>
         </div>
         <?php
+}
 }
 wp_reset_postdata();
 ?>
