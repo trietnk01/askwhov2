@@ -128,7 +128,7 @@
     align-items: center;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -100%;    
     z-index: 10;
     @media (max-width: 992px) {
         align-items: flex-start;
@@ -422,13 +422,13 @@ header {
                     .owl-stage {
                         .owl-item {
                             .item {
-                                .author_image {
+                                >img {
                                     margin-bottom: 20px;
                                 }
-                                .author_name {
+                                >.author_name {
                                     font-family: $f_GeneralSans_Medium;
                                 }
-                                .author_function {
+                                >.author_function {
                                     font-family: $f_GeneralSans_Regular;
                                     font-size: 18px;
                                     line-height: 32px;
@@ -576,25 +576,25 @@ header {
                 flex-direction: column;
                 row-gap: 32px;
             }
-            .item {
+            >.item {
                 width: calc(100% / 4 - 30px);
                 display: flex;
                 flex-direction: column;
                 @media (max-width: 576px) {
                     width: 100%;
                 }
-                .author_image {
+                >.author_image {
                     > img {
                         width: 100%;
                     }
                 }
-                .post_date {
+                >.post_date {
                     margin-bottom: 0px;
                     font-family: $f_GeneralSans_Regular;
                     font-size: 16px;
                     line-height: 32px;
                 }
-                .post_title {
+                >.post_title {
                     margin-top: auto;
                     a {
                         font-family: $f_GeneralSans_Medium;

@@ -1,0 +1,96 @@
+.personnalites_page {
+    padding-left: 168px;
+    padding-right: 64px;
+    padding-top: 104px;
+    padding-bottom: 40px;
+    @media (max-width: 992px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @media(max-width:576px){
+        padding-top: 120px;        
+    }
+    > div {
+        > h1 {
+            font-family: $f_GeneralSans_Medium;
+            font-size: 104px;
+            line-height: 104px;
+            margin-bottom: 72px;
+            @media (max-width: 576px) {
+                font-size: 48px;
+                line-height: 64px;
+                margin-bottom: 56px;                
+            }
+        }
+        > div {
+            &:nth-child(2) {
+                margin-bottom: 50px;
+                > div {
+                    width: 450px;
+                    position: relative;
+                    @media (max-width: 576px) {
+                        width: 318px;
+                    }
+                    > figure {
+                        position: absolute;
+                        top: 75px;
+                        left: 411px;
+                        height: 48px;
+                        width: 54px;
+                        margin-bottom: 0;
+                        @media (max-width: 576px) {
+                            top: 84px;
+                            left: 117px;
+                            height: 32px;
+                            width: 36px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3) {
+                padding-left: 445px;
+                margin-bottom: 80px;
+                @media (max-width: 992px) {
+                    padding-left: 0;
+                }
+                > div {
+                    width: 766px;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                    }
+                    >p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 24px;
+                row-gap: 24px;
+                @media(max-width:576px){
+                    flex-direction: column;
+                    row-gap: 32px;
+                }
+                > div {
+                    width: calc(100% / 4 - 18px);
+                    @media(max-width:576px){
+                        width: 100%;
+                    }
+                    > img {
+                        width: 100%;
+                        margin-bottom: 16px;
+                    }
+                    > .author_name {
+                        font-family: $f_GeneralSans_Medium;
+                    }
+                    > .author_function {
+                        font-family: $f_GeneralSans_Regular;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

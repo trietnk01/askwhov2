@@ -8,7 +8,8 @@ if (is_array($hp_auteur_liste)) {
 foreach ($hp_auteur_liste as $key => $val) {
             ?>
     <div class="item">
-        <img class="author_image" src="<?php echo $val['hp_auteur_avatar']; ?>" alt="author" />
+        <img class="author_image" src="<?php echo $val['hp_auteur_avatar']; ?>"
+            alt="<?php echo $val['hp_auteur_nom'] ?>" />
         <div class="author_name"><?php echo $val['hp_auteur_nom']; ?></div>
         <div class="author_function"><?php echo $val['hp_auteur_titre']; ?></div>
     </div>

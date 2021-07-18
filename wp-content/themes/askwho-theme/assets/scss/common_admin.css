@@ -431,11 +431,11 @@ header {
           @media (max-width: 576px) {
             .box_author > div > div:first-child .owl-nav > div.owl-next {
               left: 50px; } }
-    .box_author > div > div:first-child .owl-stage-outer .owl-stage .owl-item .item .author_image {
+    .box_author > div > div:first-child .owl-stage-outer .owl-stage .owl-item .item > img {
       margin-bottom: 20px; }
-    .box_author > div > div:first-child .owl-stage-outer .owl-stage .owl-item .item .author_name {
+    .box_author > div > div:first-child .owl-stage-outer .owl-stage .owl-item .item > .author_name {
       font-family: "GeneralSans_Medium"; }
-    .box_author > div > div:first-child .owl-stage-outer .owl-stage .owl-item .item .author_function {
+    .box_author > div > div:first-child .owl-stage-outer .owl-stage .owl-item .item > .author_function {
       font-family: "GeneralSans_Regular";
       font-size: 18px;
       line-height: 32px; }
@@ -555,28 +555,28 @@ header {
         .box_banner > div > .featured_post {
           flex-direction: column;
           row-gap: 32px; } }
-      .box_banner > div > .featured_post .item {
+      .box_banner > div > .featured_post > .item {
         width: calc(100% / 4 - 30px);
         display: flex;
         flex-direction: column; }
         @media (max-width: 576px) {
-          .box_banner > div > .featured_post .item {
+          .box_banner > div > .featured_post > .item {
             width: 100%; } }
-        .box_banner > div > .featured_post .item .author_image > img {
+        .box_banner > div > .featured_post > .item > .author_image > img {
           width: 100%; }
-        .box_banner > div > .featured_post .item .post_date {
+        .box_banner > div > .featured_post > .item > .post_date {
           margin-bottom: 0px;
           font-family: "GeneralSans_Regular";
           font-size: 16px;
           line-height: 32px; }
-        .box_banner > div > .featured_post .item .post_title {
+        .box_banner > div > .featured_post > .item > .post_title {
           margin-top: auto; }
-          .box_banner > div > .featured_post .item .post_title a {
+          .box_banner > div > .featured_post > .item > .post_title a {
             font-family: "GeneralSans_Medium";
             font-size: 20px;
             line-height: 32px; }
             @media (max-width: 576px) {
-              .box_banner > div > .featured_post .item .post_title a {
+              .box_banner > div > .featured_post > .item > .post_title a {
                 font-size: 16px;
                 line-height: 24px; } }
     .box_banner > div > .box_readmore {

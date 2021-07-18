@@ -19,5 +19,13 @@ function my_acf_init_block_types()
             'icon' => 'editor-paste-text',
             'keyword' => array('FeaturedBlock'),
         ));
+        acf_register_block_type(array(
+            'name' => 'author-personnalites-part',
+            'title' => __('author-personnalites-part'),
+            'description' => __('author-personnalites-part'),
+            'render_template' => 'template-parts/homepage/author-personnalites-part.php',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('PersonnalitesAuthorPart'),
+        ));
     }
 }
