@@ -3,7 +3,7 @@ get_header();
 $posts_per_page = intval(get_option('posts_per_page'));
 $offset = $posts_per_page;
 ?>
-<div class="box_section child_page" style="background:#a6e0d4" id="section_1" attr_bg="#a6e0d4">
+<div class="box_section blog_post">
     <form class="container_ask_who" name="frm_category" method="POST" action="">
         <input type="hidden" name="offset" value="<?php echo $offset; ?>">
         <h1 class="category_name">Blog</h1>

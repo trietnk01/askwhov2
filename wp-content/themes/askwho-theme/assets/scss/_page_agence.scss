@@ -2,7 +2,7 @@
     padding-left: 168px;
     padding-right: 552px;
     padding-top: 104px;
-    padding-bottom: 40px;
+    padding-bottom: 40px;    
     @media (max-width: 1024px) {
         padding-right: 24px;
     }
@@ -125,4 +125,7 @@
             }
         }
     }
+}
+.error_page{
+    background-color: $mau_3;
 }

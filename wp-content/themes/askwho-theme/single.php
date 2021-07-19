@@ -23,7 +23,7 @@ if (have_posts()) {
 }
 wp_reset_postdata();
 ?>
-<div class="box_section single_post" style="background:#A5DFD3" id="section_1" attr_bg="#A5DFD3">
+<div class="box_section single_post">
     <div class="single_col">
         <h1 class="single_title"><?php echo $title; ?></h1>
         <div class="single_date"><?php echo $date_vn; ?></div>

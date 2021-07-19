@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="box_section agence_page" style="background-color:#8dc8e8">
+<div class="box_section agence_page error_page">
     <div>
         <h1>404</h1>
         <div class="wp_tutorial_cols contact_box">

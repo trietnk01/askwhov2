@@ -12,6 +12,10 @@ jQuery(document).ready(function ($) {
   /* begin box_header remove class */
   let section_ctrl = $('.box_section');
   $(section_ctrl).removeClass('wp-block-columns');
+  $.each(section_ctrl,function(index,val){
+    var sect_bg=$(val).css('background-color');
+    $(val).attr('attr_bg',sect_bg);
+  });
   let box_header_child=$(section_ctrl).children('div');
   $.each(box_header_child,function(index,val){
     $(val).removeClass('wp-block-column');
@@ -38,13 +42,13 @@ jQuery(document).ready(function ($) {
     let i_ctrl = $(this).children(".ic");
     $(i_ctrl).toggleClass("burger close", 500);
     $(".menu_back_drop").toggleClass("meu_back_drop_scaleX1");
-  });
+  });  
   $(window).scroll(function () {
     viewScroll = Math.round(
       parseFloat(window.innerHeight) / 15 + parseFloat($(this).scrollTop())
     );
     $.each(section_ctrl, function (index, val) {
-      attr_bg = $(val).attr("attr_bg");
+      attr_bg = $(val).attr("attr_bg"); 
       viewSection = Math.round(
         parseFloat($(val).offset().top) + parseFloat($(val).outerHeight(false))
       );
@@ -53,9 +57,13 @@ jQuery(document).ready(function ($) {
         viewScroll <= viewSection
       ) {
         $(section_ctrl).css({
-          "background-color": attr_bg,
-          transition: "200ms",
-        });        
+          'background-color': attr_bg,
+          'transition': '200ms',
+        });    
+        $('.box_footer').css({
+          'background-color':attr_bg,
+          'transition':'200ms'
+        });    
       }
     });
   });
@@ -73,8 +81,7 @@ jQuery(document).ready(function ($) {
       data: dataItem,
       dataType: "json",
       async: false,
-      success: function (data, status, jsXHR) {
-        console.log(data);    
+      success: function (data, status, jsXHR) {        
         $('.blog_wrapper').append(data.xhtml);
         $(frm).find('input[name="offset"]').val(data.offset);
         if (data.hideLoadmore === true) {

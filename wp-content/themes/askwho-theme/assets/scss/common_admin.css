@@ -230,6 +230,9 @@
           font-family: "KontrapunktMiki_Regular";
           font-size: 56px;
           line-height: 64px; }
+          @media (max-width: 992px) {
+            .menu_back_drop .samBox .mainmenu li a {
+              font-size: 40px; } }
           @media (max-width: 576px) {
             .menu_back_drop .samBox .mainmenu li a {
               font-size: 40px;
@@ -317,7 +320,8 @@ header {
   margin-bottom: 0; }
   @media (max-width: 992px) {
     .box_header {
-      padding: 0px 32px; } }
+      padding: 0px 32px;
+      column-gap: 30px; } }
   @media (max-width: 576px) {
     .box_header {
       flex-direction: column;
@@ -327,9 +331,12 @@ header {
     width: 160px;
     margin-top: -265px;
     margin-bottom: 0; }
+    @media (max-width: 992px) {
+      .box_header div:first-child {
+        width: 295px; } }
     @media (max-width: 576px) {
       .box_header div:first-child {
-        margin-top: 76px;
+        margin-top: 0;
         width: 96px; } }
     .box_header div:first-child > figure {
       margin-bottom: 0; }
@@ -342,7 +349,11 @@ header {
         width: auto; } }
     @media (max-width: 576px) {
       .box_header div:nth-child(2) {
-        margin-top: 40px; } }
+        margin-top: 0px; } }
+    @media (max-width: 1024px) {
+      .box_header div:nth-child(2) h1 {
+        font-size: 40px;
+        line-height: 56px; } }
     @media (max-width: 576px) {
       .box_header div:nth-child(2) h1 {
         font-size: 40px;
@@ -820,9 +831,10 @@ header {
 .box_footer {
   display: flex;
   justify-content: flex-end;
-  padding-left: 168px;
   padding-right: 40px;
-  padding-bottom: 40px; }
+  padding-left: 40px;
+  padding-bottom: 40px;
+  position: relative; }
   @media (max-width: 576px) {
     .box_footer {
       justify-content: center;

@@ -81,7 +81,7 @@
         display: none;
     }
     .fabars_sidebar {
-        height: $fabars_sidebar_height;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -119,7 +119,7 @@
 .menu_back_drop {
     background-color: $mau_3;
     width: 100%;
-    height: $fabars_sidebar_height;
+    height: 100vh;
     transform: translate(0, 0);
     opacity: 0;
     transform-origin: left;
@@ -181,6 +181,9 @@
                     font-family: $f_KontrapunktMiki_Regular;
                     font-size: 56px;
                     line-height: 64px;
+                    @media(max-width:992px){
+                        font-size: 40px;
+                    }
                     @media (max-width: 576px) {
                         font-size: 40px;
                         line-height: 72px;
@@ -282,9 +285,10 @@ header {
     display: flex;
     align-items: center;
     column-gap: 72px;
-    margin-bottom: 0;
+    margin-bottom: 0;    
     @media (max-width: 992px) {
         padding: 0px 32px;
+        column-gap: 30px;
     }
     @media (max-width: 576px) {
         flex-direction: column;
@@ -295,9 +299,12 @@ header {
         &:first-child {
             width: $logo_block_1_width;
             margin-top: -265px;
-            margin-bottom: 0;
+            margin-bottom: 0;      
+            @media(max-width:992px){
+                width: 295px;
+            }      
             @media (max-width: 576px) {
-                margin-top: 76px;
+                margin-top: 0;
                 width: 96px;
             }
             > figure {
@@ -313,13 +320,17 @@ header {
                 width: auto;
             }
             @media (max-width: 576px) {
-                margin-top: 40px;
+                margin-top: 0px;
             }
             h1 {
-                @media (max-width: 576px) {
+                @media(max-width:1024px){
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+                @media(max-width:576px){
                     font-size: 40px;
                     line-height: 40px;
-                }
+                }                
                 span {
                     @media (max-width: 576px) {
                         background: none !important;
@@ -895,16 +906,17 @@ header {
 }
 .box_footer {
     display: flex;
-    justify-content: flex-end;
-    padding-left: 168px;
+    justify-content: flex-end;    
     padding-right: 40px;
+    padding-left: 40px;    
     padding-bottom: 40px;
+    position: relative;            
     @media (max-width: 576px) {
         justify-content: center;
         padding-left: 24px;
         padding-right: 24px;
     }
-    > a {
+    > a {        
         img {
             width: 120px;
             height: 120px;
