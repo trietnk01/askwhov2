@@ -15,7 +15,7 @@
     <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_scrollDown.svg'; ?>"
         alt="<?php echo get_bloginfo('name'); ?>" class="arrow_down">
     <div class="menu_back_drop">
-        <div class="samBox">
+        <div class="askwho_container">
             <?php
 $args = array(
     'menu' => '',
