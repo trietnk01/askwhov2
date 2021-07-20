@@ -60,3 +60,37 @@ ol {
         margin-right: auto !important;
     }   
 }
+.contact_askwho {
+    a {
+        font-family: $f_GeneralSans_Medium;
+        font-size: 24px;
+        line-height: 32px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        display: inline-block;
+        &::first-letter {
+            background-color: $mau_2;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: $mau_2;
+            transition-duration: 500ms;
+            z-index: -1;
+            display: block;
+        }
+        &:hover {
+            &::before {
+                left: 0;
+            }
+        }
+    }
+}
+.error_page{
+    background-color: $mau_3;
+}

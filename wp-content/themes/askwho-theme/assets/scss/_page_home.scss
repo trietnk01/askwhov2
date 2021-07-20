@@ -133,35 +133,30 @@
     @media (max-width: 992px) {
         align-items: flex-start;
         position: absolute;
+        padding-top: 100px;
     }
     .logoFooter {
         position: absolute;
         bottom: 40px;
         right: 40px;
-        width: $sidebar_width;
-        display: flex;
-        justify-content: center;
-        @media (max-width: 576px) {
+        width: 120px;
+        @media (max-width: 992px) {
             display: none;
         }
-        img {
-            height: 120px;
-            width: 120px;
+        > img {
+            width: 100%;
         }
     }
-    .askwho_container {        
+    .askwho_container {
         margin-left: 244px;
         margin-right: 64px;
         position: relative;
         display: flex;
         flex-direction: column;
-        @media (max-width: 1024px) {
-            width: $wrapper_mobile_width;
-        }
+        width: 100%;
         @media (max-width: 992px) {
-            width: 100%;
-            padding: 0 32px;
-            margin-top: 130px;
+            margin-left: 32px;
+            margin-right: 32px;
         }
         .mainmenu {
             list-style: none;
@@ -283,44 +278,77 @@ header {
     > .askwho_container {
         margin-left: 250px;
         margin-right: 64px;
+        flex-grow: unset;
+        flex-basis: unset;
+        width: 100%;
+        @media (max-width: 992px) {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
         > .wp-block-columns {
             align-items: center;
             column-gap: 72px;
             height: 100vh;
+            margin-bottom: 0;
+            @media (max-width: 992px) {
+                column-gap: 20px;
+            }
+            @media (max-width: 576px) {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                column-gap: 0;
+                row-gap: 40px;
+            }
             > .wp-block-column {
-                flex-basis: unset;
-                flex-grow: unset;
+                flex-basis: unset !important;
+                flex-grow: unset !important;
                 margin: 0 !important;
                 padding: 0 !important;
-                &:first-child {
-                    width: $logo_block_1_width;
-                    position: relative;
-                    figure {
-                        margin-bottom: 0;
-                        position: absolute;
-                        top: -215px;
-                        left: 0;
+            }
+            > .col_logo {
+                width: $logo_block_1_width;
+                position: relative;
+                @media (max-width: 992px) {
+                    width: 96px;
+                }
+                > figure {
+                    margin-bottom: 0;
+                    position: absolute;
+                    top: -215px;
+                    left: 0;
+                    width: 100%;
+                    @media (max-width: 992px) {
+                        top: -150px;
+                    }
+                    @media (max-width: 576px) {
+                        position: static;
+                    }
+                    > img {
                         width: 100%;
-                        img {
-                            width: 100% !important;
-                        }
                     }
                 }
-                &:nth-child(2) {
-                    width: 752px;
-                    h1 {
-                        @media (max-width: 1024px) {
-                            font-size: 40px;
-                            line-height: 56px;
-                        }
+            }
+            > .col_slogan {
+                width: 752px;
+                @media (max-width: 992px) {
+                    width: 535px;
+                }
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+                > h1 {
+                    @media (max-width: 1024px) {
+                        font-size: 40px;
+                        line-height: 56px;
+                    }
+                    @media (max-width: 576px) {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+                    span {
                         @media (max-width: 576px) {
-                            font-size: 40px;
-                            line-height: 40px;
-                        }
-                        span {
-                            @media (max-width: 576px) {
-                                background: none !important;
-                            }
+                            background: none !important;
                         }
                     }
                 }
@@ -334,42 +362,56 @@ header {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media(max-width:576px){        
+        padding-top: 40px !important;        
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
+        width: 100%;
+        @media (max-width: 992px) {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
         > .wp-block-columns {
             margin-bottom: 0 !important;
-            &:first-child {
-                padding-bottom: 55px;
-                .wp-block-column {
-                    width: 450px;
-                    position: relative;
-                    flex-basis: unset;
-                    flex-grow: unset;
+        }
+        > .uncarnet {
+            padding-bottom: 45px;
+            > .wp-block-column {
+                width: 450px;
+                position: relative;
+                flex-basis: unset !important;
+                flex-grow: unset;
+                @media (max-width: 576px) {
+                    width: 318px;
+                }
+                > figure {
+                    position: absolute;
+                    top: 75px;
+                    left: 411px;
+                    height: 48px;
+                    width: 54px;
+                    margin-bottom: 0;
                     @media (max-width: 576px) {
-                        width: 318px;
+                        top: 84px;
+                        left: 117px;
+                        height: 32px;
+                        width: 36px;
                     }
-                    > figure {
-                        position: absolute;
-                        top: 75px;
-                        left: 411px;
-                        height: 48px;
-                        width: 54px;
-                        margin-bottom: 0;
-                        @media (max-width: 576px) {
-                            top: 84px;
-                            left: 117px;
-                            height: 32px;
-                            width: 36px;
-                        }
+                    >img{
+                        width: 100%;
                     }
                 }
             }
-            &:nth-child(2) {
-                margin-left: 451px;
-                > p {
-                    margin-bottom: 0;
-                }
+        }
+        > .taille {
+            margin-left: 451px;
+            @media (max-width: 992px) {
+                margin-left: 0;
+            }
+            > p {
+                margin-bottom: 0;
             }
         }
     }
@@ -380,12 +422,21 @@ header {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media (max-width: 992px) {
+        padding-bottom: 125px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
+        width: 100%;
+        @media (max-width: 992px) {
+            margin-left: 24px;
+        }
         > .wp-block-columns {
             margin-bottom: 0;
             > .wp-block-column {
                 position: relative;
+                flex-grow: unset;
+                flex-basis: unset;
                 > .owl_carousel_author {
                     > .owl-nav {
                         position: absolute;
@@ -441,9 +492,14 @@ header {
                     bottom: -80px;
                     right: 64px;
                     margin-bottom: 0;
+                    @media (max-width: 576px) {
+                        right: 24px;
+                        column-gap: 8px;
+                        bottom: -60px;
+                    }
                     > .wp-block-column {
-                        flex-grow: unset;
-                        flex-basis: unset;
+                        flex-grow: unset !important;
+                        flex-basis: unset !important;
                         &:first-child {
                             height: 34px;
                             width: 48px;
@@ -453,6 +509,9 @@ header {
                             }
                             > figure {
                                 margin-bottom: 0;
+                                > img {
+                                    width: 100%;
+                                }
                             }
                         }
                         &:last-child {
@@ -468,10 +527,12 @@ header {
                                     overflow: hidden;
                                     z-index: 1;
                                     display: block;
+                                    @media (max-width: 992px) {
+                                        background-color: $mau_2;
+                                    }
                                     @media (max-width: 576px) {
                                         font-size: 18px;
                                         line-height: 24px;
-                                        background-color: $mau_2;
                                     }
                                     &::first-letter {
                                         background-color: $mau_2;
@@ -511,6 +572,11 @@ header {
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
+        width: 100%;
+        @media (max-width: 992px) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
         > .wp-block-columns {
             > .wp-block-column {
                 position: relative;
@@ -519,6 +585,9 @@ header {
                     > img {
                         width: 100%;
                         margin-top: -100px;
+                        @media (max-width: 992px) {
+                            margin-top: 0;
+                        }
                     }
                 }
                 > .lactualite {
@@ -561,11 +630,14 @@ header {
                         padding: 0 24px;
                     }
                     @media (max-width: 576px) {
-                        flex-direction: column;
-                        row-gap: 32px;
+                        display: block;
                     }
                     > .item {
                         width: calc(100% / 4 - 30px);
+                        @media (max-width: 992px) {
+                            width: calc(100% / 2 - 20px);
+                            margin-bottom: 32px;
+                        }
                         @media (max-width: 576px) {
                             width: 100%;
                         }
@@ -600,9 +672,14 @@ header {
                     bottom: -80px;
                     right: 64px;
                     margin-bottom: 0;
+                    @media (max-width: 576px) {
+                        right: 24px;
+                        column-gap: 8px;
+                        bottom: -60px;
+                    }
                     > .wp-block-column {
-                        flex-grow: unset;
-                        flex-basis: unset;
+                        flex-grow: unset !important;
+                        flex-basis: unset !important;
                         &:first-child {
                             height: 34px;
                             width: 48px;
@@ -612,6 +689,9 @@ header {
                             }
                             > figure {
                                 margin-bottom: 0;
+                                > img {
+                                    width: 100%;
+                                }
                             }
                         }
                         &:last-child {
@@ -627,10 +707,12 @@ header {
                                     overflow: hidden;
                                     z-index: 1;
                                     display: block;
+                                    @media (max-width: 992px) {
+                                        background-color: $mau_2;
+                                    }
                                     @media (max-width: 576px) {
                                         font-size: 18px;
                                         line-height: 24px;
-                                        background-color: $mau_2;
                                     }
                                     &::first-letter {
                                         background-color: $mau_2;
@@ -670,6 +752,13 @@ header {
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
+        width: 100%;
+        @media (max-width: 992px) {
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
         > .wp-block-columns {
             column-gap: 9px;
             > .wp-block-column {
@@ -717,9 +806,14 @@ header {
                         align-items: center;
                         column-gap: 24px;
                         margin-bottom: 0;
+                        @media (max-width: 576px) {
+                            right: 24px;
+                            column-gap: 8px;
+                            bottom: -60px;
+                        }
                         > .wp-block-column {
-                            flex-grow: unset;
-                            flex-basis: unset;
+                            flex-grow: unset !important;
+                            flex-basis: unset !important;
                             &:first-child {
                                 height: 34px;
                                 width: 48px;
@@ -729,6 +823,9 @@ header {
                                 }
                                 > figure {
                                     margin-bottom: 0;
+                                    > img {
+                                        width: 100%;
+                                    }
                                 }
                             }
                             &:last-child {
@@ -744,10 +841,12 @@ header {
                                         overflow: hidden;
                                         z-index: 1;
                                         display: block;
+                                        @media (max-width: 992px) {
+                                            background-color: $mau_3;
+                                        }
                                         @media (max-width: 576px) {
                                             font-size: 18px;
                                             line-height: 24px;
-                                            background-color: $mau_3;
                                         }
                                         &::first-letter {
                                             background-color: $mau_3;
@@ -791,8 +890,13 @@ header {
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
+        width: 100%;
+        @media (max-width: 992px) {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
         > .wp-block-columns {
-            &:first-child{
+            &:first-child {
                 margin-bottom: 90px;
                 > .wp-block-column {
                     flex-grow: unset;
@@ -809,25 +913,34 @@ header {
                     }
                 }
             }
-            &:nth-child(2){
-                >.wp-block-column{
-                    >h3{
+            &:nth-child(2) {
+                column-gap: 124px;
+                flex-wrap: wrap;
+                @media (max-width: 992px) {
+                    column-gap: 20px;
+                }
+                > .wp-block-column {
+                    flex-grow: unset;
+                    flex-basis: unset;
+                    width: calc(100% / 3 - 107px);
+                    margin-left: 0;
+                    > h3 {
                         display: inline-block;
-                        padding-left:0 !important;
+                        padding-left: 0 !important;
                         padding-right: 0 !important;
                         padding-bottom: 0 !important;
                         padding-top: 0 !important;
                         margin-bottom: 48px;
                     }
                 }
-            }            
+            }
         }
     }
 }
 .box_footer {
     position: relative;
     padding-bottom: 40px;
-    .askwho_container{
+    .askwho_container {
         margin-left: 168px;
         margin-right: 40px;
         display: flex;
@@ -842,5 +955,5 @@ header {
                 }
             }
         }
-    }            
+    }
 }

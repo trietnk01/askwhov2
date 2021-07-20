@@ -12,8 +12,21 @@
 </head>
 
 <body>
+    <?php
+$show_ic_scrollDown = true;
+if (is_page('contact')) {
+    $show_ic_scrollDown = false;
+}
+if (intval(get_queried_object_id()) === 0) {
+    $show_ic_scrollDown = false;
+}
+if (boolval($show_ic_scrollDown) === true) {
+    ?>
     <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_scrollDown.svg'; ?>"
         alt="<?php echo get_bloginfo('name'); ?>" class="arrow_down">
+    <?php
+}
+?>
     <div class="menu_back_drop">
         <div class="askwho_container">
             <?php
