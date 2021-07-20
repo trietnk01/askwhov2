@@ -1,12 +1,19 @@
 .page_expertise {
     padding-top: 104px !important;
-    padding-bottom: 40px !important;
+    padding-bottom: 0px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media(max-width:576px){
+        padding-top: 120px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 552px;
+        @media(max-width:992px){
+            margin-left: 24px;
+            margin-right: 24px;
+        }
         > .page_name {
             margin-bottom: 0 !important;
             > .wp-block-column {
@@ -24,6 +31,9 @@
                     }
                 }
             }
+        }
+        >.page_content{
+            margin-bottom: 0;
         }
     }
 }

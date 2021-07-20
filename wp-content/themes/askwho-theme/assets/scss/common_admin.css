@@ -183,7 +183,7 @@
     .menu_back_drop {
       align-items: flex-start;
       position: absolute;
-      padding-top: 100px; } }
+      padding-top: 145px; } }
   .menu_back_drop .logoFooter {
     position: absolute;
     bottom: 40px;
@@ -208,7 +208,10 @@
     .menu_back_drop .askwho_container .mainmenu {
       list-style: none;
       padding: 0;
-      margin: 0; }
+      margin-bottom: 24px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0; }
       @media (max-width: 576px) {
         .menu_back_drop .askwho_container .mainmenu {
           margin-bottom: 25px; } }
@@ -233,7 +236,10 @@
     .menu_back_drop .askwho_container .i_special {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin-top: 0;
+      margin-bottom: 0px;
+      margin-left: 0;
+      margin-right: 0;
       display: none; }
       @media (max-width: 992px) {
         .menu_back_drop .askwho_container .i_special {
@@ -718,10 +724,11 @@ header {
           width: 480px; }
           .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .logo {
             width: 120px;
-            margin-bottom: 0; }
+            margin-bottom: 40px; }
             @media (max-width: 576px) {
               .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .logo {
-                width: 96px; } }
+                width: 96px;
+                margin-bottom: 0; } }
             .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .logo > img {
               width: 100%; }
           .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .boss_mobile {
@@ -877,7 +884,7 @@ header {
       @media (max-width: 576px) {
         .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
           flex-direction: column;
-          row-gap: 10px; } }
+          row-gap: 40px; } }
       .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
         flex-grow: unset !important;
         flex-basis: unset !important;
@@ -910,6 +917,10 @@ header {
     margin-right: 40px;
     display: flex;
     justify-content: flex-end; }
+    @media (max-width: 576px) {
+      .box_footer .askwho_container {
+        margin-left: 40px;
+        justify-content: center; } }
     .box_footer .askwho_container > a img {
       width: 120px; }
       @media (max-width: 576px) {

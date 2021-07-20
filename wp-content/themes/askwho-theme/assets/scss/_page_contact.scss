@@ -4,10 +4,17 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
-    height: 100vh;
+    height: 100vh;    
+    @media(max-width:576px){
+        padding-top: 120px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 552px;
+        @media(max-width:992px){
+            margin-left: 24px;
+            margin-right: 24px;
+        }
         > .page_name {
             margin-bottom: 0 !important;
             > .wp-block-column {
@@ -23,6 +30,18 @@
                             margin-bottom: 56px;
                         }
                     }
+                }
+                &:nth-child(2){
+                    >.contact_askwho{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        >.contact_excerption{
+            >.wp-block-column{
+                >.contact_askwho{
+                    margin-bottom: 0 !important;
                 }
             }
         }

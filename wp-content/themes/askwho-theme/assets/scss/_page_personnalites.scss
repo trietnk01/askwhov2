@@ -4,9 +4,16 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media(max-width:576px){
+        padding-top: 120px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
+        @media(max-width:992px){
+            margin-left: 24px;
+            margin-right: 24px;
+        }
         > .page_name {
             margin-bottom: 0 !important;
             > .wp-block-column {
@@ -25,12 +32,15 @@
                 }
             }
         }
-        > .slogan {            
+        > .slogan {
             margin-bottom: 55px;
-            .wp-block-column {
+            @media(max-width:576px){
+                margin-bottom: 40px;
+            }            
+            > .wp-block-column {
                 width: 450px;
                 position: relative;
-                flex-basis: unset;
+                flex-basis: unset !important;
                 flex-grow: unset;
                 @media (max-width: 576px) {
                     width: 318px;
@@ -39,21 +49,28 @@
                     position: absolute;
                     top: 75px;
                     left: 411px;
-                    height: 48px;
                     width: 54px;
                     margin-bottom: 0;
                     @media (max-width: 576px) {
                         top: 84px;
                         left: 117px;
-                        height: 32px;
                         width: 36px;
+                    }
+                    > img {
+                        width: 100%;
                     }
                 }
             }
         }
         > .excerption {
             margin-left: 451px;
-            margin-bottom: 80px !important;
+            margin-bottom: 80px;
+            @media(max-width:992px){
+                margin-left: 0;
+            }
+            @media(max-width:576px){
+                margin-bottom: 32px;
+            }
             > .wp-block-column {
                 > p {
                     margin-bottom: 0;

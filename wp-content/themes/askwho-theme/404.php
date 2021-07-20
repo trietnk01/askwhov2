@@ -9,11 +9,11 @@ get_header();
             Veuillez cliquer sur le lien suivant pour être redirigé vers la page d’accueil du site.
         </div>
         <div class="box_readmore">
-            <div>
+            <div class="askwho_icon">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_arrowRight.svg'; ?>"
                     alt="<?php echo get_bloginfo('name') ?>">
             </div>
-            <div>
+            <div class="askwho_lbl">
                 <a href="<?php echo site_url(); ?>">Accueil</a>
             </div>
         </div>

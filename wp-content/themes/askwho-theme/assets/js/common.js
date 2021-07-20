@@ -35,14 +35,14 @@ jQuery(document).ready(function ($) {
         viewScroll > Math.round(parseFloat($(val).offset().top)) &&
         viewScroll <= viewSection
       ) {
-        // $(section_ctrl).css({
-        //   'background-color': attr_bg,
-        //   'transition': '200ms',
-        // });    
-        // $('.box_footer').css({
-        //   'background-color':attr_bg,
-        //   'transition':'200ms'
-        // });    
+        $(section_ctrl).css({
+          'background-color': attr_bg,
+          'transition': '200ms',
+        });    
+        $('.box_footer').css({
+          'background-color':attr_bg,
+          'transition':'200ms'
+        });    
       }
     });
   });

@@ -131,7 +131,7 @@
     @media (max-width: 992px) {
         align-items: flex-start;
         position: absolute;
-        padding-top: 100px;
+        padding-top: 145px;
     }
     .logoFooter {
         position: absolute;
@@ -159,7 +159,10 @@
         .mainmenu {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin-bottom: 24px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
             @media (max-width: 576px) {
                 margin-bottom: 25px;
             }
@@ -188,8 +191,11 @@
         .i_special {
             list-style: none;
             padding: 0;
-            margin: 0;
-            display: none;
+            margin-top: 0;
+            margin-bottom: 0px;
+            margin-left: 0;
+            margin-right: 0;
+            display: none;            
             @media (max-width: 992px) {
                 display: block;
             }
@@ -773,9 +779,10 @@ header {
                     width: 480px;
                     > .logo {
                         width: 120px;
-                        margin-bottom: 0;
+                        margin-bottom: 40px;
                         @media (max-width: 576px) {
                             width: 96px;
+                            margin-bottom: 0;
                         }
                         > img {
                             width: 100%;
@@ -962,7 +969,7 @@ header {
                 }
                 @media(max-width:576px){
                     flex-direction: column;
-                    row-gap: 10px;                                        
+                    row-gap: 40px;                                        
                 }
                 > .wp-block-column {
                     flex-grow: unset !important;
@@ -1002,6 +1009,10 @@ header {
         margin-right: 40px;
         display: flex;
         justify-content: flex-end;
+        @media(max-width:576px){
+            margin-left: 40px;
+            justify-content: center;            
+        }
         > a {
             img {
                 width: 120px;
