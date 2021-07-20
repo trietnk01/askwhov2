@@ -118,7 +118,7 @@ ol {
 
 @media (min-width: 1921px) {
   .askwho_container {
-    max-width: 1920px;
+    max-width: 1688px;
     margin-left: auto !important;
     margin-right: auto !important; } }
 
@@ -701,7 +701,7 @@ header {
         position: relative; }
         .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav {
           position: absolute;
-          bottom: -80px;
+          bottom: -90px;
           left: 0; }
           @media (max-width: 576px) {
             .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav {
@@ -912,7 +912,7 @@ header {
 
 .box_boss {
   padding-top: 64px !important;
-  padding-bottom: 41px !important;
+  padding-bottom: 10px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
@@ -1044,7 +1044,7 @@ header {
   position: relative;
   padding-bottom: 40px; }
   .box_footer .askwho_container {
-    margin-left: 164px;
+    margin-left: 168px;
     margin-right: 40px;
     display: flex;
     justify-content: flex-end; }
@@ -1057,355 +1057,271 @@ header {
           height: 80px; } }
 
 .blog_post {
-  padding-left: 168px;
-  padding-right: 64px;
-  padding-top: 104px;
-  padding-bottom: 40px;
+  padding-top: 104px !important;
+  padding-bottom: 40px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
   background-color: #A5DFD3; }
-  @media (max-width: 992px) {
-    .blog_post {
-      padding-left: 24px;
-      padding-right: 24px; } }
-  .blog_post > .container_ask_who > .category_name {
-    font-family: "GeneralSans_Medium";
-    font-size: 104px;
-    line-height: 104px;
-    margin-bottom: 72px; }
-    @media (max-width: 992px) {
-      .blog_post > .container_ask_who > .category_name {
-        margin-bottom: 40px; } }
-    @media (max-width: 576px) {
-      .blog_post > .container_ask_who > .category_name {
-        font-size: 48px;
-        line-height: 64px; } }
-  .blog_post > .container_ask_who > .lactualite {
-    margin-bottom: 85px;
-    position: relative; }
-    @media (max-width: 992px) {
-      .blog_post > .container_ask_who > .lactualite {
-        margin-bottom: 45px; } }
-    .blog_post > .container_ask_who > .lactualite > h2 {
-      width: 212px; }
-    .blog_post > .container_ask_who > .lactualite > img {
-      height: 48px;
-      width: 54px;
-      position: absolute;
-      top: 70px;
-      left: 150px;
-      margin-bottom: 0; }
-      @media (max-width: 576px) {
-        .blog_post > .container_ask_who > .lactualite > img {
-          top: 48px;
-          left: 105px;
-          height: 32px;
-          width: 36px; } }
-  .blog_post > .container_ask_who > .blog_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 40px; }
-    @media (max-width: 992px) {
-      .blog_post > .container_ask_who > .blog_wrapper {
-        column-gap: 20px; } }
-    @media (max-width: 576px) {
-      .blog_post > .container_ask_who > .blog_wrapper {
-        flex-direction: column;
-        row-gap: 32px; } }
-    .blog_post > .container_ask_who > .blog_wrapper > .item {
-      width: calc(100% / 4 - 30px); }
+  .blog_post > .askwho_container {
+    margin-left: 168px;
+    margin-right: 64px; }
+    .blog_post > .askwho_container > .category_name {
+      font-family: "GeneralSans_Medium";
+      font-size: 104px;
+      line-height: 104px;
+      margin-bottom: 72px; }
       @media (max-width: 992px) {
-        .blog_post > .container_ask_who > .blog_wrapper > .item {
-          width: calc(100% / 4 - 15px); } }
+        .blog_post > .askwho_container > .category_name {
+          margin-bottom: 40px; } }
       @media (max-width: 576px) {
-        .blog_post > .container_ask_who > .blog_wrapper > .item {
-          width: 100%; } }
-      .blog_post > .container_ask_who > .blog_wrapper > .item > .author_image > img {
-        width: 100%; }
-      .blog_post > .container_ask_who > .blog_wrapper > .item > .post_date {
-        margin-bottom: 0px;
-        font-family: "GeneralSans_Regular";
-        font-size: 16px;
-        line-height: 32px; }
-      .blog_post > .container_ask_who > .blog_wrapper > .item > .post_title a {
-        font-family: "GeneralSans_Medium";
-        font-size: 20px;
-        line-height: 32px; }
-        @media (max-width: 576px) {
-          .blog_post > .container_ask_who > .blog_wrapper > .item > .post_title a {
-            font-size: 16px;
-            line-height: 24px; } }
-  .blog_post > .container_ask_who > .box_readmore {
-    display: flex;
-    align-items: center;
-    column-gap: 24px;
-    margin-top: 72px; }
-    @media (max-width: 992px) {
-      .blog_post > .container_ask_who > .box_readmore {
-        margin-top: 56px; } }
-    @media (max-width: 576px) {
-      .blog_post > .container_ask_who > .box_readmore {
-        column-gap: 7px; } }
-    .blog_post > .container_ask_who > .box_readmore > img {
-      height: 34px;
-      width: 48px; }
-      @media (max-width: 576px) {
-        .blog_post > .container_ask_who > .box_readmore > img {
-          height: 22.67px;
-          width: 32px; } }
-      .blog_post > .container_ask_who > .box_readmore > img > figure {
-        margin-bottom: 0; }
-    .blog_post > .container_ask_who > .box_readmore > button {
-      font-family: "GeneralSans_Bold";
-      font-size: 24px;
-      letter-spacing: 0;
-      line-height: 32px;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      display: block;
-      background: none;
-      border: 0;
-      cursor: pointer; }
-      @media (max-width: 576px) {
-        .blog_post > .container_ask_who > .box_readmore > button {
-          font-size: 18px;
-          line-height: 24px;
-          background-color: #F0E87B; } }
-      .blog_post > .container_ask_who > .box_readmore > button::first-letter {
-        background-color: #F0E87B; }
-      .blog_post > .container_ask_who > .box_readmore > button::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: #F0E87B;
-        transition-duration: 500ms;
-        z-index: -1;
-        display: block; }
-      .blog_post > .container_ask_who > .box_readmore > button:hover::before {
-        left: 0; }
-
-.single_post {
-  padding-left: 168px;
-  padding-right: 64px;
-  padding-top: 125px;
-  padding-bottom: 40px;
-  display: flex;
-  column-gap: 64px;
-  flex-wrap: wrap;
-  background-color: #A5DFD3; }
-  @media (max-width: 992px) {
-    .single_post {
-      padding-left: 24px;
-      padding-right: 24px; } }
-  @media (max-width: 576px) {
-    .single_post {
-      flex-direction: column-reverse;
-      padding-bottom: 0; } }
-  .single_post > .single_col {
-    width: calc(100% / 2 - 32px); }
-    @media (max-width: 576px) {
-      .single_post > .single_col {
-        width: 100%;
-        margin-bottom: 16px; } }
-    .single_post > .single_col > .single_title {
-      font-family: "GeneralSans_Bold";
-      font-size: 40px;
-      line-height: 48px;
-      margin-bottom: 16px; }
-      @media (max-width: 576px) {
-        .single_post > .single_col > .single_title {
-          font-size: 28px;
-          line-height: 36px; } }
-    .single_post > .single_col > .single_date {
-      font-family: "GeneralSans_Regular";
-      font-size: 16px;
-      line-height: 32px;
-      margin-bottom: 24px; }
-      @media (max-width: 576px) {
-        .single_post > .single_col > .single_date {
-          margin-bottom: 32px; } }
-    .single_post > .single_col img {
-      width: 100%; }
-
-.personnalites_page {
-  padding-left: 168px;
-  padding-right: 64px;
-  padding-top: 104px;
-  padding-bottom: 40px; }
-  @media (max-width: 992px) {
-    .personnalites_page {
-      padding-left: 24px;
-      padding-right: 24px; } }
-  @media (max-width: 576px) {
-    .personnalites_page {
-      padding-top: 120px; } }
-  .personnalites_page > div > h1 {
-    font-family: "GeneralSans_Medium";
-    font-size: 104px;
-    line-height: 104px;
-    margin-bottom: 72px; }
-    @media (max-width: 576px) {
-      .personnalites_page > div > h1 {
-        font-size: 48px;
-        line-height: 64px;
-        margin-bottom: 56px; } }
-  .personnalites_page > div > div:nth-child(2) {
-    margin-bottom: 50px; }
-    .personnalites_page > div > div:nth-child(2) > div {
-      width: 450px;
+        .blog_post > .askwho_container > .category_name {
+          font-size: 48px;
+          line-height: 64px; } }
+    .blog_post > .askwho_container > .lactualite {
+      margin-bottom: 85px;
       position: relative; }
-      @media (max-width: 576px) {
-        .personnalites_page > div > div:nth-child(2) > div {
-          width: 318px; } }
-      .personnalites_page > div > div:nth-child(2) > div > figure {
-        position: absolute;
-        top: 75px;
-        left: 411px;
+      @media (max-width: 992px) {
+        .blog_post > .askwho_container > .lactualite {
+          margin-bottom: 45px; } }
+      .blog_post > .askwho_container > .lactualite > h2 {
+        width: 212px; }
+      .blog_post > .askwho_container > .lactualite > img {
         height: 48px;
         width: 54px;
+        position: absolute;
+        top: 70px;
+        left: 150px;
         margin-bottom: 0; }
         @media (max-width: 576px) {
-          .personnalites_page > div > div:nth-child(2) > div > figure {
-            top: 84px;
-            left: 117px;
+          .blog_post > .askwho_container > .lactualite > img {
+            top: 48px;
+            left: 105px;
             height: 32px;
             width: 36px; } }
-  .personnalites_page > div > div:nth-child(3) {
-    padding-left: 445px;
-    margin-bottom: 80px; }
-    @media (max-width: 992px) {
-      .personnalites_page > div > div:nth-child(3) {
-        padding-left: 0; } }
-    .personnalites_page > div > div:nth-child(3) > div {
-      width: 766px; }
+    .blog_post > .askwho_container > .blog_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 40px; }
       @media (max-width: 992px) {
-        .personnalites_page > div > div:nth-child(3) > div {
-          width: 100%; } }
-      .personnalites_page > div > div:nth-child(3) > div > p {
-        margin-bottom: 0; }
-  .personnalites_page > div > div:nth-child(4) {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 24px; }
-    @media (max-width: 576px) {
-      .personnalites_page > div > div:nth-child(4) {
-        flex-direction: column;
-        row-gap: 32px; } }
-    .personnalites_page > div > div:nth-child(4) > div {
-      width: calc(100% / 4 - 18px); }
+        .blog_post > .askwho_container > .blog_wrapper {
+          column-gap: 20px; } }
       @media (max-width: 576px) {
-        .personnalites_page > div > div:nth-child(4) > div {
-          width: 100%; } }
-      .personnalites_page > div > div:nth-child(4) > div > img {
-        width: 100%;
-        margin-bottom: 16px; }
-      .personnalites_page > div > div:nth-child(4) > div > .author_name {
-        font-family: "GeneralSans_Medium"; }
-      .personnalites_page > div > div:nth-child(4) > div > .author_function {
-        font-family: "GeneralSans_Regular";
-        font-size: 18px;
-        line-height: 32px; }
+        .blog_post > .askwho_container > .blog_wrapper {
+          flex-direction: column;
+          row-gap: 32px; } }
+      .blog_post > .askwho_container > .blog_wrapper > .item {
+        width: calc(100% / 4 - 30px); }
+        @media (max-width: 992px) {
+          .blog_post > .askwho_container > .blog_wrapper > .item {
+            width: calc(100% / 4 - 15px); } }
+        @media (max-width: 576px) {
+          .blog_post > .askwho_container > .blog_wrapper > .item {
+            width: 100%; } }
+        .blog_post > .askwho_container > .blog_wrapper > .item > .author_image > img {
+          width: 100%; }
+        .blog_post > .askwho_container > .blog_wrapper > .item > .post_date {
+          margin-bottom: 0px;
+          font-family: "GeneralSans_Regular";
+          font-size: 16px;
+          line-height: 32px; }
+        .blog_post > .askwho_container > .blog_wrapper > .item > .post_title a {
+          font-family: "GeneralSans_Medium";
+          font-size: 20px;
+          line-height: 32px; }
+          @media (max-width: 576px) {
+            .blog_post > .askwho_container > .blog_wrapper > .item > .post_title a {
+              font-size: 16px;
+              line-height: 24px; } }
+    .blog_post > .askwho_container > .box_readmore {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      margin-top: 72px; }
+      @media (max-width: 992px) {
+        .blog_post > .askwho_container > .box_readmore {
+          margin-top: 56px; } }
+      @media (max-width: 576px) {
+        .blog_post > .askwho_container > .box_readmore {
+          column-gap: 7px; } }
+      .blog_post > .askwho_container > .box_readmore > img {
+        height: 34px;
+        width: 48px; }
+        @media (max-width: 576px) {
+          .blog_post > .askwho_container > .box_readmore > img {
+            height: 22.67px;
+            width: 32px; } }
+        .blog_post > .askwho_container > .box_readmore > img > figure {
+          margin-bottom: 0; }
+      .blog_post > .askwho_container > .box_readmore > button {
+        font-family: "GeneralSans_Bold";
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 32px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        display: block;
+        background: none;
+        border: 0;
+        cursor: pointer; }
+        @media (max-width: 576px) {
+          .blog_post > .askwho_container > .box_readmore > button {
+            font-size: 18px;
+            line-height: 24px;
+            background-color: #F0E87B; } }
+        .blog_post > .askwho_container > .box_readmore > button::first-letter {
+          background-color: #F0E87B; }
+        .blog_post > .askwho_container > .box_readmore > button::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: #F0E87B;
+          transition-duration: 500ms;
+          z-index: -1;
+          display: block; }
+        .blog_post > .askwho_container > .box_readmore > button:hover::before {
+          left: 0; }
 
-.agence_page {
-  padding-left: 168px;
-  padding-right: 552px;
-  padding-top: 104px;
-  padding-bottom: 40px; }
-  @media (max-width: 1024px) {
-    .agence_page {
-      padding-right: 24px; } }
-  @media (max-width: 992px) {
-    .agence_page {
-      padding-left: 24px; } }
-  @media (max-width: 576px) {
-    .agence_page {
-      padding-top: 120px; } }
-  .agence_page > div > h1 {
-    font-family: "GeneralSans_Medium";
-    font-size: 104px;
-    line-height: 104px;
-    margin-bottom: 72px; }
-    @media (max-width: 576px) {
-      .agence_page > div > h1 {
-        font-size: 48px;
-        line-height: 64px;
-        margin-bottom: 56px; } }
-  .agence_page > div > div > div > .contact_askwho a {
-    font-family: "GeneralSans_Medium";
-    font-size: 24px;
-    line-height: 32px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    display: inline-block; }
-    .agence_page > div > div > div > .contact_askwho a::first-letter {
-      background-color: #F0E87B; }
-    .agence_page > div > div > div > .contact_askwho a::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: #F0E87B;
-      transition-duration: 500ms;
-      z-index: -1;
-      display: block; }
-    .agence_page > div > div > div > .contact_askwho a:hover::before {
-      left: 0; }
-  .agence_page > div > .contact_box > .contact_notice {
-    margin-bottom: 40px; }
-  .agence_page > div > .contact_box > .box_readmore {
-    display: flex;
-    align-items: center;
-    column-gap: 24px; }
-    @media (max-width: 576px) {
-      .agence_page > div > .contact_box > .box_readmore {
-        right: 24px;
-        column-gap: 8px;
-        bottom: -60px; } }
-    .agence_page > div > .contact_box > .box_readmore > div:first-child {
-      height: 34px;
-      width: 48px; }
+.single_post {
+  padding-top: 128px !important;
+  padding-bottom: 40px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
+  background-color: #A5DFD3; }
+  .single_post > .askwho_container {
+    margin-left: 168px;
+    margin-right: 64px; }
+    .single_post > .askwho_container > .box_wrapper {
+      display: flex;
+      column-gap: 64px;
+      flex-wrap: wrap; }
+      .single_post > .askwho_container > .box_wrapper > .single_col {
+        width: calc(100% / 2 - 32px); }
+        @media (max-width: 576px) {
+          .single_post > .askwho_container > .box_wrapper > .single_col {
+            width: 100%;
+            margin-bottom: 16px; } }
+        .single_post > .askwho_container > .box_wrapper > .single_col > .single_title {
+          font-family: "GeneralSans_Bold";
+          font-size: 40px;
+          line-height: 48px;
+          margin-bottom: 16px; }
+          @media (max-width: 576px) {
+            .single_post > .askwho_container > .box_wrapper > .single_col > .single_title {
+              font-size: 28px;
+              line-height: 36px; } }
+        .single_post > .askwho_container > .box_wrapper > .single_col > .single_date {
+          font-family: "GeneralSans_Regular";
+          font-size: 16px;
+          line-height: 32px;
+          margin-bottom: 24px; }
+          @media (max-width: 576px) {
+            .single_post > .askwho_container > .box_wrapper > .single_col > .single_date {
+              margin-bottom: 32px; } }
+        .single_post > .askwho_container > .box_wrapper > .single_col img {
+          width: 100%; }
+
+.personnalites_page {
+  padding-top: 104px !important;
+  padding-bottom: 40px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important; }
+  .personnalites_page > .askwho_container {
+    margin-left: 168px;
+    margin-right: 64px; }
+    .personnalites_page > .askwho_container > .page_name {
+      margin-bottom: 0 !important; }
+      .personnalites_page > .askwho_container > .page_name > .wp-block-column:first-child > h1 {
+        font-family: "GeneralSans_Medium";
+        font-size: 104px;
+        line-height: 104px;
+        margin-bottom: 72px; }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .page_name > .wp-block-column:first-child > h1 {
+            font-size: 48px;
+            line-height: 64px;
+            margin-bottom: 56px; } }
+    .personnalites_page > .askwho_container > .slogan {
+      margin-bottom: 55px; }
+      .personnalites_page > .askwho_container > .slogan .wp-block-column {
+        width: 450px;
+        position: relative;
+        flex-basis: unset;
+        flex-grow: unset; }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .slogan .wp-block-column {
+            width: 318px; } }
+        .personnalites_page > .askwho_container > .slogan .wp-block-column > figure {
+          position: absolute;
+          top: 75px;
+          left: 411px;
+          height: 48px;
+          width: 54px;
+          margin-bottom: 0; }
+          @media (max-width: 576px) {
+            .personnalites_page > .askwho_container > .slogan .wp-block-column > figure {
+              top: 84px;
+              left: 117px;
+              height: 32px;
+              width: 36px; } }
+    .personnalites_page > .askwho_container > .excerption {
+      margin-left: 451px;
+      margin-bottom: 80px !important; }
+      .personnalites_page > .askwho_container > .excerption > .wp-block-column > p {
+        margin-bottom: 0; }
+    .personnalites_page > .askwho_container > .personnalites_author_part {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 24px;
+      margin-bottom: 0 !important; }
       @media (max-width: 576px) {
-        .agence_page > div > .contact_box > .box_readmore > div:first-child {
-          height: 22.67px;
-          width: 32px; } }
-      .agence_page > div > .contact_box > .box_readmore > div:first-child > img {
-        width: 100%; }
-    .agence_page > div > .contact_box > .box_readmore > div:last-child > a {
-      font-family: "GeneralSans_Bold";
-      font-size: 24px;
-      letter-spacing: 0;
-      line-height: 32px;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      display: block; }
-      @media (max-width: 576px) {
-        .agence_page > div > .contact_box > .box_readmore > div:last-child > a {
+        .personnalites_page > .askwho_container > .personnalites_author_part {
+          flex-direction: column;
+          row-gap: 32px; } }
+      .personnalites_page > .askwho_container > .personnalites_author_part > div {
+        width: calc(100% / 4 - 18px); }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .personnalites_author_part > div {
+            width: 100%; } }
+        .personnalites_page > .askwho_container > .personnalites_author_part > div > img {
+          width: 100%;
+          margin-bottom: 16px; }
+        .personnalites_page > .askwho_container > .personnalites_author_part > div > .author_name {
+          font-family: "GeneralSans_Medium"; }
+        .personnalites_page > .askwho_container > .personnalites_author_part > div > .author_function {
+          font-family: "GeneralSans_Regular";
           font-size: 18px;
-          line-height: 24px;
-          background-color: #F0E87B; } }
-      .agence_page > div > .contact_box > .box_readmore > div:last-child > a::first-letter {
-        background-color: #F0E87B; }
-      .agence_page > div > .contact_box > .box_readmore > div:last-child > a::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: #F0E87B;
-        transition-duration: 500ms;
-        z-index: -1;
-        display: block; }
-      .agence_page > div > .contact_box > .box_readmore > div:last-child > a:hover::before {
-        left: 0; }
+          line-height: 32px; }
+
+.page_expertise {
+  padding-top: 104px !important;
+  padding-bottom: 40px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important; }
+  .page_expertise > .askwho_container {
+    margin-left: 168px;
+    margin-right: 552px; }
+    .page_expertise > .askwho_container > .page_name {
+      margin-bottom: 0 !important; }
+      .page_expertise > .askwho_container > .page_name > .wp-block-column:first-child > h1 {
+        font-family: "GeneralSans_Medium";
+        font-size: 104px;
+        line-height: 104px;
+        margin-bottom: 72px; }
+        @media (max-width: 576px) {
+          .page_expertise > .askwho_container > .page_name > .wp-block-column:first-child > h1 {
+            font-size: 48px;
+            line-height: 64px;
+            margin-bottom: 56px; } }
 
 .error_page {
   background-color: #8DC8E8; }

@@ -24,15 +24,19 @@ if (have_posts()) {
 wp_reset_postdata();
 ?>
 <div class="box_section single_post">
-    <div class="single_col">
-        <h1 class="single_title"><?php echo $title; ?></h1>
-        <div class="single_date"><?php echo $date_vn; ?></div>
-        <div class="single_content">
-            <?php echo $content; ?>
+    <div class="askwho_container">
+        <div class="box_wrapper">
+            <div class="single_col">
+                <h1 class="single_title"><?php echo $title; ?></h1>
+                <div class="single_date"><?php echo $date_vn; ?></div>
+                <div class="single_content">
+                    <?php echo $content; ?>
+                </div>
+            </div>
+            <div class="single_col">
+                <img src="<?php echo $featured_image; ?>" alt="<?php echo $title; ?>">
+            </div>
         </div>
-    </div>
-    <div class="single_col">
-        <img src="<?php echo $featured_image; ?>" alt="<?php echo $title; ?>">
     </div>
 </div>
 <?php

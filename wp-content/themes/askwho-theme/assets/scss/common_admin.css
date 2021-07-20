@@ -402,7 +402,7 @@ header {
         position: relative; }
         .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav {
           position: absolute;
-          bottom: -80px;
+          bottom: -90px;
           left: 0; }
           @media (max-width: 576px) {
             .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav {
@@ -613,7 +613,7 @@ header {
 
 .box_boss {
   padding-top: 64px !important;
-  padding-bottom: 41px !important;
+  padding-bottom: 10px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
@@ -745,7 +745,7 @@ header {
   position: relative;
   padding-bottom: 40px; }
   .box_footer .askwho_container {
-    margin-left: 164px;
+    margin-left: 168px;
     margin-right: 40px;
     display: flex;
     justify-content: flex-end; }

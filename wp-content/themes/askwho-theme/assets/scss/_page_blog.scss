@@ -1,14 +1,13 @@
 .blog_post {
-    padding-left: 168px;
-    padding-right: 64px;
-    padding-top: 104px;
-    padding-bottom: 40px;
-    background-color: $mau_4;    
-    @media (max-width: 992px) {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    > .container_ask_who {        
+    padding-top: 104px !important;
+    padding-bottom: 40px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+    background-color: $mau_4;
+    > .askwho_container {
+        margin-left: 168px;
+        margin-right: 64px;      
         > .category_name {
             font-family: $f_GeneralSans_Medium;
             font-size: 104px;
