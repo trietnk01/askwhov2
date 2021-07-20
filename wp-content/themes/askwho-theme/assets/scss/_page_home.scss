@@ -62,10 +62,8 @@
     }
     img {
         width: 72px;
-        height: 72px;
         @media (max-width: 576px) {
             width: 56px;
-            height: 56px;
         }
     }
 }
@@ -362,8 +360,9 @@ header {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
-    @media(max-width:576px){        
-        padding-top: 40px !important;        
+    @media (max-width: 576px) {
+        padding-top: 40px !important;
+        padding-bottom: 32px !important;
     }
     > .askwho_container {
         margin-left: 168px;
@@ -390,16 +389,14 @@ header {
                     position: absolute;
                     top: 75px;
                     left: 411px;
-                    height: 48px;
                     width: 54px;
                     margin-bottom: 0;
                     @media (max-width: 576px) {
                         top: 84px;
                         left: 117px;
-                        height: 32px;
                         width: 36px;
                     }
-                    >img{
+                    > img {
                         width: 100%;
                     }
                 }
@@ -410,8 +407,10 @@ header {
             @media (max-width: 992px) {
                 margin-left: 0;
             }
-            > p {
-                margin-bottom: 0;
+            > .wp-block-column {
+                > p {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -569,6 +568,9 @@ header {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media (max-width: 576px) {
+        padding-bottom: 100px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
@@ -582,6 +584,9 @@ header {
                 position: relative;
                 > figure {
                     margin-bottom: 56px;
+                    @media (max-width: 576px) {
+                        margin-bottom: 40px;
+                    }
                     > img {
                         width: 100%;
                         margin-top: -100px;
@@ -607,7 +612,6 @@ header {
                             }
                         }
                         > figure {
-                            height: 48px;
                             width: 54px;
                             position: absolute;
                             top: 70px;
@@ -616,7 +620,6 @@ header {
                             @media (max-width: 576px) {
                                 top: 45px;
                                 left: 115px;
-                                height: 32px;
                                 width: 36px;
                             }
                         }
@@ -675,7 +678,7 @@ header {
                     @media (max-width: 576px) {
                         right: 24px;
                         column-gap: 8px;
-                        bottom: -60px;
+                        bottom: -45px;
                     }
                     > .wp-block-column {
                         flex-grow: unset !important;
@@ -749,15 +752,17 @@ header {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media (max-width: 576px) {
+        padding-top: 40px !important;
+        padding-bottom: 20px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
         width: 100%;
         @media (max-width: 992px) {
-            margin-left: 24px;
-            margin-right: 24px;
-            padding-top: 40px;
-            padding-bottom: 80px;
+            margin-left: 40px;
+            margin-right: 40px;
         }
         > .wp-block-columns {
             column-gap: 9px;
@@ -766,10 +771,22 @@ header {
                 flex-basis: unset;
                 &:first-child {
                     width: 480px;
-                    > figure {
+                    > .logo {
                         width: 120px;
-                        height: 120px;
-                        margin-bottom: 40px;
+                        margin-bottom: 0;
+                        @media (max-width: 576px) {
+                            width: 96px;
+                        }
+                        > img {
+                            width: 100%;
+                        }
+                    }
+                    > .boss_mobile {
+                        display: none;
+                        margin-bottom: 0;
+                        @media (max-width: 576px) {
+                            display: block;
+                        }
                         > img {
                             width: 100%;
                         }
@@ -876,6 +893,15 @@ header {
                 }
                 &:last-child {
                     margin-left: auto;
+                    > .boss_desktop {
+                        margin-bottom: 0;
+                        @media (max-width: 576px) {
+                            display: none;
+                        }
+                        > img {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -883,10 +909,13 @@ header {
 }
 .box_ex_co_ac {
     padding-top: 56px !important;
-    padding-bottom: 55px !important;
+    padding-bottom: 40px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media (max-width: 576px) {
+        padding-top: 40px !important;
+    }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
@@ -898,32 +927,54 @@ header {
         > .wp-block-columns {
             &:first-child {
                 margin-bottom: 90px;
+                @media(max-width:576px){
+                    margin-bottom: 60px;
+                }
                 > .wp-block-column {
-                    flex-grow: unset;
-                    flex-basis: unset;
+                    flex-grow: unset !important;
+                    flex-basis: unset !important;
                     width: 455px;
                     position: relative;
+                    @media (max-width: 576px) {
+                        width: 318px;
+                    }
                     > figure {
                         position: absolute;
                         top: 75px;
                         left: 368px;
-                        height: 48px;
                         width: 54px;
                         margin-bottom: 0;
+                        @media (max-width: 576px) {
+                            top: 78px;
+                            left: 170px;
+                            height: 32px;
+                            width: 36px;
+                        }
                     }
                 }
             }
             &:nth-child(2) {
                 column-gap: 124px;
                 flex-wrap: wrap;
+                margin-bottom: 0;
                 @media (max-width: 992px) {
                     column-gap: 20px;
                 }
+                @media(max-width:576px){
+                    flex-direction: column;
+                    row-gap: 10px;                                        
+                }
                 > .wp-block-column {
-                    flex-grow: unset;
-                    flex-basis: unset;
+                    flex-grow: unset !important;
+                    flex-basis: unset !important;
                     width: calc(100% / 3 - 107px);
                     margin-left: 0;
+                    @media(max-width:992px){
+                        width: calc(100% / 3 - 14px);
+                    }
+                    @media(max-width:576px){
+                        width: 100%;
+                    }
                     > h3 {
                         display: inline-block;
                         padding-left: 0 !important;
@@ -931,6 +982,12 @@ header {
                         padding-bottom: 0 !important;
                         padding-top: 0 !important;
                         margin-bottom: 48px;
+                        @media(max-width:576px){
+                            margin-bottom: 32px;
+                        }
+                    }
+                    >p{
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -948,10 +1005,8 @@ header {
         > a {
             img {
                 width: 120px;
-                height: 120px;
                 @media (max-width: 576px) {
                     width: 80px;
-                    height: 80px;
                 }
             }
         }

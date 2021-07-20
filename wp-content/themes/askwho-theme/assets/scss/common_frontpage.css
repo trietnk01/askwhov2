@@ -445,12 +445,10 @@ body.hidden-scroll {
       top: 20px;
       left: 20px; } }
   .logoMain img {
-    width: 72px;
-    height: 72px; }
+    width: 72px; }
     @media (max-width: 576px) {
       .logoMain img {
-        width: 56px;
-        height: 56px; } }
+        width: 56px; } }
 
 .menu_sidebar {
   width: 105px;
@@ -711,7 +709,8 @@ header {
   margin-bottom: 0 !important; }
   @media (max-width: 576px) {
     .box_contacts {
-      padding-top: 40px !important; } }
+      padding-top: 40px !important;
+      padding-bottom: 32px !important; } }
   .box_contacts > .askwho_container {
     margin-left: 168px;
     margin-right: 64px;
@@ -736,14 +735,12 @@ header {
           position: absolute;
           top: 75px;
           left: 411px;
-          height: 48px;
           width: 54px;
           margin-bottom: 0; }
           @media (max-width: 576px) {
             .box_contacts > .askwho_container > .uncarnet > .wp-block-column > figure {
               top: 84px;
               left: 117px;
-              height: 32px;
               width: 36px; } }
           .box_contacts > .askwho_container > .uncarnet > .wp-block-column > figure > img {
             width: 100%; }
@@ -752,7 +749,7 @@ header {
       @media (max-width: 992px) {
         .box_contacts > .askwho_container > .taille {
           margin-left: 0; } }
-      .box_contacts > .askwho_container > .taille > p {
+      .box_contacts > .askwho_container > .taille > .wp-block-column > p {
         margin-bottom: 0; }
 
 .box_person {
@@ -874,6 +871,9 @@ header {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
+  @media (max-width: 576px) {
+    .box_banner {
+      padding-bottom: 100px !important; } }
   .box_banner > .askwho_container {
     margin-left: 168px;
     margin-right: 64px;
@@ -886,6 +886,9 @@ header {
       position: relative; }
       .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > figure {
         margin-bottom: 56px; }
+        @media (max-width: 576px) {
+          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > figure {
+            margin-bottom: 40px; } }
         .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > figure > img {
           width: 100%;
           margin-top: -100px; }
@@ -908,7 +911,6 @@ header {
               .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column > h2 {
                 width: 218px; } }
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column > figure {
-            height: 48px;
             width: 54px;
             position: absolute;
             top: 70px;
@@ -918,7 +920,6 @@ header {
               .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column > figure {
                 top: 45px;
                 left: 115px;
-                height: 32px;
                 width: 36px; } }
       .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
         display: flex;
@@ -965,7 +966,7 @@ header {
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .box_readmore {
             right: 24px;
             column-gap: 8px;
-            bottom: -60px; } }
+            bottom: -45px; } }
         .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .box_readmore > .wp-block-column {
           flex-grow: unset !important;
           flex-basis: unset !important; }
@@ -1022,16 +1023,18 @@ header {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
+  @media (max-width: 576px) {
+    .box_boss {
+      padding-top: 40px !important;
+      padding-bottom: 20px !important; } }
   .box_boss > .askwho_container {
     margin-left: 168px;
     margin-right: 64px;
     width: 100%; }
     @media (max-width: 992px) {
       .box_boss > .askwho_container {
-        margin-left: 24px;
-        margin-right: 24px;
-        padding-top: 40px;
-        padding-bottom: 80px; } }
+        margin-left: 40px;
+        margin-right: 40px; } }
     .box_boss > .askwho_container > .wp-block-columns {
       column-gap: 9px; }
       .box_boss > .askwho_container > .wp-block-columns > .wp-block-column {
@@ -1039,11 +1042,21 @@ header {
         flex-basis: unset; }
         .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child {
           width: 480px; }
-          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > figure {
+          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .logo {
             width: 120px;
-            height: 120px;
-            margin-bottom: 40px; }
-            .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > figure > img {
+            margin-bottom: 0; }
+            @media (max-width: 576px) {
+              .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .logo {
+                width: 96px; } }
+            .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .logo > img {
+              width: 100%; }
+          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .boss_mobile {
+            display: none;
+            margin-bottom: 0; }
+            @media (max-width: 576px) {
+              .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .boss_mobile {
+                display: block; } }
+            .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .boss_mobile > img {
               width: 100%; }
           .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .slogan {
             font-family: "GeneralSans_Semibold";
@@ -1130,13 +1143,23 @@ header {
                       left: 0; }
         .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:last-child {
           margin-left: auto; }
+          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:last-child > .boss_desktop {
+            margin-bottom: 0; }
+            @media (max-width: 576px) {
+              .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:last-child > .boss_desktop {
+                display: none; } }
+            .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:last-child > .boss_desktop > img {
+              width: 100%; }
 
 .box_ex_co_ac {
   padding-top: 56px !important;
-  padding-bottom: 55px !important;
+  padding-bottom: 40px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
+  @media (max-width: 576px) {
+    .box_ex_co_ac {
+      padding-top: 40px !important; } }
   .box_ex_co_ac > .askwho_container {
     margin-left: 168px;
     margin-right: 64px;
@@ -1147,29 +1170,51 @@ header {
         margin-right: 24px; } }
     .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child {
       margin-bottom: 90px; }
+      @media (max-width: 576px) {
+        .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child {
+          margin-bottom: 60px; } }
       .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column {
-        flex-grow: unset;
-        flex-basis: unset;
+        flex-grow: unset !important;
+        flex-basis: unset !important;
         width: 455px;
         position: relative; }
+        @media (max-width: 576px) {
+          .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column {
+            width: 318px; } }
         .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column > figure {
           position: absolute;
           top: 75px;
           left: 368px;
-          height: 48px;
           width: 54px;
           margin-bottom: 0; }
+          @media (max-width: 576px) {
+            .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column > figure {
+              top: 78px;
+              left: 170px;
+              height: 32px;
+              width: 36px; } }
     .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
       column-gap: 124px;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-bottom: 0; }
       @media (max-width: 992px) {
         .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
           column-gap: 20px; } }
+      @media (max-width: 576px) {
+        .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
+          flex-direction: column;
+          row-gap: 10px; } }
       .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
-        flex-grow: unset;
-        flex-basis: unset;
+        flex-grow: unset !important;
+        flex-basis: unset !important;
         width: calc(100% / 3 - 107px);
         margin-left: 0; }
+        @media (max-width: 992px) {
+          .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
+            width: calc(100% / 3 - 14px); } }
+        @media (max-width: 576px) {
+          .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
+            width: 100%; } }
         .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column > h3 {
           display: inline-block;
           padding-left: 0 !important;
@@ -1177,6 +1222,11 @@ header {
           padding-bottom: 0 !important;
           padding-top: 0 !important;
           margin-bottom: 48px; }
+          @media (max-width: 576px) {
+            .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column > h3 {
+              margin-bottom: 32px; } }
+        .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column > p {
+          margin-bottom: 0; }
 
 .box_footer {
   position: relative;
@@ -1187,12 +1237,10 @@ header {
     display: flex;
     justify-content: flex-end; }
     .box_footer .askwho_container > a img {
-      width: 120px;
-      height: 120px; }
+      width: 120px; }
       @media (max-width: 576px) {
         .box_footer .askwho_container > a img {
-          width: 80px;
-          height: 80px; } }
+          width: 80px; } }
 
 .blog_post {
   padding-top: 104px !important;
