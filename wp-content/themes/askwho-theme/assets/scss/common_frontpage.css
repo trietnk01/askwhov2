@@ -113,8 +113,11 @@ a {
 
 ul,
 ol {
-  padding-left: 20px;
-  margin-bottom: 10px; }
+  padding-left: 55px;
+  margin-bottom: 30px; }
+
+.list_no_padding {
+  padding-left: 20px; }
 
 @media (min-width: 1921px) {
   .askwho_container {
@@ -511,7 +514,6 @@ body.hidden-scroll {
   @media (max-width: 992px) {
     .menu_back_drop {
       align-items: flex-start;
-      position: absolute;
       padding-top: 145px; } }
   .menu_back_drop .logoFooter {
     position: absolute;
@@ -880,7 +882,7 @@ header {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
-  @media (max-width: 576px) {
+  @media (max-width: 992px) {
     .box_banner {
       padding-bottom: 100px !important; } }
   .box_banner > .askwho_container {
@@ -1032,6 +1034,9 @@ header {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important; }
+  @media (max-width: 992px) {
+    .box_boss {
+      padding-top: 0 !important; } }
   @media (max-width: 576px) {
     .box_boss {
       padding-top: 40px !important;
@@ -1069,21 +1074,31 @@ header {
             .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .boss_mobile > img {
               width: 100%; }
           .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .slogan {
-            font-family: "GeneralSans_Semibold";
+            font-family: "GeneralSans_Medium";
             font-size: 32px;
             line-height: 40px; }
             @media (max-width: 576px) {
               .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .slogan {
                 font-size: 24px;
                 line-height: 32px; } }
-          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .author_name {
+          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .author_name_label {
             font-family: "GeneralSans_Semibold";
             font-size: 32px;
             line-height: 40px;
             padding: 0;
             display: inline; }
             @media (max-width: 576px) {
-              .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .author_name {
+              .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .author_name_label {
+                font-size: 24px;
+                line-height: 32px; } }
+          .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .author_name_dot {
+            font-family: "GeneralSans_Semibold";
+            font-size: 32px;
+            line-height: 40px;
+            padding: 0;
+            display: inline; }
+            @media (max-width: 576px) {
+              .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .author_name_dot {
                 font-size: 24px;
                 line-height: 32px; } }
           .box_boss > .askwho_container > .wp-block-columns > .wp-block-column:first-child > .excerption {

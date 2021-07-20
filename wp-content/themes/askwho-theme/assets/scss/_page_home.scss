@@ -130,7 +130,7 @@
     z-index: 10;
     @media (max-width: 992px) {
         align-items: flex-start;
-        position: absolute;
+        // position: absolute;
         padding-top: 145px;
     }
     .logoFooter {
@@ -573,8 +573,8 @@ header {
     padding-bottom: 140px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-bottom: 0 !important;
-    @media (max-width: 576px) {
+    margin-bottom: 0 !important;    
+    @media (max-width: 992px) {
         padding-bottom: 100px !important;
     }
     > .askwho_container {
@@ -758,6 +758,9 @@ header {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    @media(max-width:992px){
+        padding-top: 0 !important;
+    }
     @media (max-width: 576px) {
         padding-top: 40px !important;
         padding-bottom: 20px !important;
@@ -799,7 +802,7 @@ header {
                         }
                     }
                     > .slogan {
-                        font-family: $f_GeneralSans_Semibold;
+                        font-family: $f_GeneralSans_Medium;
                         font-size: 32px;
                         line-height: 40px;
                         @media (max-width: 576px) {
@@ -807,7 +810,18 @@ header {
                             line-height: 32px;
                         }
                     }
-                    > .author_name {
+                    > .author_name_label {
+                        font-family: $f_GeneralSans_Semibold;
+                        font-size: 32px;
+                        line-height: 40px;
+                        padding: 0;
+                        display: inline;
+                        @media (max-width: 576px) {
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+                    }
+                    > .author_name_dot {
                         font-family: $f_GeneralSans_Semibold;
                         font-size: 32px;
                         line-height: 40px;

@@ -50,8 +50,11 @@ a {
 }
 ul,
 ol {
+    padding-left: 55px;
+    margin-bottom: 30px;
+}
+.list_no_padding{
     padding-left: 20px;
-    margin-bottom: 10px;
 }
 .askwho_container {
     @media (min-width: 1921px) {
