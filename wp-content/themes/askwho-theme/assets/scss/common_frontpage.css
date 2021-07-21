@@ -1728,6 +1728,9 @@ header {
   .page_expertise > .askwho_container {
     margin-left: 168px;
     margin-right: 552px; }
+    @media (max-width: 1024px) {
+      .page_expertise > .askwho_container {
+        margin-right: 64px; } }
     @media (max-width: 992px) {
       .page_expertise > .askwho_container {
         margin-left: 24px;

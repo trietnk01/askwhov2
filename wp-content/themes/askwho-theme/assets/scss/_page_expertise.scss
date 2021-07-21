@@ -10,6 +10,9 @@
     > .askwho_container {
         margin-left: 168px;
         margin-right: 552px;
+        @media(max-width:1024px){
+            margin-right: 64px;
+        }
         @media(max-width:992px){
             margin-left: 24px;
             margin-right: 24px;
