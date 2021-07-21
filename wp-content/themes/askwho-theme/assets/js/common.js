@@ -70,4 +70,28 @@ jQuery(document).ready(function ($) {
     });
   });
   /* end plus articles */
+  /* begin Plus de personnalités */
+  $('button[name="btn_plus_de_personnalites"]').on('click',function(){
+    let frm = $(this).closest("form");    
+    let offset = $(frm).find('input[name="offset"]').val();
+    let dataItem = {      
+      offset,      
+      action: "plus_de_personnalites",
+    };
+    $.ajax({
+      url: ajaxurl,
+      type: "POST",
+      data: dataItem,
+      dataType: "json",
+      async: false,
+      success: function (data, status, jsXHR) {        
+        $('.personnalites_author_part').append(data.xhtml);
+        $(frm).find('input[name="offset"]').val(data.offset);
+        if (data.hideLoadmore === true) {
+          $('.box_readmore').hide();
+        }
+      },
+    });
+  });
+  /* end Plus de personnalités */
 });

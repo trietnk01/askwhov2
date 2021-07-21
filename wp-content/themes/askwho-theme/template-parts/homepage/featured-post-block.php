@@ -3,6 +3,13 @@ global $zController;
 $args = array(
     'post_type' => 'post',
     'posts_per_page' => 4,
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'category',
+            'field' => 'slug',
+            'terms' => 'blog',
+        ),
+    ),
 );
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) {

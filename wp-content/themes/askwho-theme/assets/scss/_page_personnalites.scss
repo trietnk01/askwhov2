@@ -4,13 +4,13 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
-    @media(max-width:576px){
+    @media (max-width: 576px) {
         padding-top: 120px !important;
     }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
-        @media(max-width:992px){
+        @media (max-width: 992px) {
             margin-left: 24px;
             margin-right: 24px;
         }
@@ -34,9 +34,9 @@
         }
         > .slogan {
             margin-bottom: 55px;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 margin-bottom: 40px;
-            }            
+            }
             > .wp-block-column {
                 width: 450px;
                 position: relative;
@@ -65,10 +65,10 @@
         > .excerption {
             margin-left: 451px;
             margin-bottom: 80px;
-            @media(max-width:992px){
+            @media (max-width: 992px) {
                 margin-left: 0;
             }
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 margin-bottom: 32px;
             }
             > .wp-block-column {
@@ -77,32 +77,93 @@
                 }
             }
         }
-        > .personnalites_author_part {
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 24px;
-            row-gap: 24px;
-            margin-bottom: 0 !important;
-            @media (max-width: 576px) {
-                flex-direction: column;
-                row-gap: 32px;
-            }
-            > div {
-                width: calc(100% / 4 - 18px);
+        > .personnalites_frm {
+            > .personnalites_author_part {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 24px;
+                row-gap: 24px;
+                margin-bottom: 0 !important;
                 @media (max-width: 576px) {
-                    width: 100%;
+                    flex-direction: column;
+                    row-gap: 32px;
+                }
+                > div {
+                    width: calc(100% / 4 - 18px);
+                    @media (max-width: 576px) {
+                        width: 100%;
+                    }
+                    > img {
+                        width: 100%;
+                        margin-bottom: 16px;
+                    }
+                    > .author_name {
+                        font-family: $f_GeneralSans_Medium;
+                    }
+                    > .author_function {
+                        font-family: $f_GeneralSans_Regular;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+            > .box_readmore {
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+                margin-top: 72px;
+                @media (max-width: 992px) {
+                    margin-top: 56px;
+                }
+                @media (max-width: 576px) {
+                    column-gap: 7px;
                 }
                 > img {
-                    width: 100%;
-                    margin-bottom: 16px;
+                    width: 48px;
+                    @media (max-width: 576px) {
+                        width: 32px;
+                    }
+                    > figure {
+                        margin-bottom: 0;
+                    }
                 }
-                > .author_name {
-                    font-family: $f_GeneralSans_Medium;
-                }
-                > .author_function {
-                    font-family: $f_GeneralSans_Regular;
-                    font-size: 18px;
+                > button {
+                    font-family: $f_GeneralSans_Bold;
+                    font-size: 24px;
+                    letter-spacing: 0;
                     line-height: 32px;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    display: block;
+                    background: none;
+                    border: 0;
+                    cursor: pointer;
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        background-color: $mau_2;
+                    }
+                    &::first-letter {
+                        background-color: $mau_2;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 100%;
+                        background: $mau_2;
+                        transition-duration: 500ms;
+                        z-index: -1;
+                        display: block;
+                    }
+                    &:hover {
+                        &::before {
+                            left: 0;
+                        }
+                    }
                 }
             }
         }

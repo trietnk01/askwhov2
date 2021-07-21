@@ -1528,30 +1528,80 @@ header {
           margin-bottom: 32px; } }
       .personnalites_page > .askwho_container > .excerption > .wp-block-column > p {
         margin-bottom: 0; }
-    .personnalites_page > .askwho_container > .personnalites_author_part {
+    .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part {
       display: flex;
       flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 24px;
       margin-bottom: 0 !important; }
       @media (max-width: 576px) {
-        .personnalites_page > .askwho_container > .personnalites_author_part {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part {
           flex-direction: column;
           row-gap: 32px; } }
-      .personnalites_page > .askwho_container > .personnalites_author_part > div {
+      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div {
         width: calc(100% / 4 - 18px); }
         @media (max-width: 576px) {
-          .personnalites_page > .askwho_container > .personnalites_author_part > div {
+          .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div {
             width: 100%; } }
-        .personnalites_page > .askwho_container > .personnalites_author_part > div > img {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div > img {
           width: 100%;
           margin-bottom: 16px; }
-        .personnalites_page > .askwho_container > .personnalites_author_part > div > .author_name {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div > .author_name {
           font-family: "GeneralSans_Medium"; }
-        .personnalites_page > .askwho_container > .personnalites_author_part > div > .author_function {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div > .author_function {
           font-family: "GeneralSans_Regular";
           font-size: 18px;
           line-height: 32px; }
+    .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      margin-top: 72px; }
+      @media (max-width: 992px) {
+        .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore {
+          margin-top: 56px; } }
+      @media (max-width: 576px) {
+        .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore {
+          column-gap: 7px; } }
+      .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > img {
+        width: 48px; }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > img {
+            width: 32px; } }
+        .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > img > figure {
+          margin-bottom: 0; }
+      .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > button {
+        font-family: "GeneralSans_Bold";
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 32px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        display: block;
+        background: none;
+        border: 0;
+        cursor: pointer; }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > button {
+            font-size: 18px;
+            line-height: 24px;
+            background-color: #F0E87B; } }
+        .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > button::first-letter {
+          background-color: #F0E87B; }
+        .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > button::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: #F0E87B;
+          transition-duration: 500ms;
+          z-index: -1;
+          display: block; }
+        .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > button:hover::before {
+          left: 0; }
 
 .page_expertise {
   padding-top: 104px !important;
