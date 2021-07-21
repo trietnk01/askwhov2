@@ -640,18 +640,16 @@ header {
                         column-gap: 10px;
                     }
                     @media (max-width: 576px) {
-                        display: block;
+                        flex-direction: column;
+                        row-gap: 32px;
                     }
                     > .item {
                         width: calc(100% / 4 - 30px);   
                         @media(max-width:992px){
-                            width: calc(100% / 4 - 8px);
-                            overflow: hidden;
+                            width: calc(100% / 4 - 8px);                            
                         }                     
                         @media (max-width: 576px) {
-                            width: 100%;
-                            overflow: auto;
-                            margin-bottom: 32px;
+                            width: 100%;                                           
                         }
                         > .author_image {
                             > img {
@@ -666,7 +664,7 @@ header {
                         }
                         > .post_title {
                             @media(max-width:992px){
-                                height: 95px;
+                                overflow: hidden;
                             }
                             @media(max-width:576px){
                                 height: auto;
@@ -676,9 +674,13 @@ header {
                                 font-size: 20px;
                                 line-height: 32px;
                                 display: block;
+                                @media(max-width:992px){
+                                    height: 95px;
+                                }
                                 @media (max-width: 576px) {
                                     font-size: 16px;
                                     line-height: 24px;
+                                    height: auto;
                                 }
                             }
                         }

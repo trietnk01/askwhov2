@@ -610,18 +610,16 @@ header {
             column-gap: 10px; } }
         @media (max-width: 576px) {
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
-            display: block; } }
+            flex-direction: column;
+            row-gap: 32px; } }
         .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
           width: calc(100% / 4 - 30px); }
           @media (max-width: 992px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
-              width: calc(100% / 4 - 8px);
-              overflow: hidden; } }
+              width: calc(100% / 4 - 8px); } }
           @media (max-width: 576px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
-              width: 100%;
-              overflow: auto;
-              margin-bottom: 32px; } }
+              width: 100%; } }
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .author_image > img {
             width: 100%; }
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_date {
@@ -631,7 +629,7 @@ header {
             line-height: 32px; }
           @media (max-width: 992px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
-              height: 95px; } }
+              overflow: hidden; } }
           @media (max-width: 576px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
               height: auto; } }
@@ -640,10 +638,14 @@ header {
             font-size: 20px;
             line-height: 32px;
             display: block; }
+            @media (max-width: 992px) {
+              .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
+                height: 95px; } }
             @media (max-width: 576px) {
               .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
                 font-size: 16px;
-                line-height: 24px; } }
+                line-height: 24px;
+                height: auto; } }
       .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .box_readmore {
         align-items: center;
         column-gap: 24px;
