@@ -99,13 +99,17 @@ wp_nav_menu($args);
     </header>
     <div class="menu_sidebar">
         <div class="fabars_sidebar">
+            <a href="<?php echo site_url(); ?>" class="logo_top_sidebar">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
+                    alt="<?php echo get_bloginfo('name'); ?>">
+            </a>
             <button type="button" class="navbar_href">
                 <i class="ic burger"></i>
             </button>
             <a href="<?php echo site_url("contact"); ?>" class="navbar_contact">Contact</a>
         </div>
     </div>
-    <a href="<?php echo site_url(); ?>" class="logoMain">
+    <a href="<?php echo site_url(); ?>" class="logo_top_mobile">
         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
             alt="<?php echo get_bloginfo('name'); ?>">
     </a>

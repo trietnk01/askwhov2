@@ -85,7 +85,7 @@ jQuery(document).ready(function ($) {
       dataType: "json",
       async: false,
       success: function (data, status, jsXHR) {        
-        $('.personnalites_author_part').append(data.xhtml);
+        $(frm).find('.personnalites_author_part').append(data.xhtml);
         $(frm).find('input[name="offset"]').val(data.offset);
         if (data.hideLoadmore === true) {
           $('.box_readmore').hide();
@@ -94,4 +94,28 @@ jQuery(document).ready(function ($) {
     });
   });
   /* end Plus de personnalités */
+  /* begin Plus de personnalités vmobile */
+  $('button[name="personnalites_author_part_vmobile"]').on('click',function(){
+    let frm = $(this).closest("form");    
+    let offset = $(frm).find('input[name="offset"]').val();
+    let dataItem = {      
+      offset,      
+      action: "plus_de_personnalites",
+    };
+    $.ajax({
+      url: ajaxurl,
+      type: "POST",
+      data: dataItem,
+      dataType: "json",
+      async: false,
+      success: function (data, status, jsXHR) {        
+        $(frm).find('.personnalites_author_part').append(data.xhtml);
+        $(frm).find('input[name="offset"]').val(data.offset);
+        if (data.hideLoadmore === true) {
+          $('.box_readmore').hide();
+        }
+      },
+    });
+  });
+  /* end Plus de personnalités vmobile */
 });

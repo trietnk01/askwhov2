@@ -103,6 +103,8 @@ body {
     body {
       font-size: 16px;
       line-height: 24px; } }
+  body strong {
+    font-family: "GeneralSans_Bold"; }
 
 p {
   margin-bottom: 30px; }
@@ -437,23 +439,26 @@ body.hidden-scroll {
     .contact_navbar .navbar_toggle_v2 .close {
       background-image: url("../images/ic_close.svg"); }
 
-.logoMain {
+.logo_top_mobile {
   position: absolute;
   top: 16px;
   left: 0;
   width: 105px;
-  display: flex;
+  display: none;
   justify-content: center;
   z-index: 13; }
+  @media (max-width: 992px) {
+    .logo_top_mobile {
+      display: flex; } }
   @media (max-width: 576px) {
-    .logoMain {
+    .logo_top_mobile {
       width: auto;
       top: 20px;
       left: 20px; } }
-  .logoMain img {
+  .logo_top_mobile img {
     width: 72px; }
     @media (max-width: 576px) {
-      .logoMain img {
+      .logo_top_mobile img {
         width: 56px; } }
 
 .menu_sidebar {
@@ -463,7 +468,7 @@ body.hidden-scroll {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 11; }
+  z-index: 12; }
   @media (max-width: 992px) {
     .menu_sidebar {
       display: none; } }
@@ -473,6 +478,15 @@ body.hidden-scroll {
     align-items: center;
     justify-content: center;
     position: relative; }
+    .menu_sidebar .fabars_sidebar .logo_top_sidebar {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .menu_sidebar .fabars_sidebar .logo_top_sidebar img {
+        width: 72px; }
     .menu_sidebar .fabars_sidebar .navbar_href {
       background: none;
       border: none;
@@ -609,7 +623,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 12; }
+  z-index: 11; }
   header .menu_header {
     border: 0;
     list-style: none;
@@ -711,6 +725,8 @@ header {
         @media (max-width: 576px) {
           .box_header > .askwho_container > .wp-block-columns > .col_slogan > h1 span {
             background: none !important; } }
+        .box_header > .askwho_container > .wp-block-columns > .col_slogan > h1 span.evenements {
+          background-color: #8DC8E8; }
 
 .box_contacts {
   padding-top: 56px !important;
@@ -936,7 +952,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         column-gap: 40px; }
-        @media (max-width: 992px) {
+        @media (max-width: 1024px) {
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
             padding: 0 24px;
             column-gap: 10px; } }
@@ -946,7 +962,7 @@ header {
             row-gap: 32px; } }
         .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
           width: calc(100% / 4 - 30px); }
-          @media (max-width: 992px) {
+          @media (max-width: 1024px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
               width: calc(100% / 4 - 8px); } }
           @media (max-width: 576px) {
@@ -959,7 +975,7 @@ header {
             font-family: "GeneralSans_Regular";
             font-size: 16px;
             line-height: 32px; }
-          @media (max-width: 992px) {
+          @media (max-width: 1024px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
               overflow: hidden; } }
           @media (max-width: 576px) {
@@ -970,7 +986,7 @@ header {
             font-size: 20px;
             line-height: 32px;
             display: block; }
-            @media (max-width: 992px) {
+            @media (max-width: 1024px) {
               .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
                 height: 95px; } }
             @media (max-width: 576px) {
@@ -1205,54 +1221,54 @@ header {
       .box_ex_co_ac > .askwho_container {
         margin-left: 24px;
         margin-right: 24px; } }
-    .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child {
+    .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel {
       margin-bottom: 90px; }
       @media (max-width: 576px) {
-        .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child {
+        .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel {
           margin-bottom: 60px; } }
-      .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column {
+      .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column {
         flex-grow: unset !important;
         flex-basis: unset !important;
         width: 455px;
         position: relative; }
         @media (max-width: 576px) {
-          .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column {
+          .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column {
             width: 318px; } }
-        .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column > figure {
+        .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column > figure {
           position: absolute;
           top: 75px;
           left: 368px;
           width: 54px;
           margin-bottom: 0; }
           @media (max-width: 576px) {
-            .box_ex_co_ac > .askwho_container > .wp-block-columns:first-child > .wp-block-column > figure {
+            .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column > figure {
               top: 78px;
               left: 170px;
               height: 32px;
               width: 36px; } }
-    .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
+    .box_ex_co_ac > .askwho_container > .conseil {
       column-gap: 124px;
       flex-wrap: wrap;
       margin-bottom: 0; }
-      @media (max-width: 992px) {
-        .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
+      @media (max-width: 1024px) {
+        .box_ex_co_ac > .askwho_container > .conseil {
           column-gap: 20px; } }
       @media (max-width: 576px) {
-        .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) {
+        .box_ex_co_ac > .askwho_container > .conseil {
           flex-direction: column;
           row-gap: 40px; } }
-      .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
+      .box_ex_co_ac > .askwho_container > .conseil > .wp-block-column {
         flex-grow: unset !important;
         flex-basis: unset !important;
         width: calc(100% / 3 - 107px);
         margin-left: 0; }
-        @media (max-width: 992px) {
-          .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
+        @media (max-width: 1024px) {
+          .box_ex_co_ac > .askwho_container > .conseil > .wp-block-column {
             width: calc(100% / 3 - 14px); } }
         @media (max-width: 576px) {
-          .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column {
+          .box_ex_co_ac > .askwho_container > .conseil > .wp-block-column {
             width: 100%; } }
-        .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column > h3 {
+        .box_ex_co_ac > .askwho_container > .conseil > .wp-block-column > h3 {
           display: inline-block;
           padding-left: 0 !important;
           padding-right: 0 !important;
@@ -1260,9 +1276,9 @@ header {
           padding-top: 0 !important;
           margin-bottom: 48px; }
           @media (max-width: 576px) {
-            .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column > h3 {
+            .box_ex_co_ac > .askwho_container > .conseil > .wp-block-column > h3 {
               margin-bottom: 32px; } }
-        .box_ex_co_ac > .askwho_container > .wp-block-columns:nth-child(2) > .wp-block-column > p {
+        .box_ex_co_ac > .askwho_container > .conseil > .wp-block-column > p {
           margin-bottom: 0; }
 
 .box_footer {
@@ -1336,7 +1352,7 @@ header {
       flex-wrap: wrap;
       column-gap: 40px;
       row-gap: 40px; }
-      @media (max-width: 992px) {
+      @media (max-width: 1024px) {
         .blog_post > .askwho_container > .blog_wrapper {
           column-gap: 10px; } }
       @media (max-width: 576px) {
@@ -1345,7 +1361,7 @@ header {
           row-gap: 32px; } }
       .blog_post > .askwho_container > .blog_wrapper > .item {
         width: calc(100% / 4 - 30px); }
-        @media (max-width: 992px) {
+        @media (max-width: 1024px) {
           .blog_post > .askwho_container > .blog_wrapper > .item {
             width: calc(100% / 4 - 8px); } }
         @media (max-width: 576px) {
@@ -1358,7 +1374,7 @@ header {
           font-family: "GeneralSans_Regular";
           font-size: 16px;
           line-height: 32px; }
-        @media (max-width: 992px) {
+        @media (max-width: 1024px) {
           .blog_post > .askwho_container > .blog_wrapper > .item > .post_title {
             overflow: hidden; } }
         @media (max-width: 576px) {
@@ -1369,7 +1385,7 @@ header {
           font-size: 20px;
           line-height: 32px;
           display: block; }
-          @media (max-width: 992px) {
+          @media (max-width: 1024px) {
             .blog_post > .askwho_container > .blog_wrapper > .item > .post_title a {
               height: 95px; } }
           @media (max-width: 576px) {
@@ -1445,39 +1461,47 @@ header {
       .single_post > .askwho_container {
         margin-left: 24px;
         margin-right: 24px; } }
-    .single_post > .askwho_container > .box_wrapper {
-      display: flex;
-      column-gap: 64px;
-      flex-wrap: wrap; }
-      @media (max-width: 992px) {
-        .single_post > .askwho_container > .box_wrapper {
-          flex-direction: column-reverse;
-          column-gap: 0;
-          row-gap: 16px; } }
-      .single_post > .askwho_container > .box_wrapper > .single_col {
-        width: calc(100% / 2 - 32px); }
-        @media (max-width: 992px) {
-          .single_post > .askwho_container > .box_wrapper > .single_col {
-            width: 100%; } }
-        .single_post > .askwho_container > .box_wrapper > .single_col > .single_title {
-          font-family: "GeneralSans_Bold";
-          font-size: 40px;
-          line-height: 48px;
-          margin-bottom: 16px; }
-          @media (max-width: 576px) {
-            .single_post > .askwho_container > .box_wrapper > .single_col > .single_title {
-              font-size: 28px;
-              line-height: 36px; } }
-        .single_post > .askwho_container > .box_wrapper > .single_col > .single_date {
-          font-family: "GeneralSans_Regular";
-          font-size: 16px;
-          line-height: 32px;
-          margin-bottom: 24px; }
-          @media (max-width: 576px) {
-            .single_post > .askwho_container > .box_wrapper > .single_col > .single_date {
-              margin-bottom: 32px; } }
-        .single_post > .askwho_container > .box_wrapper > .single_col img {
-          width: 100%; }
+    @media (max-width: 576px) {
+      .single_post > .askwho_container > .box_wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        column-gap: 0;
+        row-gap: 16px; } }
+    .single_post > .askwho_container > .box_wrapper > .single_col_1 {
+      width: 51%; }
+      @media (max-width: 576px) {
+        .single_post > .askwho_container > .box_wrapper > .single_col_1 {
+          width: 100%; } }
+      .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_title {
+        font-family: "GeneralSans_Bold";
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 16px; }
+        @media (max-width: 576px) {
+          .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_title {
+            font-size: 28px;
+            line-height: 36px; } }
+      .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_date {
+        font-family: "GeneralSans_Regular";
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 24px; }
+        @media (max-width: 576px) {
+          .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_date {
+            margin-bottom: 32px; } }
+      .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content img {
+        width: 100%; }
+    .single_post > .askwho_container > .box_wrapper > .single_col_2 {
+      width: 37%;
+      position: fixed;
+      top: 128px;
+      right: 64px; }
+      @media (max-width: 576px) {
+        .single_post > .askwho_container > .box_wrapper > .single_col_2 {
+          width: 100%;
+          position: static; } }
+      .single_post > .askwho_container > .box_wrapper > .single_col_2 img {
+        width: 100%; }
 
 .personnalites_page {
   padding-top: 104px !important;
@@ -1544,6 +1568,9 @@ header {
           margin-bottom: 32px; } }
       .personnalites_page > .askwho_container > .excerption > .wp-block-column > p {
         margin-bottom: 0; }
+    @media (max-width: 576px) {
+      .personnalites_page > .askwho_container > .personnalites_frm {
+        display: none; } }
     .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part {
       display: flex;
       flex-wrap: wrap;
@@ -1554,17 +1581,17 @@ header {
         .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part {
           flex-direction: column;
           row-gap: 32px; } }
-      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div {
+      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item {
         width: calc(100% / 4 - 18px); }
         @media (max-width: 576px) {
-          .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div {
+          .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item {
             width: 100%; } }
-        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div > img {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item > img {
           width: 100%;
           margin-bottom: 16px; }
-        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div > .author_name {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item > .author_name {
           font-family: "GeneralSans_Medium"; }
-        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > div > .author_function {
+        .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item > .author_function {
           font-family: "GeneralSans_Regular";
           font-size: 18px;
           line-height: 32px; }
@@ -1618,6 +1645,81 @@ header {
           display: block; }
         .personnalites_page > .askwho_container > .personnalites_frm > .box_readmore > button:hover::before {
           left: 0; }
+    .personnalites_page > .askwho_container > .personnalites_frm_vmobile {
+      display: none; }
+      @media (max-width: 576px) {
+        .personnalites_page > .askwho_container > .personnalites_frm_vmobile {
+          display: block; } }
+      .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        margin-bottom: 0 !important;
+        align-items: center; }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part {
+            row-gap: 32px; } }
+        .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item {
+          width: 100%; }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item > img {
+            width: 100%;
+            margin-bottom: 16px; }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item > .author_name {
+            font-family: "GeneralSans_Medium"; }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item > .author_function {
+            font-family: "GeneralSans_Regular";
+            font-size: 18px;
+            line-height: 32px; }
+      .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        margin-top: 72px; }
+        @media (max-width: 992px) {
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore {
+            margin-top: 56px; } }
+        @media (max-width: 576px) {
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore {
+            column-gap: 7px; } }
+        .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > img {
+          width: 48px; }
+          @media (max-width: 576px) {
+            .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > img {
+              width: 32px; } }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > img > figure {
+            margin-bottom: 0; }
+        .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > button {
+          font-family: "GeneralSans_Bold";
+          font-size: 24px;
+          letter-spacing: 0;
+          line-height: 32px;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          display: block;
+          background: none;
+          border: 0;
+          cursor: pointer; }
+          @media (max-width: 576px) {
+            .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > button {
+              font-size: 18px;
+              line-height: 24px;
+              background-color: #F0E87B; } }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > button::first-letter {
+            background-color: #F0E87B; }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #F0E87B;
+            transition-duration: 500ms;
+            z-index: -1;
+            display: block; }
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > button:hover::before {
+            left: 0; }
 
 .page_expertise {
   padding-top: 104px !important;

@@ -199,15 +199,9 @@ function plus_de_personnalites()
             $date = get_the_date('Y-m-d');
             $date_vn = datetimeConverterByFormat($date, "d.m.Y");
             $xhtml .= '<div class="item">
-            <a href="' . get_the_permalink() . '" class="author_image">
-                <img src="' . $featured_image . '" alt="' . get_the_title() . '" />
-            </a>
-            <div class="post_date">' . $date_vn . '</div>
-            <div class="post_title">
-                <a href="' . get_the_permalink() . '">
-                    ' . wp_trim_words(get_the_title(), '12', '(...)') . '
-                </a>
-            </div>
+            <img class="author_image" src="' . $featured_image . '" alt="' . get_the_title() . '" />
+            <div class="author_name">' . get_the_title() . '</div>
+            <div class="author_function">' . get_field('post_personne_fonction', get_the_ID()) . '</div>
         </div>';
         }
         wp_reset_postdata();
