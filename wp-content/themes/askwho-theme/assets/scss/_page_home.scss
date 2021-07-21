@@ -637,18 +637,21 @@ header {
                     column-gap: 40px;
                     @media (max-width: 992px) {
                         padding: 0 24px;
+                        column-gap: 10px;
                     }
                     @media (max-width: 576px) {
                         display: block;
                     }
                     > .item {
-                        width: calc(100% / 4 - 30px);
-                        @media (max-width: 992px) {
-                            width: calc(100% / 2 - 20px);
-                            margin-bottom: 32px;
-                        }
+                        width: calc(100% / 4 - 30px);   
+                        @media(max-width:992px){
+                            width: calc(100% / 4 - 8px);
+                            overflow: hidden;
+                        }                     
                         @media (max-width: 576px) {
                             width: 100%;
+                            overflow: auto;
+                            margin-bottom: 32px;
                         }
                         > .author_image {
                             > img {
@@ -662,10 +665,17 @@ header {
                             line-height: 32px;
                         }
                         > .post_title {
+                            @media(max-width:992px){
+                                height: 95px;
+                            }
+                            @media(max-width:576px){
+                                height: auto;
+                            }
                             a {
                                 font-family: $f_GeneralSans_Medium;
                                 font-size: 20px;
                                 line-height: 32px;
+                                display: block;
                                 @media (max-width: 576px) {
                                     font-size: 16px;
                                     line-height: 24px;
