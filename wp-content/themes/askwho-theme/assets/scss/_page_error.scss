@@ -1,25 +1,24 @@
 .page_error {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-bottom: 0 !important;
-    height: 100vh;
-    background-color: $mau_3;
     display: flex;
-    align-items: center;
+    height: 100vh;
+    padding-top: 204px;
+    padding-bottom: 40px ;            
+    background-color: $mau_3;        
+    box-sizing: border-box;
     > .askwho_container {
         margin-left: 168px;
-        margin-right: 552px;
-        @media (max-width: 992px) {
+        margin-right: 40px;        
+        position: relative;
+        flex-grow: 1;
+        @media(max-width:992px){
             margin-left: 24px;
             margin-right: 24px;
         }
         > .page_name {
             font-family: $f_GeneralSans_Medium;
             font-size: 104px;
-            line-height: 104px;
-            margin-bottom: 72px;
+            line-height: 104px;            
+            margin-bottom: 72px;            
             @media (max-width: 576px) {
                 font-size: 48px;
                 line-height: 64px;
@@ -28,6 +27,10 @@
         }
         > .contact_notice {
             margin-bottom: 40px;
+            width: 720px;
+            @media(max-width:576px){
+                width: 100%;
+            }
         }
         > .box_readmore {
             align-items: center;
@@ -90,6 +93,19 @@
                     }
                 }
             }
+        }
+        >.error_logo{                        
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            margin-bottom: 0;
+            >a{
+                display: block;
+                width: 120px;
+                >img{
+                    width: 100%;
+                }
+            }            
         }
     }
 }

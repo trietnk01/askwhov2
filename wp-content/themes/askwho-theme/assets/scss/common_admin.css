@@ -324,10 +324,7 @@ header {
   margin-bottom: 0 !important; }
   .box_header > .askwho_container {
     margin-left: 250px;
-    margin-right: 64px;
-    flex-grow: unset;
-    flex-basis: unset;
-    width: 100%; }
+    margin-right: 64px; }
     @media (max-width: 992px) {
       .box_header > .askwho_container {
         margin-left: 32px;
@@ -463,9 +460,7 @@ header {
     .box_person > .askwho_container > .wp-block-columns {
       margin-bottom: 0; }
       .box_person > .askwho_container > .wp-block-columns > .wp-block-column {
-        position: relative;
-        flex-grow: unset;
-        flex-basis: unset; }
+        position: relative; }
         .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav {
           position: absolute;
           bottom: -90px;

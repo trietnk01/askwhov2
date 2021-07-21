@@ -658,10 +658,7 @@ header {
   margin-bottom: 0 !important; }
   .box_header > .askwho_container {
     margin-left: 250px;
-    margin-right: 64px;
-    flex-grow: unset;
-    flex-basis: unset;
-    width: 100%; }
+    margin-right: 64px; }
     @media (max-width: 992px) {
       .box_header > .askwho_container {
         margin-left: 32px;
@@ -797,9 +794,7 @@ header {
     .box_person > .askwho_container > .wp-block-columns {
       margin-bottom: 0; }
       .box_person > .askwho_container > .wp-block-columns > .wp-block-column {
-        position: relative;
-        flex-grow: unset;
-        flex-basis: unset; }
+        position: relative; }
         .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav {
           position: absolute;
           bottom: -90px;
@@ -1754,7 +1749,7 @@ header {
 
 .page_contact {
   padding-top: 104px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 40px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 0 !important;
@@ -1764,7 +1759,8 @@ header {
       padding-top: 120px !important; } }
   .page_contact > .askwho_container {
     margin-left: 168px;
-    margin-right: 552px; }
+    margin-right: 40px;
+    position: relative; }
     @media (max-width: 992px) {
       .page_contact > .askwho_container {
         margin-left: 24px;
@@ -1783,22 +1779,37 @@ header {
             margin-bottom: 56px; } }
       .page_contact > .askwho_container > .page_name > .wp-block-column:nth-child(2) > .contact_askwho {
         margin-bottom: 0; }
-    .page_contact > .askwho_container > .contact_excerption > .wp-block-column > .contact_askwho {
-      margin-bottom: 0 !important; }
+    .page_contact > .askwho_container > .contact_excerption {
+      margin-bottom: 0;
+      width: 720px; }
+      @media (max-width: 576px) {
+        .page_contact > .askwho_container > .contact_excerption {
+          width: 100%; } }
+      .page_contact > .askwho_container > .contact_excerption > .wp-block-column > .contact_askwho {
+        margin-bottom: 0 !important; }
+    .page_contact > .askwho_container > .contact_logo {
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      margin-bottom: 0; }
+      .page_contact > .askwho_container > .contact_logo > a {
+        display: block;
+        width: 120px; }
+        .page_contact > .askwho_container > .contact_logo > a > img {
+          width: 100%; }
 
 .page_error {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-bottom: 0 !important;
-  height: 100vh;
-  background-color: #8DC8E8;
   display: flex;
-  align-items: center; }
+  height: 100vh;
+  padding-top: 204px;
+  padding-bottom: 40px;
+  background-color: #8DC8E8;
+  box-sizing: border-box; }
   .page_error > .askwho_container {
     margin-left: 168px;
-    margin-right: 552px; }
+    margin-right: 40px;
+    position: relative;
+    flex-grow: 1; }
     @media (max-width: 992px) {
       .page_error > .askwho_container {
         margin-left: 24px;
@@ -1814,7 +1825,11 @@ header {
           line-height: 64px;
           margin-bottom: 56px; } }
     .page_error > .askwho_container > .contact_notice {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      width: 720px; }
+      @media (max-width: 576px) {
+        .page_error > .askwho_container > .contact_notice {
+          width: 100%; } }
     .page_error > .askwho_container > .box_readmore {
       align-items: center;
       column-gap: 24px;
@@ -1867,5 +1882,15 @@ header {
             display: block; }
           .page_error > .askwho_container > .box_readmore > .askwho_lbl > a:hover::before {
             left: 0; }
+    .page_error > .askwho_container > .error_logo {
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      margin-bottom: 0; }
+      .page_error > .askwho_container > .error_logo > a {
+        display: block;
+        width: 120px; }
+        .page_error > .askwho_container > .error_logo > a > img {
+          width: 100%; }
 
 /*# sourceMappingURL=common_frontpage.css.map */

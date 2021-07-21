@@ -10,8 +10,8 @@ jQuery(document).ready(function ($) {
     var sect_bg=$(val).css('background-color');
     $(val).attr('attr_bg',sect_bg);
   });
-  $('.img_no_attr > img').removeAttr('width');
-  $('.img_no_attr > img').removeAttr('height');  
+  $('.img_no_attr img').removeAttr('width');
+  $('.img_no_attr img').removeAttr('height');  
   $(".navbar_href").on("click", function () {
     let i_ctrl = $(this).children(".ic");
     $(i_ctrl).toggleClass("burger close", 500);

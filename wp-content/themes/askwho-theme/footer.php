@@ -1,3 +1,13 @@
+<?php
+$show_ic_scrollDown = true;
+if (is_page('contact')) {
+    $show_ic_scrollDown = false;
+}
+if (intval(get_queried_object_id()) === 0) {
+    $show_ic_scrollDown = false;
+}
+if (boolval($show_ic_scrollDown) === true) {
+    ?>
 <div class="box_footer">
     <div class="askwho_container">
         <a href="<?php echo site_url(); ?>">
@@ -6,6 +16,9 @@
         </a>
     </div>
 </div>
+<?php
+}
+?>
 <?php wp_footer();?>
 </body>
 
