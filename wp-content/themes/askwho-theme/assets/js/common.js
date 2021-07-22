@@ -4,6 +4,13 @@ let outerHeightSection = 0;
 let viewSection = 0;
 let el_top = 0;
 let attr_bg = "";
+function disableOnScroll(el){  
+  if(parseInt(el.length) === 1){
+    window.onscroll = function () { window.scrollTo(0, 0); };
+  }else{
+    window.onscroll=function(){};
+  }
+}
 jQuery(document).ready(function ($) {  
   let section_ctrl = $('.box_section');
   $.each(section_ctrl,function(index,val){
@@ -15,12 +22,16 @@ jQuery(document).ready(function ($) {
   $(".navbar_href").on("click", function () {
     let i_ctrl = $(this).children(".ic");
     $(i_ctrl).toggleClass("burger close", 500);
-    $(".menu_back_drop").toggleClass("meu_back_drop_scaleX1");
+    $(".menu_back_drop").toggleClass("menu_back_drop_scaleX1");    
+    var bdrop_scalex1 = document.getElementsByClassName("menu_back_drop_scaleX1");
+    disableOnScroll(bdrop_scalex1);
   });
   $('.navbar_toggle_v2').on('click',function(){
     let i_ctrl = $(this).children(".ic");
     $(i_ctrl).toggleClass("burger close", 500);
-    $(".menu_back_drop").toggleClass("meu_back_drop_scaleX1");
+    $(".menu_back_drop").toggleClass("menu_back_drop_scaleX1");
+    var bdrop_scalex1 = document.getElementsByClassName("menu_back_drop_scaleX1");
+    disableOnScroll(bdrop_scalex1);
   });  
   $(window).scroll(function () {
     viewScroll = Math.round(
