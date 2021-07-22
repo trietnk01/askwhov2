@@ -1791,7 +1791,7 @@ header {
     .page_contact > .askwho_container > .contact_excerption {
       margin-bottom: 0;
       width: 720px; }
-      @media (max-width: 576px) {
+      @media (max-width: 992px) {
         .page_contact > .askwho_container > .contact_excerption {
           width: 100%; } }
       .page_contact > .askwho_container > .contact_excerption > .wp-block-column > .contact_askwho {
@@ -1800,10 +1800,18 @@ header {
       position: absolute;
       bottom: 0px;
       right: 0;
-      margin-bottom: 0; }
+      margin: 0; }
+      @media (max-width: 576px) {
+        .page_contact > .askwho_container > .contact_logo {
+          width: 100%;
+          display: flex;
+          justify-content: center; } }
       .page_contact > .askwho_container > .contact_logo > a {
         display: block;
         width: 120px; }
+        @media (max-width: 576px) {
+          .page_contact > .askwho_container > .contact_logo > a {
+            width: 80px; } }
         .page_contact > .askwho_container > .contact_logo > a > img {
           width: 100%; }
 
@@ -1836,7 +1844,7 @@ header {
     .page_error > .askwho_container > .contact_notice {
       margin-bottom: 40px;
       width: 720px; }
-      @media (max-width: 576px) {
+      @media (max-width: 992px) {
         .page_error > .askwho_container > .contact_notice {
           width: 100%; } }
     .page_error > .askwho_container > .box_readmore {
@@ -1895,10 +1903,18 @@ header {
       position: absolute;
       bottom: 0px;
       right: 0;
-      margin-bottom: 0; }
+      margin: 0; }
+      @media (max-width: 576px) {
+        .page_error > .askwho_container > .error_logo {
+          width: 100%;
+          display: flex;
+          justify-content: center; } }
       .page_error > .askwho_container > .error_logo > a {
         display: block;
         width: 120px; }
+        @media (max-width: 576px) {
+          .page_error > .askwho_container > .error_logo > a {
+            width: 80px; } }
         .page_error > .askwho_container > .error_logo > a > img {
           width: 100%; }
 

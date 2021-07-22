@@ -42,7 +42,7 @@
         >.contact_excerption{
             margin-bottom: 0;
             width: 720px;
-            @media(max-width:576px){
+            @media(max-width:992px){
                 width: 100%;
             }
             >.wp-block-column{
@@ -55,10 +55,18 @@
             position: absolute;
             bottom: 0px;
             right: 0;
-            margin-bottom: 0;
+            margin: 0;
+            @media(max-width:576px){
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
             >a{
                 display: block;
                 width: 120px;
+                @media(max-width:576px){
+                    width: 80px;
+                }
                 >img{
                     width: 100%;
                 }

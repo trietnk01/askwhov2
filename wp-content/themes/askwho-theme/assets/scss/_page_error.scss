@@ -28,7 +28,7 @@
         > .contact_notice {
             margin-bottom: 40px;
             width: 720px;
-            @media(max-width:576px){
+            @media(max-width:992px){
                 width: 100%;
             }
         }
@@ -98,10 +98,18 @@
             position: absolute;
             bottom: 0px;
             right: 0;
-            margin-bottom: 0;
+            margin: 0;
+            @media(max-width:576px){
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
             >a{
                 display: block;
                 width: 120px;
+                @media(max-width:576px){
+                    width: 80px;
+                }
                 >img{
                     width: 100%;
                 }
