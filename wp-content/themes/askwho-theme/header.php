@@ -6,7 +6,7 @@
     <meta charset="<?php bloginfo('charset');?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="icon" href="<?php echo get_field("st_ico", "option"); ?>" />
+    <link rel="icon" href="<?php echo get_field("op_logo", "option"); ?>" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <?php wp_head();?>
 </head>
@@ -62,8 +62,7 @@ wp_nav_menu($args);
             </ul>
         </div>
         <a href="<?php echo site_url(); ?>" class="logoFooter">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
-                alt="<?php echo get_bloginfo('name'); ?>">
+            <img src="<?php echo get_field('op_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?>">
         </a>
     </div>
     <div class="contact_navbar">
@@ -100,8 +99,7 @@ wp_nav_menu($args);
     <div class="menu_sidebar">
         <div class="fabars_sidebar">
             <a href="<?php echo site_url(); ?>" class="logo_top_sidebar">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
-                    alt="<?php echo get_bloginfo('name'); ?>">
+                <img src="<?php echo get_field('op_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?>">
             </a>
             <button type="button" class="navbar_href">
                 <i class="ic burger"></i>
@@ -110,6 +108,5 @@ wp_nav_menu($args);
         </div>
     </div>
     <a href="<?php echo site_url(); ?>" class="logo_top_mobile">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
-            alt="<?php echo get_bloginfo('name'); ?>">
+        <img src="<?php echo get_field('op_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?>">
     </a>

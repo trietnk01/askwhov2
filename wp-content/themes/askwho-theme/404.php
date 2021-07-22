@@ -19,8 +19,8 @@ get_header();
         </div>
         <div class="error_logo">
             <a href="<?php echo site_url(); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Logo_AskWho.svg'; ?>"
-                    alt="<?php echo get_bloginfo('name'); ?>" class="logo">
+                <img src="<?php echo get_field('op_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?>"
+                    class="logo">
             </a>
         </div>
     </div>
