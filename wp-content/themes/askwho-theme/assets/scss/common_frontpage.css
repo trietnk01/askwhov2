@@ -551,7 +551,7 @@ body.hidden-scroll {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    flex-grow: 1; }
     @media (max-width: 992px) {
       .menu_back_drop .askwho_container {
         margin-left: 32px;
