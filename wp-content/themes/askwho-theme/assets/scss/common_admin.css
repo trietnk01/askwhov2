@@ -610,51 +610,44 @@ header {
                 left: 115px;
                 width: 36px; } }
       .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 40px; }
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 40px; }
         @media (max-width: 1024px) {
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
-            padding: 0 24px;
-            column-gap: 10px; } }
+            grid-column-gap: 10px;
+            padding: 0 24px; } }
         @media (max-width: 576px) {
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
+            display: flex;
             flex-direction: column;
             row-gap: 32px; } }
-        .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
-          width: calc(100% / 4 - 30px); }
+        .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .author_image > img {
+          width: 100%; }
+        .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_date {
+          margin-bottom: 0px;
+          font-family: "GeneralSans_Regular";
+          font-size: 16px;
+          line-height: 32px; }
+        @media (max-width: 1024px) {
+          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
+            overflow: hidden; } }
+        @media (max-width: 576px) {
+          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
+            height: auto; } }
+        .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
+          font-family: "GeneralSans_Medium";
+          font-size: 20px;
+          line-height: 32px;
+          display: block; }
           @media (max-width: 1024px) {
-            .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
-              width: calc(100% / 4 - 8px); } }
+            .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
+              height: 95px; } }
           @media (max-width: 576px) {
-            .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
-              width: 100%; } }
-          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .author_image > img {
-            width: 100%; }
-          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_date {
-            margin-bottom: 0px;
-            font-family: "GeneralSans_Regular";
-            font-size: 16px;
-            line-height: 32px; }
-          @media (max-width: 1024px) {
-            .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
-              overflow: hidden; } }
-          @media (max-width: 576px) {
-            .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title {
+            .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
+              font-size: 16px;
+              line-height: 24px;
               height: auto; } }
-          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
-            font-family: "GeneralSans_Medium";
-            font-size: 20px;
-            line-height: 32px;
-            display: block; }
-            @media (max-width: 1024px) {
-              .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
-                height: 95px; } }
-            @media (max-width: 576px) {
-              .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_title a {
-                font-size: 16px;
-                line-height: 24px;
-                height: auto; } }
       .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .box_readmore {
         align-items: center;
         column-gap: 24px;
