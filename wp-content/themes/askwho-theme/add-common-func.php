@@ -198,11 +198,21 @@ function plus_de_personnalites()
             }
             $date = get_the_date('Y-m-d');
             $date_vn = datetimeConverterByFormat($date, "d.m.Y");
-            $xhtml .= '<div class="item">
-            <img class="author_image" src="' . $featured_image . '" alt="' . get_the_title() . '" />
-            <div class="author_name">' . get_the_title() . '</div>
-            <div class="author_function">' . get_field('post_personne_fonction', get_the_ID()) . '</div>
-        </div>';
+            $post_personne_url = get_field('post_personne_url', $hp_personne_objet->ID);
+            if (!empty($post_personne_url)) {
+                $xhtml .= '<div class="item"><a href="' . $post_personne_url . '" target="_blank">
+    <img class="author_image" src="' . $featured_image . '" alt="' . get_the_title() . '" />
+    <div class="author_name">' . get_the_title() . '</div>
+    <div class="author_function">' . get_field('post_personne_fonction', get_the_ID()) . '</div>
+    </a></div>';
+            } else {
+                $xhtml .= '<div class="item">
+    <img class="author_image" src="' . $featured_image . '" alt="' . get_the_title() . '" />
+    <div class="author_name">' . get_the_title() . '</div>
+    <div class="author_function">' . get_field('post_personne_fonction', get_the_ID()) . '</div>
+</div>';
+            }
+
         }
         wp_reset_postdata();
     }

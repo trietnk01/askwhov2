@@ -294,7 +294,7 @@ header {
     margin-bottom: 0 !important;
     > .askwho_container {
         margin-left: 250px;
-        margin-right: 64px;                
+        margin-right: 64px;
         @media (max-width: 992px) {
             margin-left: 32px;
             margin-right: 32px;
@@ -364,7 +364,7 @@ header {
                         @media (max-width: 576px) {
                             background: none !important;
                         }
-                        &.evenements{
+                        &.evenements {
                             background-color: $mau_3;
                         }
                     }
@@ -386,7 +386,6 @@ header {
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
-        width: 100%;
         @media (max-width: 992px) {
             margin-left: 24px;
             margin-right: 24px;
@@ -452,7 +451,7 @@ header {
         > .wp-block-columns {
             margin-bottom: 0;
             > .wp-block-column {
-                position: relative;                
+                position: relative;
                 > .owl_carousel_author {
                     > .owl-nav {
                         position: absolute;
@@ -485,13 +484,13 @@ header {
                         > .owl-stage {
                             > .owl-item {
                                 > .item {
-                                    > img {
+                                    img {
                                         margin-bottom: 20px;
                                     }
-                                    > .author_name {
+                                    .author_name {
                                         font-family: $f_GeneralSans_Medium;
                                     }
-                                    > .author_function {
+                                    .author_function {
                                         font-family: $f_GeneralSans_Regular;
                                         font-size: 18px;
                                         line-height: 32px;
@@ -623,10 +622,7 @@ header {
                     > .wp-block-column {
                         position: relative;
                         > h2 {
-                            width: 291px;
-                            @media (max-width: 576px) {
-                                width: 218px;
-                            }
+                            width: 155px;
                         }
                         > figure {
                             width: 54px;
@@ -642,20 +638,20 @@ header {
                         }
                     }
                 }
-                > .featured_post {                    
+                > .featured_post {
                     display: grid;
                     grid-template-columns: auto auto auto auto;
                     grid-column-gap: 40px;
-                    @media(max-width:1024px){
+                    @media (max-width: 1024px) {
                         grid-column-gap: 10px;
-                        padding : 0 24px;
+                        padding: 0 24px;
                     }
                     @media (max-width: 576px) {
                         display: flex;
                         flex-direction: column;
                         row-gap: 32px;
                     }
-                    > .item {                        
+                    > .item {
                         > .author_image {
                             > img {
                                 width: 100%;
@@ -970,10 +966,10 @@ header {
             > .wp-block-column {
                 flex-grow: unset !important;
                 flex-basis: unset !important;
-                width: 455px;
+                width: 465px;
                 position: relative;
                 @media (max-width: 576px) {
-                    width: 318px;
+                    width: 289px;
                 }
                 > figure {
                     position: absolute;

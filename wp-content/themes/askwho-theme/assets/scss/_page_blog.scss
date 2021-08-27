@@ -45,6 +45,9 @@
 
             > h2 {
                 width: 212px;
+                @media(max-width:576px){
+                    width: 160px;
+                }
             }
 
             > img {

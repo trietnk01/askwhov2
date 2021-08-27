@@ -743,8 +743,7 @@ header {
       padding-bottom: 32px !important; } }
   .box_contacts > .askwho_container {
     margin-left: 168px;
-    margin-right: 64px;
-    width: 100%; }
+    margin-right: 64px; }
     @media (max-width: 992px) {
       .box_contacts > .askwho_container {
         margin-left: 24px;
@@ -823,11 +822,11 @@ header {
               @media (max-width: 576px) {
                 .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-nav > div.owl-next {
                   left: 50px; } }
-        .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-stage-outer > .owl-stage > .owl-item > .item > img {
+        .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-stage-outer > .owl-stage > .owl-item > .item img {
           margin-bottom: 20px; }
-        .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-stage-outer > .owl-stage > .owl-item > .item > .author_name {
+        .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-stage-outer > .owl-stage > .owl-item > .item .author_name {
           font-family: "GeneralSans_Medium"; }
-        .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-stage-outer > .owl-stage > .owl-item > .item > .author_function {
+        .box_person > .askwho_container > .wp-block-columns > .wp-block-column > .owl_carousel_author > .owl-stage-outer > .owl-stage > .owl-item > .item .author_function {
           font-family: "GeneralSans_Regular";
           font-size: 18px;
           line-height: 32px; }
@@ -934,10 +933,7 @@ header {
         .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column {
           position: relative; }
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column > h2 {
-            width: 291px; }
-            @media (max-width: 576px) {
-              .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column > h2 {
-                width: 218px; } }
+            width: 155px; }
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .lactualite > .wp-block-column > figure {
             width: 54px;
             position: absolute;
@@ -1223,11 +1219,11 @@ header {
       .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column {
         flex-grow: unset !important;
         flex-basis: unset !important;
-        width: 455px;
+        width: 465px;
         position: relative; }
         @media (max-width: 576px) {
           .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column {
-            width: 318px; } }
+            width: 289px; } }
         .box_ex_co_ac > .askwho_container > .pourquoi_faire_appel > .wp-block-column > figure {
           position: absolute;
           top: 75px;
@@ -1330,6 +1326,9 @@ header {
           margin-bottom: 45px; } }
       .blog_post > .askwho_container > .lactualite > h2 {
         width: 212px; }
+        @media (max-width: 576px) {
+          .blog_post > .askwho_container > .lactualite > h2 {
+            width: 160px; } }
       .blog_post > .askwho_container > .lactualite > img {
         width: 54px;
         position: absolute;
@@ -1560,12 +1559,12 @@ header {
       @media (max-width: 576px) {
         .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part {
           grid-row-gap: 32px; } }
-      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item > img {
+      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item img {
         width: 100%;
         margin-bottom: 16px; }
-      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item > .author_name {
+      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item .author_name {
         font-family: "GeneralSans_Medium"; }
-      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item > .author_function {
+      .personnalites_page > .askwho_container > .personnalites_frm > .personnalites_author_part > .item .author_function {
         font-family: "GeneralSans_Regular";
         font-size: 18px;
         line-height: 32px; }
@@ -1635,12 +1634,12 @@ header {
             row-gap: 32px; } }
         .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item {
           width: 100%; }
-          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item > img {
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item img {
             width: 100%;
             margin-bottom: 16px; }
-          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item > .author_name {
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item .author_name {
             font-family: "GeneralSans_Medium"; }
-          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item > .author_function {
+          .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .personnalites_author_part > .item .author_function {
             font-family: "GeneralSans_Regular";
             font-size: 18px;
             line-height: 32px; }

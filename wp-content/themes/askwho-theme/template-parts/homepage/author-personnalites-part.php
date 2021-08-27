@@ -27,7 +27,19 @@ while ($the_query->have_posts()) {
         } else {
             $featured_image = get_stylesheet_directory_uri() . "/assets/images/no-image.png";
         }
-        ?>
+        $post_personne_url = get_field('post_personne_url', $hp_personne_objet->ID);
+        if (!empty($post_personne_url)) {
+            ?>
+        <div class="item">
+            <a href="<?php echo $post_personne_url; ?>" target="_blank">
+                <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+                <div class="author_name"><?php echo get_the_title(); ?></div>
+                <div class="author_function"><?php echo get_field('post_personne_fonction', get_the_ID()); ?></div>
+            </a>
+        </div>
+        <?php
+} else {
+            ?>
         <div class="item">
             <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
             <div class="author_name"><?php echo get_the_title(); ?></div>
@@ -35,6 +47,8 @@ while ($the_query->have_posts()) {
         </div>
         <?php
 }
+
+    }
     ?>
     </div>
     <?php
@@ -80,7 +94,19 @@ while ($the_query->have_posts()) {
         } else {
             $featured_image = get_stylesheet_directory_uri() . "/assets/images/no-image.png";
         }
-        ?>
+        $post_personne_url = get_field('post_personne_url', $hp_personne_objet->ID);
+        if (!empty($post_personne_url)) {
+            ?>
+        <div class="item">
+            <a href="<?php echo $post_personne_url; ?>" target="_blank">
+                <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+                <div class="author_name"><?php echo get_the_title(); ?></div>
+                <div class="author_function"><?php echo get_field('post_personne_fonction', get_the_ID()); ?></div>
+            </a>
+        </div>
+        <?php
+} else {
+            ?>
         <div class="item">
             <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
             <div class="author_name"><?php echo get_the_title(); ?></div>
@@ -88,6 +114,7 @@ while ($the_query->have_posts()) {
         </div>
         <?php
 }
+    }
     ?>
     </div>
     <?php

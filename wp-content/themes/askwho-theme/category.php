@@ -20,7 +20,7 @@ $the_query = new WP_Query($args);
         <input type="hidden" name="offset" value="<?php echo $offset; ?>">
         <h1 class="category_name">Blog</h1>
         <div class="lactualite">
-            <h2 class="name">L’actualité AskWho</h2>
+            <h2 class="name">L’actualité Ask Who</h2>
             <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/ic_arrowDown.svg'; ?>"
                 alt="<?php echo get_bloginfo('name'); ?>" />
         </div>

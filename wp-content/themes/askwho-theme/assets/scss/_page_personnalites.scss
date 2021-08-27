@@ -111,16 +111,16 @@
                 }
 
                 >.item {                
-                    >img {
+                    img {
                         width: 100%;
                         margin-bottom: 16px;
                     }
 
-                    >.author_name {
+                    .author_name {
                         font-family: $f_GeneralSans_Medium;
                     }
 
-                    >.author_function {
+                    .author_function {
                         font-family: $f_GeneralSans_Regular;
                         font-size: 18px;
                         line-height: 32px;
@@ -220,16 +220,16 @@
                 >.item {
                     width: 100%;
 
-                    >img {
+                    img {
                         width: 100%;
                         margin-bottom: 16px;
                     }
 
-                    >.author_name {
+                    .author_name {
                         font-family: $f_GeneralSans_Medium;
                     }
 
-                    >.author_function {
+                    .author_function {
                         font-family: $f_GeneralSans_Regular;
                         font-size: 18px;
                         line-height: 32px;
