@@ -198,7 +198,7 @@ function plus_de_personnalites()
             }
             $date = get_the_date('Y-m-d');
             $date_vn = datetimeConverterByFormat($date, "d.m.Y");
-            $post_personne_url = get_field('post_personne_url', $hp_personne_objet->ID);
+            $post_personne_url = get_field('post_personne_url', get_the_ID());
             if (!empty($post_personne_url)) {
                 $xhtml .= '<div class="item"><a href="' . $post_personne_url . '" target="_blank">
     <img class="author_image" src="' . $featured_image . '" alt="' . get_the_title() . '" />

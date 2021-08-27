@@ -27,7 +27,7 @@ while ($the_query->have_posts()) {
         } else {
             $featured_image = get_stylesheet_directory_uri() . "/assets/images/no-image.png";
         }
-        $post_personne_url = get_field('post_personne_url', $hp_personne_objet->ID);
+        $post_personne_url = get_field('post_personne_url', get_the_ID());
         if (!empty($post_personne_url)) {
             ?>
         <div class="item">
@@ -94,7 +94,7 @@ while ($the_query->have_posts()) {
         } else {
             $featured_image = get_stylesheet_directory_uri() . "/assets/images/no-image.png";
         }
-        $post_personne_url = get_field('post_personne_url', $hp_personne_objet->ID);
+        $post_personne_url = get_field('post_personne_url', get_the_ID());
         if (!empty($post_personne_url)) {
             ?>
         <div class="item">
