@@ -640,7 +640,7 @@ header {
                 }
                 > .featured_post {
                     display: flex;                    
-                    column-gap: 40px;                    
+                    column-gap: 40px;                                        
                     @media (max-width: 1024px) {
                         column-gap: 10px;
                         padding: 0 24px;
@@ -650,12 +650,12 @@ header {
                         flex-direction: column;
                         row-gap: 32px;
                     }
-                    > .item {
-                        width: calc(100% / 4);
+                    > .item {    
+                        width: calc(100% / 4);                    
                         @media(max-width:576px){
                             width: 100%;
                         }
-                        > .author_image {                            
+                        > .author_image {                                   
                             > img {
                                 width: 100%;                                     
                             }
