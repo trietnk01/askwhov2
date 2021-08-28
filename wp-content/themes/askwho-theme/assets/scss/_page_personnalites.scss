@@ -9,7 +9,7 @@
         padding-top: 120px !important;
     }
 
-    >.askwho_container {
+    > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
 
@@ -18,12 +18,12 @@
             margin-right: 24px;
         }
 
-        >.page_name {
+        > .page_name {
             margin-bottom: 0 !important;
 
-            >.wp-block-column {
+            > .wp-block-column {
                 &:first-child {
-                    >h1 {
+                    > h1 {
                         font-family: $f_GeneralSans_Medium;
                         font-size: 104px;
                         line-height: 104px;
@@ -39,14 +39,14 @@
             }
         }
 
-        >.slogan {
+        > .slogan {
             margin-bottom: 55px;
 
             @media (max-width: 576px) {
                 margin-bottom: 40px;
             }
 
-            >.wp-block-column {
+            > .wp-block-column {
                 width: 450px;
                 position: relative;
                 flex-basis: unset !important;
@@ -56,7 +56,7 @@
                     width: 318px;
                 }
 
-                >figure {
+                > figure {
                     position: absolute;
                     top: 75px;
                     left: 411px;
@@ -69,14 +69,14 @@
                         width: 36px;
                     }
 
-                    >img {
+                    > img {
                         width: 100%;
                     }
                 }
             }
         }
 
-        >.excerption {
+        > .excerption {
             margin-left: 451px;
             margin-bottom: 80px;
 
@@ -88,31 +88,47 @@
                 margin-bottom: 32px;
             }
 
-            >.wp-block-column {
-                >p {
+            > .wp-block-column {
+                > p {
                     margin-bottom: 0;
                 }
             }
         }
 
-        >.personnalites_frm {
-            @media(max-width:576px) {
+        > .personnalites_frm {
+            @media (max-width: 576px) {
                 display: none;
             }
 
-            >.personnalites_author_part {
-                display: grid;
-                grid-template-columns: auto auto auto auto;
-                grid-column-gap: 24px;
-                grid-row-gap: 24px;
-                margin-bottom: 0 !important;
-                @media (max-width: 576px) {                                        
-                    grid-row-gap: 32px;
+            > .personnalites_author_part {
+                display: flex;
+                column-gap: 24px;
+                row-gap: 24px;   
+                flex-wrap: wrap;             
+                @media (max-width: 576px) {
+                    flex-direction: column;
+                    row-gap: 32px;
                 }
+                // display: grid;
+                // grid-template-columns: auto auto auto auto;
+                // grid-column-gap: 24px;
+                // grid-row-gap: 24px;
+                // margin-bottom: 0 !important;
+                // @media (max-width: 576px) {
+                //     grid-row-gap: 32px;
+                // }
 
-                >.item {                
-                    img {
+                > .item {
+                    width: calc(100% / 4 - 18px);
+                    @media(max-width:576px){
                         width: 100%;
+                    }
+                    .author_image {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+                        width: 100%;
+                        height: 304px;
                         margin-bottom: 16px;
                     }
 
@@ -128,7 +144,7 @@
                 }
             }
 
-            >.box_readmore {
+            > .box_readmore {
                 display: flex;
                 align-items: center;
                 column-gap: 24px;
@@ -142,19 +158,19 @@
                     column-gap: 7px;
                 }
 
-                >img {
+                > img {
                     width: 48px;
 
                     @media (max-width: 576px) {
                         width: 32px;
                     }
 
-                    >figure {
+                    > figure {
                         margin-bottom: 0;
                     }
                 }
 
-                >button {
+                > button {
                     font-family: $f_GeneralSans_Bold;
                     font-size: 24px;
                     letter-spacing: 0;
@@ -199,14 +215,14 @@
             }
         }
 
-        >.personnalites_frm_vmobile {
+        > .personnalites_frm_vmobile {
             display: none;
 
-            @media(max-width:576px) {
+            @media (max-width: 576px) {
                 display: block;
             }
 
-            >.personnalites_author_part {
+            > .personnalites_author_part {
                 display: flex;
                 flex-direction: column;
                 row-gap: 24px;
@@ -217,11 +233,15 @@
                     row-gap: 32px;
                 }
 
-                >.item {
+                > .item {
                     width: 100%;
 
-                    img {
+                    .author_image {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;
                         width: 100%;
+                        height: 304px;
                         margin-bottom: 16px;
                     }
 
@@ -237,7 +257,7 @@
                 }
             }
 
-            >.box_readmore {
+            > .box_readmore {
                 display: flex;
                 align-items: center;
                 column-gap: 24px;
@@ -251,19 +271,19 @@
                     column-gap: 7px;
                 }
 
-                >img {
+                > img {
                     width: 48px;
 
                     @media (max-width: 576px) {
                         width: 32px;
                     }
 
-                    >figure {
+                    > figure {
                         margin-bottom: 0;
                     }
                 }
 
-                >button {
+                > button {
                     font-family: $f_GeneralSans_Bold;
                     font-size: 24px;
                     letter-spacing: 0;

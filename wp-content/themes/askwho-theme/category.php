@@ -42,7 +42,7 @@ while ($the_query->have_posts()) {
         ?>
             <div class="item">
                 <a href="<?php echo get_the_permalink(); ?>" class="author_image">
-                    <img src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+                    <div style="background-image:url('<?php echo $featured_image; ?>')"></div>
                 </a>
                 <div class="post_date"><?php echo $date_vn; ?></div>
                 <div class="post_title">

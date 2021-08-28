@@ -614,7 +614,6 @@ header {
             padding: 0 24px; } }
         @media (max-width: 576px) {
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post {
-            display: flex;
             flex-direction: column;
             row-gap: 32px; } }
         .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
@@ -622,8 +621,12 @@ header {
           @media (max-width: 576px) {
             .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item {
               width: 100%; } }
-          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .author_image > img {
-            width: 100%; }
+          .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .author_image > div {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 272px; }
           .box_banner > .askwho_container > .wp-block-columns > .wp-block-column > .featured_post > .item > .post_date {
             margin-bottom: 0px;
             font-family: "GeneralSans_Regular";

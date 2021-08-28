@@ -32,7 +32,7 @@ while ($the_query->have_posts()) {
             ?>
         <div class="item">
             <a href="<?php echo $post_personne_url; ?>" target="_blank">
-                <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+                <div class="author_image" style="background-image:url('<?php echo $featured_image; ?>')"></div>
                 <div class="author_name"><?php echo get_the_title(); ?></div>
                 <div class="author_function"><?php echo get_field('post_personne_fonction', get_the_ID()); ?></div>
             </a>
@@ -41,7 +41,7 @@ while ($the_query->have_posts()) {
 } else {
             ?>
         <div class="item">
-            <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+            <div class="author_image" style="background-image:url('<?php echo $featured_image; ?>')"></div>
             <div class="author_name"><?php echo get_the_title(); ?></div>
             <div class="author_function"><?php echo get_field('post_personne_fonction', get_the_ID()); ?></div>
         </div>
@@ -99,7 +99,7 @@ while ($the_query->have_posts()) {
             ?>
         <div class="item">
             <a href="<?php echo $post_personne_url; ?>" target="_blank">
-                <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+                <div class="author_image" style="background-image:url('<?php echo $featured_image; ?>')"></div>
                 <div class="author_name"><?php echo get_the_title(); ?></div>
                 <div class="author_function"><?php echo get_field('post_personne_fonction', get_the_ID()); ?></div>
             </a>
@@ -108,7 +108,7 @@ while ($the_query->have_posts()) {
 } else {
             ?>
         <div class="item">
-            <img class="author_image" src="<?php echo $featured_image; ?>" alt="<?php echo get_the_title(); ?>" />
+            <div class="author_image" style="background-image:url('<?php echo $featured_image; ?>')"></div>
             <div class="author_name"><?php echo get_the_title(); ?></div>
             <div class="author_function"><?php echo get_field('post_personne_fonction', get_the_ID()); ?></div>
         </div>
