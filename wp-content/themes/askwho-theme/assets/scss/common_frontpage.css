@@ -152,6 +152,9 @@ ol {
 .error_page {
   background-color: #8DC8E8; }
 
+.full_height {
+  min-height: 100vh; }
+
 .margin_bottom_10 {
   margin-bottom: 10px; }
 
@@ -1474,7 +1477,8 @@ header {
         position: fixed;
         top: 128px;
         right: 64px;
-        width: 37%; }
+        width: 37%;
+        z-index: 1; }
         @media (max-width: 576px) {
           .single_post > .askwho_container > .box_wrapper > .single_col_2 {
             width: 100%;

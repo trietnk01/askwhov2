@@ -15,7 +15,7 @@ $args = array(
 );
 $the_query = new WP_Query($args);
 ?>
-<div class="box_section blog_post">
+<div class="box_section blog_post full_height">
     <form class="askwho_container" name="frm_category" method="POST" action="">
         <input type="hidden" name="offset" value="<?php echo $offset; ?>">
         <h1 class="category_name">Blog</h1>

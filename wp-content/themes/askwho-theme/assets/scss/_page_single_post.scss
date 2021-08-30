@@ -54,7 +54,8 @@
                 position: fixed;
                 top: 128px;
                 right: 64px;   
-                width: 37%;    
+                width: 37%;   
+                z-index: 1; 
                 @media(max-width:576px){
                     width: 100%;
                     position: static;

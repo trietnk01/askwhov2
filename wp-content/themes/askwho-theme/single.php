@@ -23,7 +23,7 @@ if (have_posts()) {
 }
 wp_reset_postdata();
 ?>
-<div class="box_section single_post">
+<div class="box_section single_post full_height">
     <div class="askwho_container">
         <div class="box_wrapper">
             <div class="single_col_1">

@@ -49,11 +49,11 @@ jQuery(document).ready(function ($) {
         $(section_ctrl).css({
           'background-color': attr_bg,
           'transition': '200ms',
-        });    
+        });      
         $('.box_footer').css({
           'background-color':attr_bg,
           'transition':'200ms'
-        });    
+        });   
       }
     });
   });
@@ -129,4 +129,8 @@ jQuery(document).ready(function ($) {
     });
   });
   /* end Plus de personnalités vmobile */
+  /* begin remove width iframe video youtube */
+  $('iframe').attr('width','100%');
+  $('iframe').attr('height','100%');
+  /* end remove width iframe video youtube */
 });
