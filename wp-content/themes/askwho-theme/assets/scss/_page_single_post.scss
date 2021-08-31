@@ -5,25 +5,25 @@
     padding-right: 0 !important;
     margin-bottom: 0 !important;
     background-color: $mau_4;
-    @media(max-width:576px){
+    @media (max-width: 576px) {
         padding-top: 120px !important;
     }
     > .askwho_container {
         margin-left: 168px;
         margin-right: 64px;
-        @media(max-width:992px){
+        @media (max-width: 992px) {
             margin-left: 24px;
             margin-right: 24px;
         }
-        > .box_wrapper {          
+        > .box_wrapper {
             display: grid;
-            grid-template-columns: 52%;                   
-            @media(max-width:576px){
+            grid-template-columns: 52%;
+            @media (max-width: 576px) {
                 display: flex;
                 flex-direction: column-reverse;
                 row-gap: 16px;
-            }      
-            > .single_col_1 {                                              
+            }
+            > .single_col_1 {
                 > .single_title {
                     font-family: $f_GeneralSans_Bold;
                     font-size: 40px;
@@ -43,25 +43,41 @@
                         margin-bottom: 32px;
                     }
                 }
-                >.single_content{
-                    img{
+                > .single_content {
+                    .video_container {
+                        display: block;
+                        .wp-block-column {
+                            position: relative;
+                            width: 100%;
+                            padding-bottom: 56.25%;
+                            margin-left: 0;
+                            iframe {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border: 0;
+                            }
+                        }
+                    }
+                    img {
                         width: 100%;
                     }
                 }
-                
             }
-            >.single_col_2{                
+            > .single_col_2 {
                 position: fixed;
                 top: 128px;
-                right: 64px;   
-                width: 37%;   
-                z-index: 1; 
-                @media(max-width:576px){
+                right: 64px;
+                width: 37%;
+                z-index: 1;
+                @media (max-width: 576px) {
                     width: 100%;
                     position: static;
-                }                                          
-                >img {                    
-                    width: 100%;                    
+                }
+                > img {
+                    width: 100%;
                 }
             }
         }

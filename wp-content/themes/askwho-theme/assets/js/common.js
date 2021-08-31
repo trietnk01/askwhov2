@@ -130,7 +130,7 @@ jQuery(document).ready(function ($) {
   });
   /* end Plus de personnalités vmobile */
   /* begin remove width iframe video youtube */
-  $('iframe').attr('width','100%');
-  $('iframe').attr('height','100%');
+  $('iframe').removeAttr('width');
+  $('iframe').removeAttr('height');
   /* end remove width iframe video youtube */
 });
