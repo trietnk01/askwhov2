@@ -1471,14 +1471,14 @@ header {
         @media (max-width: 576px) {
           .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_date {
             margin-bottom: 32px; } }
-      .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content .video_container {
+      .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content .iframe_container {
         display: block; }
-        .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content .video_container .wp-block-column {
+        .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content .iframe_container .wp-block-column {
           position: relative;
           width: 100%;
           padding-bottom: 56.25%;
           margin-left: 0; }
-          .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content .video_container .wp-block-column iframe {
+          .single_post > .askwho_container > .box_wrapper > .single_col_1 > .single_content .iframe_container .wp-block-column iframe {
             position: absolute;
             top: 0;
             left: 0;

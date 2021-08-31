@@ -133,4 +133,5 @@ jQuery(document).ready(function ($) {
   $('iframe').removeAttr('width');
   $('iframe').removeAttr('height');
   /* end remove width iframe video youtube */
+  $('.iframe_container').find('br').remove();
 });
