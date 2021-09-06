@@ -27,5 +27,13 @@ function my_acf_init_block_types()
             'icon' => 'editor-paste-text',
             'keyword' => array('PersonnalitesAuthorPart'),
         ));
+        acf_register_block_type(array(
+            'name' => 'et-bien-plus-encore-part',
+            'title' => __('et-bien-plus-encore-part'),
+            'description' => __('et-bien-plus-encore-part'),
+            'render_template' => 'template-parts/personnalites/et-bien-plus-encore-block.php',
+            'icon' => 'editor-paste-text',
+            'keyword' => array('Et bien plus encore'),
+        ));
     }
 }

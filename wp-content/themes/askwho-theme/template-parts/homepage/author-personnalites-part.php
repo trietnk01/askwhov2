@@ -9,6 +9,7 @@ $args = array(
             'taxonomy' => 'category',
             'field' => 'slug',
             'terms' => 'personne',
+            'include_children' => false,
         ),
     ),
 );
@@ -76,6 +77,7 @@ $args = array(
             'taxonomy' => 'category',
             'field' => 'slug',
             'terms' => 'personne',
+            'include_children' => false,
         ),
     ),
 );

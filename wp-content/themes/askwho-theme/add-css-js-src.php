@@ -17,4 +17,7 @@ function p_load_css_js()
     wp_enqueue_style('common_css', get_stylesheet_directory_uri() . '/assets/scss/common_frontpage.css', array(), $js_css_ran, 'all');
     wp_enqueue_script('common_js', get_stylesheet_directory_uri() . '/assets/js/common.js', array(), $js_css_ran, true);
     /* end common */
+    /* begin masonry */
+    wp_enqueue_script('masonry_js', get_stylesheet_directory_uri() . '/assets/js/masonry.pkgd.min.js', array(), $js_css_ran, true);
+    /* end masonry */
 }

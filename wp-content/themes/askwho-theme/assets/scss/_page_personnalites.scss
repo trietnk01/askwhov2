@@ -103,24 +103,15 @@
             > .personnalites_author_part {
                 display: flex;
                 column-gap: 24px;
-                row-gap: 24px;   
-                flex-wrap: wrap;             
+                row-gap: 24px;
+                flex-wrap: wrap;
                 @media (max-width: 576px) {
                     flex-direction: column;
                     row-gap: 32px;
                 }
-                // display: grid;
-                // grid-template-columns: auto auto auto auto;
-                // grid-column-gap: 24px;
-                // grid-row-gap: 24px;
-                // margin-bottom: 0 !important;
-                // @media (max-width: 576px) {
-                //     grid-row-gap: 32px;
-                // }
-
                 > .item {
                     width: calc(100% / 4 - 18px);
-                    @media(max-width:576px){
+                    @media (max-width: 576px) {
                         width: 100%;
                     }
                     .author_image {
@@ -324,6 +315,62 @@
                             left: 0;
                         }
                     }
+                }
+            }
+        }
+        > .et_bien_plus_encore {
+            > .wp-block-column {
+                position: relative;
+                flex-basis: unset !important;
+                flex-grow: unset;
+
+                @media (max-width: 576px) {
+                    width: 318px;
+                }
+
+                > figure {
+                    position: absolute;
+                    top: 25px;
+                    right: -70px;
+                    width: 54px;
+                    margin-bottom: 0;
+
+                    @media (max-width: 576px) {
+                        top: 84px;
+                        left: 117px;
+                        width: 36px;
+                    }
+
+                    > img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.grid {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .grid-item {
+        float: left;
+        margin-bottom: 40px;     
+        .title {
+            background-color: $mau_2;
+            margin-bottom: 20px;
+        }
+        .list {
+            .item {
+                .author_name {
+                    font-family: $f_GeneralSans_Medium;
+                }
+                .author_function {
+                    font-family: $f_GeneralSans_Regular;
+                    font-size: 18px;
+                    line-height: 32px;
                 }
             }
         }

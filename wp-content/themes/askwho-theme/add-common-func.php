@@ -163,6 +163,7 @@ function plus_de_personnalites()
                 'taxonomy' => 'category',
                 'field' => 'slug',
                 'terms' => 'personne',
+                'include_children' => false,
             ),
         ),
     );
@@ -183,6 +184,7 @@ function plus_de_personnalites()
                 'taxonomy' => 'category',
                 'field' => 'slug',
                 'terms' => 'personne',
+                'include_children' => false,
             ),
         ),
     );
