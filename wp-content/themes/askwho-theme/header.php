@@ -51,15 +51,49 @@ $args = array(
     'add_li_class' => 'dropdown',
 );
 wp_nav_menu($args);
+$args = array(
+    'menu' => '',
+    'container' => '',
+    'container_class' => '',
+    'container_id' => '',
+    'menu_class' => 'i_special',
+    'echo' => true,
+    'fallback_cb' => 'wp_page_menu',
+    'before' => '',
+    'after' => '',
+    'link_before' => '',
+    'link_after' => '',
+    'items_wrap' => '<ul  id="%1$s" class="%2$s">%3$s</ul>',
+    'depth' => 3,
+    'walker' => '',
+    'theme_location' => 'primary',
+    'menu_li_actived' => 'active',
+    'menu_item_has_children' => 'menu-item-has-children',
+    'add_li_class' => 'dropdown',
+);
+wp_nav_menu($args);
+$args = array(
+    'menu' => '',
+    'container' => '',
+    'container_class' => '',
+    'container_id' => '',
+    'menu_class' => 'i_collect',
+    'echo' => true,
+    'fallback_cb' => 'wp_page_menu',
+    'before' => '',
+    'after' => '',
+    'link_before' => '',
+    'link_after' => '',
+    'items_wrap' => '<ul  id="%1$s" class="%2$s">%3$s</ul>',
+    'depth' => 3,
+    'walker' => '',
+    'theme_location' => 'menu_collection',
+    'menu_li_actived' => 'active',
+    'menu_item_has_children' => 'menu-item-has-children',
+    'add_li_class' => 'dropdown',
+);
+wp_nav_menu($args);
 ?>
-            <ul class="i_special">
-                <li><a href="javascript:void(0);">Spécial Chefs</a></li>
-                <li><a href="javascript:void(0);">Spécial Arts & Culture</a></li>
-            </ul>
-            <ul class="i_collect">
-                <li><a href="javascript:void(0);">Mentions légales et politique des cookies</a></li>
-                <li><a href="javascript:void(0);">Accessibilité</a></li>
-            </ul>
         </div>
         <a href="<?php echo site_url(); ?>" class="logoFooter">
             <img src="<?php echo get_field('op_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?>">

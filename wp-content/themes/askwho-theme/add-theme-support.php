@@ -7,6 +7,7 @@ function p_load_support()
             "primary" => __("Mainmenu"),
             "menu_sidebar" => __("Menu sidebar"),
             "menu_mobile" => __("Menu mobile"),
+            'menu_collection' => __('Menu collection'),
         )
     );
 }
