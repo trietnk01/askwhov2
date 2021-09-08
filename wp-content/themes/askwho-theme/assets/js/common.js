@@ -152,8 +152,7 @@ jQuery(document).ready(function ($) {
   /* end remove width iframe video youtube */
   /* begin masonry */
   $(".grid").masonry({
-    itemSelector: ".grid-item",
-    columnWidth: 425    
+    itemSelector: ".grid-item"
   });
   /* end masonry */
 });

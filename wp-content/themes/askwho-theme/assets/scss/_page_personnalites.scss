@@ -319,6 +319,9 @@
             }
         }
         > .et_bien_plus_encore {
+            @media(max-width:576px){
+                margin-bottom: 120px;
+            }
             > .wp-block-column {
                 position: relative;
                 flex-basis: unset !important;
@@ -347,30 +350,26 @@
                 }
             }
         }
-    }
-}
-.grid {
-    &:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    .grid-item {
-        float: left;
-        margin-bottom: 40px;     
-        .title {
-            background-color: $mau_2;
-            margin-bottom: 20px;
-        }
-        .list {
-            .item {
-                .author_name {
-                    font-family: $f_GeneralSans_Medium;
+        .grid {
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .grid-item {
+                float: left;
+                margin-bottom: 40px;
+                width: 30%;
+                padding-right: 40px;
+                box-sizing: border-box;
+                @media(max-width:576px){
+                    width: 100%;
+                    padding-right: 0;
                 }
-                .author_function {
-                    font-family: $f_GeneralSans_Regular;
-                    font-size: 18px;
-                    line-height: 32px;
+                .title {
+                    background-color: $mau_2;
+                    margin-bottom: 20px;
+                    width: fit-content;
                 }
             }
         }

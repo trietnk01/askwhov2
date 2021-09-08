@@ -1727,6 +1727,9 @@ header {
             display: block; }
           .personnalites_page > .askwho_container > .personnalites_frm_vmobile > .box_readmore > button:hover::before {
             left: 0; }
+    @media (max-width: 576px) {
+      .personnalites_page > .askwho_container > .et_bien_plus_encore {
+        margin-bottom: 120px; } }
     .personnalites_page > .askwho_container > .et_bien_plus_encore > .wp-block-column {
       position: relative;
       flex-basis: unset !important;
@@ -1747,23 +1750,24 @@ header {
             width: 36px; } }
         .personnalites_page > .askwho_container > .et_bien_plus_encore > .wp-block-column > figure > img {
           width: 100%; }
-
-.grid:after {
-  content: "";
-  display: block;
-  clear: both; }
-.grid .grid-item {
-  float: left;
-  margin-bottom: 40px; }
-  .grid .grid-item .title {
-    background-color: #F0E87B;
-    margin-bottom: 20px; }
-  .grid .grid-item .list .item .author_name {
-    font-family: "GeneralSans_Medium"; }
-  .grid .grid-item .list .item .author_function {
-    font-family: "GeneralSans_Regular";
-    font-size: 18px;
-    line-height: 32px; }
+    .personnalites_page > .askwho_container .grid:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .personnalites_page > .askwho_container .grid .grid-item {
+      float: left;
+      margin-bottom: 40px;
+      width: 30%;
+      padding-right: 40px;
+      box-sizing: border-box; }
+      @media (max-width: 576px) {
+        .personnalites_page > .askwho_container .grid .grid-item {
+          width: 100%;
+          padding-right: 0; } }
+      .personnalites_page > .askwho_container .grid .grid-item .title {
+        background-color: #F0E87B;
+        margin-bottom: 20px;
+        width: fit-content; }
 
 .page_expertise {
   padding-top: 104px !important;
