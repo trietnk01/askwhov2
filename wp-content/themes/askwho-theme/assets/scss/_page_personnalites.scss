@@ -320,7 +320,7 @@
         }
         > .et_bien_plus_encore {
             @media(max-width:576px){
-                margin-bottom: 120px;
+                margin-bottom: 60px;
             }
             > .wp-block-column {
                 position: relative;
@@ -328,7 +328,7 @@
                 flex-grow: unset;
 
                 @media (max-width: 576px) {
-                    width: 318px;
+                    width: 260px;
                 }
 
                 > figure {
@@ -339,8 +339,8 @@
                     margin-bottom: 0;
 
                     @media (max-width: 576px) {
-                        top: 84px;
-                        left: 117px;
+                        top: 15px;
+                        right: 0px;
                         width: 36px;
                     }
 

@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD53DWG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <?php
 $show_ic_scrollDown = true;
 if (is_page('contact')) {
@@ -92,7 +96,7 @@ $args = array(
     'menu_item_has_children' => 'menu-item-has-children',
     'add_li_class' => 'dropdown',
 );
-wp_nav_menu($args);
+// wp_nav_menu($args);
 ?>
         </div>
         <a href="<?php echo site_url(); ?>" class="logoFooter">
