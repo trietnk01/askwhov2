@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The base configuration for WordPress
  *
@@ -26,7 +27,7 @@ define('DB_NAME', 'askwhov2');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', 'abc@123');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
